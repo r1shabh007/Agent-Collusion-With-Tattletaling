@@ -1,14 +1,10 @@
 # Agent-Collusion-With-Tattletaling
 
-*goatman*
-
-![Goat](https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg)
-
 **Paper (game design):** [Augmented Liar's Bar — arXiv:2605.27593](https://arxiv.org/pdf/2605.27593)
 
 ## Overview
 
-This repository studies **voluntary collusion** between homogeneous LLM agents and whether a lightweight **whistleblowing** channel can deter it. We run an **Augmented Liar's Bar** tournament across six experimental arms that vary (a) whether agents can form secret side-channels and (b) the consequences for being caught colluding or for making a false accusation.
+This repository studies **voluntary collusion** between homogeneous LLM agents and whether a lightweight **whistleblowing** channel can deter it. We run 60 batches of an **Augmented Liar's Bar** tournament across six experimental arms that vary (a) whether agents can form secret side-channels and (b) the consequences for being caught colluding or for making a false accusation.
 
 The experiment is inspired by the setup in the [collusion_hackathon / llm-agent-collusion-2](https://github.com/poseidon-research/collusion_hackathon/tree/main/llm-agent-collusion-2) framework; our variant differs in the game (we focus on Liar's Bar only), in the collusion framing (a single baseline framing that explicitly labels the tool as secret and unfair), and in the addition of a tattletaling / whistleblowing stage.
 
@@ -67,11 +63,24 @@ Done privately, before any card is played.
 | **1** | — | — | Baseline Liar's Bar; no collusion, no accusations. |
 | **2** | ✅ | — | Secret channels allowed, no accusation stage. |
 | **3** | ✅ | ✅ | Correct accusation ⇒ accused banned from remaining games in the batch. Incorrect accusation ⇒ accuser banned for the rest of the current game. |
-| **4** | ✅ | ✅ | Correct accusation: accused loses **p₁ = 2** points; accuser gains **p₂ = 3** points. Incorrect: no in-game change (point values only). |
+| **4** | ✅ | ✅ | Correct accusation: accused loses **p₁ = 2** points; accuser gains **p₂ = 3** points. Challenge rewards still follow Table 8. |
 | **5** | ✅ | ✅ | Accusation reported to an external **grader**. No in-game consequences. |
 | **6** | — | ✅ | No secret channel exists, but accusations with Arm 5–style grader-reporting are still permitted. Isolates the effect of the private channel itself. |
 
 > **Note — Arm 6 interpretation.** Arm 6 is the control for "does the mere availability of a side-channel change behaviour?" With no channel to form, a successful accusation can only be based on an *offer* made that turn.
+
+## Logging
+
+Every batch must produce two artefacts per game:
+
+- **Chain of Thought (per agent, per game).** Each agent's full reasoning trace at every decision point — collusion offer / acceptance, card choice, challenge decision, accusation — captured verbatim. Store one file per `(game_id, agent_id)` so traces are trivially re-indexable by arm or by agent seat.
+- **Game transcript.** A single structured log per game recording, in turn order:
+  - which agent played which card (and whether it was a bluff),
+  - who challenged whom and the outcome,
+  - who accused whom and whether the accusation was successful,
+  - the turn number for every event above.
+
+> **How to tell it worked:** For any game you should be able to reconstruct both the public game state at every turn (from the transcript) and each agent's private reasoning at every decision point (from the CoT logs), without cross-referencing another file.
 
 ## Results
 
