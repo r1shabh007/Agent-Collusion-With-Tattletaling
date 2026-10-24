@@ -5,7 +5,7 @@ Dry run of all six arms with a scripted stand-in for the model (no server needed
     python -m tests.test_stub
 
 Checks that every arm finishes its games, writes a transcript and per-agent CoT logs, and applies each
-arm's rules (no channels in arms 1 and 6, no accusations in arms 1 and 2, bans only in arm 3,
+arm's rules (no channels in arms 1 and 6, no accusations in arms 1 and 2, bans only in arm 3 and only within a game,
 accusation correctness matches the README condition).
 """
 
@@ -53,8 +53,7 @@ def main() -> None:
     out = tempfile.mkdtemp(prefix="tattletale_stub_")
     try:
         runner = Runner(FakeLLM(), out, games=3, seed=7)
-        runner.run_arm3()
-        for arm in (1, 2, 4, 5, 6):
+        for arm in ARMS:
             for n in range(1, 4):
                 runner.play(arm, n)
         summarize(out)
@@ -73,7 +72,8 @@ def main() -> None:
                 if cfg["accuse"] is None:
                     assert "accusation" not in kinds
                 if cfg["accuse"] != "ban":
-                    assert "banned" not in kinds and not t["banned_from_batch"]
+                    assert "banned" not in kinds
+                assert t["players"] == NAMES                     # bans never carry into the next game
                 for e in t["events"]:
                     if e["type"] == "accusation_phase":
                         phase = e

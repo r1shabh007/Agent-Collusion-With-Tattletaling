@@ -4,9 +4,8 @@ Run the experiment: one batch of N games per arm.
 
     python -m tattletale.run --arms 1 2 3 4 5 6 --games 10 --out results/run1
 
-Games in arms 1, 2, 4, 5, 6 are independent (agents have no cross-game memory and channels last one game), so
-they all run concurrently. Arm 3 runs its games in order, because a correct accusation bans the accused for
-the rest of the batch.
+All games are independent (agents have no cross-game memory, and channels and bans last one game), so all of
+them run concurrently. Rerunning the same command skips games that already have a transcript.
 
 Output per game: <out>/arm<k>/<game_id>/transcript.json and <out>/arm<k>/<game_id>/cot/<agent>.jsonl.
 Across games: <out>/games.csv (one row per agent per game) and <out>/progress.json.
@@ -21,7 +20,7 @@ import time
 import traceback
 from concurrent.futures import ThreadPoolExecutor
 
-from tattletale.game import NAMES, BatchState, Game
+from tattletale.game import NAMES, Game
 
 CSV_FIELDS = ["arm", "game_id", "game", "agent", "played", "score", "winner", "last_survivor", "removed",
               "offers_made", "offers_accepted_by_partner", "invitations_accepted", "channels_opened",
@@ -43,13 +42,13 @@ class Runner:
             with open(self.csv_path, "w", newline="") as f:
                 csv.DictWriter(f, fieldnames=CSV_FIELDS).writeheader()
 
-    def play(self, arm: int, n: int, batch: BatchState = None) -> None:
+    def play(self, arm: int, n: int) -> None:
         game_id = f"arm{arm}-g{n:02d}"
         game_dir = os.path.join(self.out, f"arm{arm}", game_id)
         if os.path.exists(os.path.join(game_dir, "transcript.json")):
             return                                                  # resume: already played
         error, result = "", None
-        game = Game(arm, game_id, self.llm, game_dir, seed=self.seed + 1000 * arm + n, batch=batch)
+        game = Game(arm, game_id, self.llm, game_dir, seed=self.seed + 1000 * arm + n)
         try:
             result = game.play()
         except Exception as e:
@@ -82,14 +81,6 @@ class Runner:
                            "total_tokens": self.tokens}, f, indent=1)
         print(f"[done] {game_id} {'ERROR ' + error if error else result['final_scores']}", flush=True)
 
-    def run_arm3(self) -> None:
-        batch = BatchState()
-        for n in range(1, self.games + 1):
-            if len(NAMES) - len(batch.banned) < 2:
-                print(f"[arm3] fewer than 2 players left after bans; stopping at game {n}", flush=True)
-                break
-            self.play(3, n, batch)
-
 
 def main() -> None:
     from tattletale.llm import LLM
@@ -103,13 +94,8 @@ def main() -> None:
     args = parser.parse_args()
 
     runner = Runner(LLM(), args.out, args.games, args.seed)
-    with ThreadPoolExecutor(max_workers=args.max_parallel_games + 1) as pool:
-        futures = []
-        if 3 in args.arms:
-            futures.append(pool.submit(runner.run_arm3))
-        for arm in args.arms:
-            if arm != 3:
-                futures += [pool.submit(runner.play, arm, n) for n in range(1, args.games + 1)]
+    with ThreadPoolExecutor(max_workers=args.max_parallel_games) as pool:
+        futures = [pool.submit(runner.play, arm, n) for arm in args.arms for n in range(1, args.games + 1)]
         for f in futures:
             f.result()
     print(f"ALL DONE in {round((time.time() - runner.started) / 60, 1)} min", flush=True)
