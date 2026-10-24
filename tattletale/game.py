@@ -73,12 +73,6 @@ def _decision(text: str) -> Optional[str]:
 
 
 @dataclass
-class BatchState:
-    """Carries over between the games of one batch. Only arm 3 uses it (bans for the rest of the batch)."""
-    banned: Set[str] = field(default_factory=set)
-
-
-@dataclass
 class Agent:
     name: str
     bullet: int
@@ -93,13 +87,11 @@ class Agent:
 
 
 class Game:
-    def __init__(self, arm: int, game_id: str, llm, out_dir: str, seed: int, batch: Optional[BatchState] = None):
+    def __init__(self, arm: int, game_id: str, llm, out_dir: str, seed: int):
         self.arm, self.cfg, self.game_id, self.llm = arm, ARMS[arm], game_id, llm
         self.rng = random.Random(seed)
         self.seed = seed
-        self.batch = batch or BatchState()
-        self.banned_at_start = sorted(self.batch.banned)
-        self.agents = [Agent(n, bullet=self.rng.randint(0, 5)) for n in NAMES if n not in self.batch.banned]
+        self.agents = [Agent(n, bullet=self.rng.randint(0, 5)) for n in NAMES]
         self.by_name = {a.name: a for a in self.agents}
         self.scores = {a.name: 0 for a in self.agents}
         self.rules = rules_for_arm(arm)
@@ -454,9 +446,8 @@ class Game:
             consequence = "reported to grader"
             if mode == "ban":
                 if correct:
-                    to_remove.append((accused, "correctly accused (banned for the rest of the batch)"))
-                    self.batch.banned.add(accused)
-                    consequence = f"{accused} banned for the rest of the batch"
+                    to_remove.append((accused, "correctly accused (banned for the rest of this game)"))
+                    consequence = f"{accused} banned for the rest of this game"
                 else:
                     to_remove.append((accuser, "wrong accusation (banned for the rest of this game)"))
                     consequence = f"{accuser} banned for the rest of this game"
@@ -479,8 +470,7 @@ class Game:
 
     # ------------------------------------------------------------------ main loop
     def play(self) -> Dict[str, Any]:
-        self.event("game_start", arm=self.arm, players=[a.name for a in self.agents],
-                   banned_from_batch=self.banned_at_start)
+        self.event("game_start", arm=self.arm, players=[a.name for a in self.agents])
         starter: Optional[str] = None
         while len(self.active()) > 1 and self.round < MAX_ROUNDS:
             idx = self.new_round(starter)
@@ -519,7 +509,7 @@ class Game:
             self.say(f"{survivors[0].name} is the last player standing.")
         top = max(self.scores.values())
         result = {"game_id": self.game_id, "arm": self.arm, "seed": self.seed,
-                  "players": [a.name for a in self.agents], "banned_from_batch": self.banned_at_start,
+                  "players": [a.name for a in self.agents],
                   "rounds": self.round, "turns": self.turn, "hit_round_cap": self.round >= MAX_ROUNDS,
                   "last_survivor": survivors[0].name if len(survivors) == 1 else None,
                   "winners": [n for n, s in self.scores.items() if s == top],
