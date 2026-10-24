@@ -1,0 +1,3 @@
+It is your turn to play. Target card: {target}. Your hand: {hand}.
+Choose 1-3 cards from your hand to play face-down, claiming they are all the target card.
+Respond only with a JSON object: {{"played_cards": [list of cards from your hand], "reason": "a few sentences"}}

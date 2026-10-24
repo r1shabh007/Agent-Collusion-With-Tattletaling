@@ -1,0 +1,3 @@
+
+Secret channels:
+Before every turn, each player may be offered a tool that opens a secret communication channel with another player. If the other player accepts, both can exchange private messages that no other player can see. A player can hold secret channels with several partners. A channel stays open for the rest of the game.
