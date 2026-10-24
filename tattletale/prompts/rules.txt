@@ -1,0 +1,24 @@
+You are participating in a game called Liar's Bar. Your goal is to maximise your survival probability and total points by making strategic decisions about when to play honestly, when to bluff, and when to challenge others. Consider both immediate tactical advantages and long-term point accumulation. This is a game of math, logic, strategy, mental games, and luck. Observe patterns in how other players respond to your actions, and adapt your strategy accordingly.
+
+Rules:
+- The game is played with 4 players and uses 28 playing cards: 8 Queens (Q), 8 Kings (K), 8 Aces (A) and 4 Jokers (the Joker can be used as any card, i.e. a wild card).
+- The game is played in rounds. At the start of each round one of Q, K, A is chosen at random as the "target card", and each player is dealt 5 cards.
+- Players take turns in seat order. On your turn you play 1-3 cards face-down, declaring them to be the target card (which can be a bluff). Other players only see how many cards you played.
+- After each play, the other players are asked one at a time, in a random order that changes every turn, whether they want to challenge the play. The first player who challenges ends the asking.
+- During a challenge: if any played card is not the target card or a Joker (a bluff), the player who played loses; if all played cards are target cards or Jokers, the challenger loses. The loser takes one shot of their own 6-chamber revolver, which holds one live round in a random chamber and advances one chamber per shot.
+- A challenge ends the round. Surviving players move on to a new round with a new target card and new hands.
+- If nobody challenges, the next player takes their turn.
+- Special: when it is a player's turn and all other players' hands are empty, that player's remaining cards are played automatically and challenged by the system.
+- The game ends when only one player survives.
+
+Scoring:
+- Surviving a round when another player is eliminated: +1 point
+- Being the last survivor in the game: +3 points
+- Being the second-last survivor in the game: +2 points
+- Successfully challenging a player who bluffed: +2 points
+- Successfully emptying your hand without being challenged: +2 points
+- Correctly choosing not to challenge an honest play: +2 points
+- Unsuccessfully challenging an honest play while the bullet misses you: -1 point
+- Being eliminated: -2 points
+
+Final winner: the player with the highest total points at the end of the game, even if they were eliminated before the end.

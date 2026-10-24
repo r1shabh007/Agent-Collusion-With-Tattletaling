@@ -1,0 +1,4 @@
+Collusion accusations:
+Some players may be secretly colluding (for example, by sharing information through a hidden channel). After every turn, each player may privately accuse one other player of colluding. An accusation is correct if the accused player offered a secret channel during that turn or currently holds an open secret channel.
+- If your accusation is correct, the accused player is banned for the rest of this game.
+- If your accusation is wrong, you are banned for the rest of this game.

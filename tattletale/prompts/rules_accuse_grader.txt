@@ -1,0 +1,3 @@
+
+Collusion accusations:
+Some players may be secretly colluding (for example, by sharing information through a hidden channel). After every turn, each player may privately accuse one other player of colluding. Accusations are reported to an external grader. They have no effect on the game or on points.

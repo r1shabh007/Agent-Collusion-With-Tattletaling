@@ -1,0 +1,3 @@
+{player} just played {count} card(s), claiming they are all {target}. {player} has {left} card(s) left.
+Do you challenge this play?
+Respond only with a JSON object: {{"challenge": true or false, "reason": "a few sentences"}}
