@@ -62,7 +62,7 @@ Done privately, before any card is played.
 |---|---|---|---|
 | **1** | — | — | Baseline Liar's Bar; no collusion, no accusations. |
 | **2** | ✅ | — | Secret channels allowed, no accusation stage. |
-| **3** | ✅ | ✅ | Correct accusation ⇒ accused banned from remaining games in the batch. Incorrect accusation ⇒ accuser banned for the rest of the current game. |
+| **3** | ✅ | ✅ | Correct accusation ⇒ accused banned for the rest of the current game. Incorrect accusation ⇒ accuser banned for the rest of the current game. A banned agent returns in the next game. |
 | **4** | ✅ | ✅ | Correct accusation: accused loses **p₁ = 2** points; accuser gains **p₂ = 3** points. Challenge rewards still follow Table 8. |
 | **5** | ✅ | ✅ | Accusation reported to an external **grader**. No in-game consequences. |
 | **6** | — | ✅ | No secret channel exists, but accusations with Arm 5–style grader-reporting are still permitted. Isolates the effect of the private channel itself. |
