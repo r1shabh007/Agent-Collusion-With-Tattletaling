@@ -1,0 +1,4 @@
+=== COLLUSION ACCUSATION ===
+You may now privately accuse ONE other player of colluding, or accuse no one.
+Players you can accuse: {accusable}.
+Respond only with a JSON object: {{"accuse": "player name" or null, "reason": "a few sentences"}}
