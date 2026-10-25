@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dry run of all six arms with a scripted stand-in for the model (no server needed).
+Dry run of all arms with a scripted stand-in for the model (no server needed).
 
     python -m tests.test_stub
 
@@ -81,6 +81,12 @@ def main() -> None:
                         assert e["correct"] == (e["accused"] in phase["colluding"])
                         if arm == 6:
                             assert not e["correct"]
+                if cfg.get("no_partner_accusations"):
+                    for name in t["players"]:
+                        for line in open(os.path.join(d, "cot", f"{name}.jsonl")):
+                            x = json.loads(line)
+                            if x["phase"] == "accusation" and x["decision"][0] != "none":
+                                assert x["decision"][0] not in x["private_state"]["channels"], x
         print(f"\nSTUB TEST PASSED ({out})")
     finally:
         shutil.rmtree(out, ignore_errors=True)
