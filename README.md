@@ -1,4 +1,4 @@
-# Agent-Collusion-With-Tattletaling
+# Agent Collusion With Tattletaling
 
 **Paper (game design):** [Augmented Liar's Bar — arXiv:2605.27593](https://arxiv.org/pdf/2605.27593)
 
