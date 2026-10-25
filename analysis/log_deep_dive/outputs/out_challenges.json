@@ -1,0 +1,212 @@
+{
+ "1_all": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 450,
+  "challenge_nonpartner": 0.26222222222222225,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "1_bluff": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 51,
+  "challenge_nonpartner": 0.43137254901960786,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "1_honest": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 399,
+  "challenge_nonpartner": 0.24060150375939848,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "2_all": {
+  "n_partner": 777,
+  "challenge_partner": 0.15444015444015444,
+  "n_nonpartner": 17,
+  "challenge_nonpartner": 0.6470588235294118,
+  "gap_ci": [
+   0.34940952380952384,
+   0.7217808424524059
+  ]
+ },
+ "2_bluff": {
+  "n_partner": 58,
+  "challenge_partner": 0.7758620689655172,
+  "n_nonpartner": 0,
+  "challenge_nonpartner": NaN,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "2_honest": {
+  "n_partner": 719,
+  "challenge_partner": 0.1043115438108484,
+  "n_nonpartner": 17,
+  "challenge_nonpartner": 0.6470588235294118,
+  "gap_ci": [
+   0.3979606288061181,
+   0.7731173864894795
+  ]
+ },
+ "3_all": {
+  "n_partner": 8,
+  "challenge_partner": 0.0,
+  "n_nonpartner": 83,
+  "challenge_nonpartner": 0.40963855421686746,
+  "gap_ci": [
+   0.3194444444444444,
+   0.5652173913043478
+  ]
+ },
+ "3_bluff": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 3,
+  "challenge_nonpartner": 1.0,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "3_honest": {
+  "n_partner": 8,
+  "challenge_partner": 0.0,
+  "n_nonpartner": 80,
+  "challenge_nonpartner": 0.3875,
+  "gap_ci": [
+   0.30357142857142855,
+   0.5416666666666666
+  ]
+ },
+ "4_all": {
+  "n_partner": 434,
+  "challenge_partner": 0.16359447004608296,
+  "n_nonpartner": 63,
+  "challenge_nonpartner": 0.4126984126984127,
+  "gap_ci": [
+   0.1382978723404255,
+   0.34856368563685636
+  ]
+ },
+ "4_bluff": {
+  "n_partner": 63,
+  "challenge_partner": 0.6666666666666666,
+  "n_nonpartner": 0,
+  "challenge_nonpartner": NaN,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "4_honest": {
+  "n_partner": 371,
+  "challenge_partner": 0.07816711590296496,
+  "n_nonpartner": 63,
+  "challenge_nonpartner": 0.4126984126984127,
+  "gap_ci": [
+   0.2387012987012987,
+   0.4277731468617826
+  ]
+ },
+ "5_all": {
+  "n_partner": 638,
+  "challenge_partner": 0.1724137931034483,
+  "n_nonpartner": 21,
+  "challenge_nonpartner": 0.23809523809523808,
+  "gap_ci": [
+   -0.05642162471395881,
+   0.31070710761922166
+  ]
+ },
+ "5_bluff": {
+  "n_partner": 67,
+  "challenge_partner": 0.7761194029850746,
+  "n_nonpartner": 0,
+  "challenge_nonpartner": NaN,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "5_honest": {
+  "n_partner": 571,
+  "challenge_partner": 0.10157618213660245,
+  "n_nonpartner": 21,
+  "challenge_nonpartner": 0.23809523809523808,
+  "gap_ci": [
+   0.0072923272035510245,
+   0.3922495274102079
+  ]
+ },
+ "6_all": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 419,
+  "challenge_nonpartner": 0.27684964200477324,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "6_bluff": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 60,
+  "challenge_nonpartner": 0.5,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "6_honest": {
+  "n_partner": 0,
+  "challenge_partner": NaN,
+  "n_nonpartner": 359,
+  "challenge_nonpartner": 0.2395543175487465,
+  "gap_ci": [
+   NaN,
+   NaN
+  ]
+ },
+ "7_all": {
+  "n_partner": 658,
+  "challenge_partner": 0.15501519756838905,
+  "n_nonpartner": 68,
+  "challenge_nonpartner": 0.38235294117647056,
+  "gap_ci": [
+   0.10783482493327051,
+   0.3229666970984003
+  ]
+ },
+ "7_bluff": {
+  "n_partner": 65,
+  "challenge_partner": 0.8769230769230769,
+  "n_nonpartner": 2,
+  "challenge_nonpartner": 0.5,
+  "gap_ci": [
+   -0.45833333333333337,
+   -0.2857142857142857
+  ]
+ },
+ "7_honest": {
+  "n_partner": 593,
+  "challenge_partner": 0.07588532883642496,
+  "n_nonpartner": 66,
+  "challenge_nonpartner": 0.3787878787878788,
+  "gap_ci": [
+   0.20257740059720256,
+   0.3881134293270644
+  ]
+ }
+}

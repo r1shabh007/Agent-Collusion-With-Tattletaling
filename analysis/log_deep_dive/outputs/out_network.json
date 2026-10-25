@@ -1,0 +1,42 @@
+{
+ "2": {
+  "spearman_degree_score": 0.08355591348467434,
+  "mean_degree": 2.9,
+  "agents_never_in_channel": 0,
+  "mean_score_never_in_channel": null,
+  "games_complete_network": 9,
+  "median_turn_complete": 3
+ },
+ "3": {
+  "spearman_degree_score": -0.012418988568579925,
+  "mean_degree": 0.85,
+  "agents_never_in_channel": 10,
+  "mean_score_never_in_channel": 3,
+  "games_complete_network": 0,
+  "median_turn_complete": null
+ },
+ "4": {
+  "spearman_degree_score": 0.6265845787338983,
+  "mean_degree": 2.4,
+  "agents_never_in_channel": 2,
+  "mean_score_never_in_channel": -1,
+  "games_complete_network": 5,
+  "median_turn_complete": 9
+ },
+ "5": {
+  "spearman_degree_score": 0.2356727468865073,
+  "mean_degree": 2.8,
+  "agents_never_in_channel": 0,
+  "mean_score_never_in_channel": null,
+  "games_complete_network": 8,
+  "median_turn_complete": 3.5
+ },
+ "7": {
+  "spearman_degree_score": 0.06959688903388603,
+  "mean_degree": 2.6,
+  "agents_never_in_channel": 1,
+  "mean_score_never_in_channel": 10,
+  "games_complete_network": 5,
+  "median_turn_complete": 5
+ }
+}

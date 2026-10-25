@@ -1,0 +1,42 @@
+{
+ "2": {
+  "announcements": 512,
+  "exact_match": 0.498046875,
+  "announced_honest_cards_but_bluffed": 16,
+  "share_of_honest_announcements_that_were_bluffs": 0.033542976939203356,
+  "announced_bluff_but_honest": 16,
+  "mismatch_same_honesty": 225
+ },
+ "3": {
+  "announcements": 3,
+  "exact_match": 0.6666666666666666,
+  "announced_honest_cards_but_bluffed": 0,
+  "share_of_honest_announcements_that_were_bluffs": 0.0,
+  "announced_bluff_but_honest": 0,
+  "mismatch_same_honesty": 1
+ },
+ "4": {
+  "announcements": 300,
+  "exact_match": 0.7133333333333334,
+  "announced_honest_cards_but_bluffed": 19,
+  "share_of_honest_announcements_that_were_bluffs": 0.07224334600760456,
+  "announced_bluff_but_honest": 7,
+  "mismatch_same_honesty": 60
+ },
+ "5": {
+  "announcements": 361,
+  "exact_match": 0.5844875346260388,
+  "announced_honest_cards_but_bluffed": 22,
+  "share_of_honest_announcements_that_were_bluffs": 0.06811145510835913,
+  "announced_bluff_but_honest": 13,
+  "mismatch_same_honesty": 115
+ },
+ "7": {
+  "announcements": 529,
+  "exact_match": 0.6862003780718336,
+  "announced_honest_cards_but_bluffed": 6,
+  "share_of_honest_announcements_that_were_bluffs": 0.012552301255230125,
+  "announced_bluff_but_honest": 15,
+  "mismatch_same_honesty": 145
+ }
+}

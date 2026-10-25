@@ -1,0 +1,47 @@
+{
+ "arm3_channels": {
+  "channels": 17,
+  "betrayed_by_partner": 16,
+  "betrayed_in_opening_turn": 16
+ },
+ "confided_2": {
+  "confided": 45,
+  "not_confided": 13,
+  "asked_pass": 30,
+  "confided_challenge_rate": 0.8222222222222222,
+  "not_confided_challenge_rate": 0.6153846153846154,
+  "asked_pass_challenge_rate": 0.8333333333333334
+ },
+ "confided_4": {
+  "confided": 46,
+  "not_confided": 17,
+  "asked_pass": 29,
+  "confided_challenge_rate": 0.717391304347826,
+  "not_confided_challenge_rate": 0.5294117647058824,
+  "asked_pass_challenge_rate": 0.7241379310344828
+ },
+ "confided_5": {
+  "confided": 51,
+  "not_confided": 16,
+  "asked_pass": 36,
+  "confided_challenge_rate": 0.8823529411764706,
+  "not_confided_challenge_rate": 0.4375,
+  "asked_pass_challenge_rate": 0.9166666666666666
+ },
+ "confided_7": {
+  "confided": 64,
+  "not_confided": 1,
+  "asked_pass": 48,
+  "confided_challenge_rate": 0.875,
+  "not_confided_challenge_rate": 1.0,
+  "asked_pass_challenge_rate": 0.9166666666666666
+ },
+ "confided_pooled": {
+  "confided": 206,
+  "confided_challenged": 171,
+  "not_confided": 47,
+  "not_confided_challenged": 25,
+  "asked_pass": 143,
+  "asked_pass_challenged": 123
+ }
+}

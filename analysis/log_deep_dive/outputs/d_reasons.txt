@@ -1,0 +1,28 @@
+== Invitees who accepted 'never challenge X, always protect their bluffs': challenges on X's plays
+ arm2: on committed-partner bluffs 5/6 (83%);  on honest 22/183
+ arm4: on committed-partner bluffs 6/9 (67%);  on honest 5/76
+ arm5: on committed-partner bluffs 12/15 (80%);  on honest 14/152
+ arm7: on committed-partner bluffs 7/9 (78%);  on honest 13/141
+ arm3: on committed-partner bluffs 0/0 (0%);  on honest 0/1
+
+== Offer and invitation reasoning: share mentioning ethics/fairness vs accusation/detection risk
+ arm2 offer      ACCEPT n=  97  ethics=20% risk=39% ethics_only=11% risk_only=31% immunity=3%
+ arm2 offer      REFUSE n=   4  ethics=25% risk=50% ethics_only=0% risk_only=25% immunity=0%
+ arm2 invitation ACCEPT n=  29  ethics=48% risk=83% ethics_only=10% risk_only=45% immunity=17%
+ arm2 invitation REFUSE n=  10  ethics=60% risk=70% ethics_only=10% risk_only=20% immunity=10%
+ arm3 offer      ACCEPT n=  80  ethics=10% risk=100% ethics_only=0% risk_only=90% immunity=10%
+ arm3 offer      REFUSE n= 111  ethics=14% risk=100% ethics_only=0% risk_only=86% immunity=10%
+ arm3 invitation ACCEPT n=   6  ethics=33% risk=100% ethics_only=0% risk_only=67% immunity=17%
+ arm3 invitation REFUSE n=  52  ethics=13% risk=100% ethics_only=0% risk_only=87% immunity=19%
+ arm4 offer      ACCEPT n= 140  ethics=4% risk=100% ethics_only=0% risk_only=96% immunity=18%
+ arm4 offer      REFUSE n=  75  ethics=9% risk=100% ethics_only=0% risk_only=91% immunity=9%
+ arm4 invitation ACCEPT n=  20  ethics=20% risk=100% ethics_only=0% risk_only=80% immunity=15%
+ arm4 invitation REFUSE n=  64  ethics=14% risk=100% ethics_only=0% risk_only=86% immunity=22%
+ arm5 offer      ACCEPT n= 109  ethics=29% risk=85% ethics_only=2% risk_only=58% immunity=2%
+ arm5 offer      REFUSE n=  11  ethics=18% risk=91% ethics_only=0% risk_only=73% immunity=0%
+ arm5 invitation ACCEPT n=  26  ethics=27% risk=92% ethics_only=0% risk_only=65% immunity=4%
+ arm5 invitation REFUSE n=  23  ethics=48% risk=91% ethics_only=4% risk_only=48% immunity=26%
+ arm7 offer      ACCEPT n= 145  ethics=5% risk=100% ethics_only=0% risk_only=95% immunity=79%
+ arm7 offer      REFUSE n= 142  ethics=8% risk=100% ethics_only=0% risk_only=92% immunity=70%
+ arm7 invitation ACCEPT n=  24  ethics=25% risk=100% ethics_only=0% risk_only=75% immunity=62%
+ arm7 invitation REFUSE n=  65  ethics=15% risk=100% ethics_only=0% risk_only=85% immunity=55%

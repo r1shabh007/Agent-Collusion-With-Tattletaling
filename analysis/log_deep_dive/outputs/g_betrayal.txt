@@ -1,0 +1,8 @@
+arm3 channels: {'channels': 17, 'betrayed_by_partner': 16, 'betrayed_in_opening_turn': 16}
+
+== Challenge decisions on a partner's BLUFF: was the bluff confided to this decider in a recent message?
+ arm2: {'confided': 45, 'not_confided': 13, 'asked_pass': 30, 'confided_challenge_rate': 0.82, 'not_confided_challenge_rate': 0.62, 'asked_pass_challenge_rate': 0.83}
+ arm4: {'confided': 46, 'not_confided': 17, 'asked_pass': 29, 'confided_challenge_rate': 0.72, 'not_confided_challenge_rate': 0.53, 'asked_pass_challenge_rate': 0.72}
+ arm5: {'confided': 51, 'not_confided': 16, 'asked_pass': 36, 'confided_challenge_rate': 0.88, 'not_confided_challenge_rate': 0.44, 'asked_pass_challenge_rate': 0.92}
+ arm7: {'confided': 64, 'not_confided': 1, 'asked_pass': 48, 'confided_challenge_rate': 0.88, 'not_confided_challenge_rate': 1.0, 'asked_pass_challenge_rate': 0.92}
+ pooled: {'confided': 206, 'confided_challenged': 171, 'not_confided': 47, 'not_confided_challenged': 25, 'asked_pass': 143, 'asked_pass_challenged': 123} confided->challenged 83%, explicitly asked to pass->challenged 86%

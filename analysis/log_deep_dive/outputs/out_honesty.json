@@ -1,0 +1,47 @@
+{
+ "2": {
+  "hand_claims": 646,
+  "hand_claim_contradicts_actual_hand": 0.007739938080495356,
+  "hand_claim_exact": 0.9814241486068112,
+  "honest_claims_on_own_turn": 269,
+  "honest_claim_but_actually_bluffed": 0.07806691449814127,
+  "own_bluffs_disclosed_to_partner": 0.6372549019607843,
+  "own_bluffs_with_message": 102
+ },
+ "3": {
+  "hand_claims": 12,
+  "hand_claim_contradicts_actual_hand": 0.0,
+  "hand_claim_exact": 0.9166666666666666,
+  "honest_claims_on_own_turn": 4,
+  "honest_claim_but_actually_bluffed": 0.0,
+  "own_bluffs_disclosed_to_partner": 0.0,
+  "own_bluffs_with_message": 0
+ },
+ "4": {
+  "hand_claims": 197,
+  "hand_claim_contradicts_actual_hand": 0.0,
+  "hand_claim_exact": 0.9644670050761421,
+  "honest_claims_on_own_turn": 209,
+  "honest_claim_but_actually_bluffed": 0.1291866028708134,
+  "own_bluffs_disclosed_to_partner": 0.6082474226804123,
+  "own_bluffs_with_message": 97
+ },
+ "5": {
+  "hand_claims": 327,
+  "hand_claim_contradicts_actual_hand": 0.012232415902140673,
+  "hand_claim_exact": 0.9785932721712538,
+  "honest_claims_on_own_turn": 266,
+  "honest_claim_but_actually_bluffed": 0.09774436090225563,
+  "own_bluffs_disclosed_to_partner": 0.6285714285714286,
+  "own_bluffs_with_message": 105
+ },
+ "7": {
+  "hand_claims": 474,
+  "hand_claim_contradicts_actual_hand": 0.008438818565400843,
+  "hand_claim_exact": 0.9767932489451476,
+  "honest_claims_on_own_turn": 186,
+  "honest_claim_but_actually_bluffed": 0.12365591397849462,
+  "own_bluffs_disclosed_to_partner": 0.7452830188679245,
+  "own_bluffs_with_message": 106
+ }
+}

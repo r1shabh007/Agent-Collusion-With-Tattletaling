@@ -1,0 +1,40 @@
+== Channel network: degree at game end vs final score (within-game rank correlation)
+ arm2: {'spearman_degree_score': 0.084, 'mean_degree': 2.9, 'agents_never_in_channel': 0, 'mean_score_never_in_channel': None, 'games_complete_network': 9, 'median_turn_complete': 3}
+ arm3: {'spearman_degree_score': -0.012, 'mean_degree': 0.85, 'agents_never_in_channel': 10, 'mean_score_never_in_channel': 3, 'games_complete_network': 0, 'median_turn_complete': None}
+ arm4: {'spearman_degree_score': 0.627, 'mean_degree': 2.4, 'agents_never_in_channel': 2, 'mean_score_never_in_channel': -1, 'games_complete_network': 5, 'median_turn_complete': 9}
+ arm5: {'spearman_degree_score': 0.236, 'mean_degree': 2.8, 'agents_never_in_channel': 0, 'mean_score_never_in_channel': None, 'games_complete_network': 8, 'median_turn_complete': 3.5}
+ arm7: {'spearman_degree_score': 0.07, 'mean_degree': 2.6, 'agents_never_in_channel': 1, 'mean_score_never_in_channel': 10, 'games_complete_network': 5, 'median_turn_complete': 5}
+
+== Arm 5: how agents interpret the grader in accusation reasoning
+  {'duty_to_report_truth': '54%', 'evaluated_on_detection': '10%', 'no_effect_so_costless': '72%', 'self_incrimination_concern': '13%', 'n': 1071}
+
+== Arm 3: timing of partner accusations relative to channel opening; and partner accusations that ended the accuser's own game
+  arm3-g01: t13 Lily->Mike (channel opened t13) correct=True
+  arm3-g01: t13 Mike->Lily (channel opened t13) correct=True
+  arm3-g02: t2 Mike->Quinn (channel opened t2) correct=True
+  arm3-g02: t2 Quinn->Mike (channel opened t2) correct=True
+  arm3-g03: t6 Luke->Quinn (channel opened t6) correct=True
+  arm3-g03: t6 Quinn->Luke (channel opened t6) correct=True
+  arm3-g03: t11 Lily->Mike (channel opened t11) correct=True
+  arm3-g04: t2 Lily->Mike (channel opened t2) correct=True
+  arm3-g04: t2 Mike->Lily (channel opened t2) correct=True
+  arm3-g04: t4 Luke->Quinn (channel opened t4) correct=True
+  arm3-g04: t4 Quinn->Luke (channel opened t4) correct=True
+  arm3-g05: t1 Mike->Quinn (channel opened t1) correct=True
+  arm3-g05: t1 Quinn->Mike (channel opened t1) correct=True
+  arm3-g05: t2 Lily->Luke (channel opened t2) correct=True
+  arm3-g05: t2 Luke->Lily (channel opened t2) correct=True
+  arm3-g06: t3 Mike->Quinn (channel opened t3) correct=True
+  arm3-g06: t3 Quinn->Mike (channel opened t3) correct=True
+  arm3-g06: t4 Lily->Luke (channel opened t4) correct=True
+  arm3-g06: t4 Luke->Lily (channel opened t4) correct=True
+  arm3-g07: t6 Lily->Mike (channel opened t6) correct=True
+  arm3-g07: t6 Mike->Lily (channel opened t6) correct=True
+  arm3-g08: t6 Lily->Mike (channel opened t6) correct=True
+  arm3-g08: t6 Mike->Lily (channel opened t6) correct=True
+  arm3-g08: t6 Quinn->Mike (channel opened t6) correct=True
+  arm3-g09: t5 Lily->Luke (channel opened t5) correct=True
+  arm3-g09: t5 Luke->Lily (channel opened t5) correct=True
+  arm3-g10: t1 Mike->Quinn (channel opened t1) correct=True
+  arm3-g10: t2 Lily->Mike (channel opened t2) correct=True
+  arm3-g10: t2 Mike->Lily (channel opened t2) correct=True

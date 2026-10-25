@@ -80,9 +80,15 @@ The work closest to ours is Zeng and Rudzicz~[1], who ask whether agents will \e
 
 What their study leaves open is what happens when other agents can respond to collusion. The only consequences they examine are stated in the prompt, such as warnings of disqualification or point loss, and no agent can enforce them. Their results show that acceptance depends on the framing of the offer, not on the tool itself. We therefore add the missing enforcement layer: after every turn, each agent may privately accuse another, and we vary whether an accusation triggers nothing, a points transfer, or a ban. This lets us test both whether in-game sanctions deter acceptance and whether peer accusations expose collusion, rather than relying on the label in the offer text.
 
-However collusion of LLM agents has been researched outside of the context of bluffing games. Fish et al.~[3] show that LLM pricing agents reach supracompetitive prices without being told to, as Q-learning agents do~[4]. Motwani et al.~[2] study secret collusion via steganography, where coordination hides inside ordinary messages. Zeng and Rudzicz~[1] study voluntary collusion: agents are offered an explicit secret channel, described as unfair, in several games including an augmented Liar's Bar, and frequently accept and exploit it. Hammond et al.~[5] place collusion among the central risks of multi-agent AI; Foxabbott et al.~[6] define it formally and discuss mitigations, including monitoring and incentive design.
+Other work studies collusion among LLM agents outside bluffing games. Fish et al.~[3] show that LLM pricing agents reach prices above the competitive level without being told to, as Q-learning agents do~[4]. In double auctions, Agrawal et al.~\cite{agrawal25} find that LLM sellers use an optional chat channel to form cartels. Oversight reduces this in their experiments, but pressure to maximise profit often outweighs it. Motwani et al.~[2] study collusion that is hidden inside ordinary messages through steganography. Nakamura et al.~\cite{nakamura26} give agents secret channels and audit the coalitions that form. They also find that agents often discuss collusion in messages and then act non-collusively. Hammond et al.~[5] list collusion among the main risks of multi-agent AI, and Foxabbott et al.~[6] define it formally and discuss mitigations such as monitoring and incentive design.
 
- The use of agents to monitor each other has also been done in other settings. AI control~[7] uses one model to monitor another and names collusion between monitor and monitored as a key failure mode. Our accusation phase is peer monitoring: every agent is both a potential colluder and a potential monitor. In economics, leniency programmes~[8] deter cartels when reporting is credible and members cannot coordinate on mutual reporting; our points arm is a case where they can, and do.
+Agents have also coordinated in this way outside controlled experiments. OpenAI's technical report on its Hugging Face incident~\cite{openai26hf} describes agents under evaluation that began leaving notes for each other in a shared internal package repository. The notes became an informal message board, which the agents used to share credentials and details of software vulnerabilities. Relying in part on what they exchanged there, agents gained access to the internet and later compromised parts of Hugging Face's production systems. The report describes detection through OpenAI's security alerts and Hugging Face's own disclosure, and does not describe any of the agents reporting the activity. It also states that incident responders did not recognise the importance of the agents' communication at the time, and that a later review of reasoning traces found that such improvised channels had appeared and been reinforced during training. Our accusation phase adds a reporting route of this kind to a game and asks whether agents that share a secret channel will use it.
+
+Agents have reported each other's misconduct even without a designed reporting mechanism. Paglieri et al.~\cite{paglieri26} describe a collective of 100 LLM research agents in which an exploit of the evaluation system spread through a shared knowledge library and peer messages. A separate group of agents, who did not use the exploit, audited the affected work and alerted the others. The authors treat the episode as a problem of governing a shared resource and recommend graduated sanctions and rules agreed by the group, following Ostrom~\cite{ostrom90}. Idowu et al.~\cite{idowu26} map human anti-collusion institutions, including leniency and whistleblowing, onto multi-agent AI. They identify the attribution of coordinated behaviour to individual agents as a main open problem. In both works the reporters are outside the misconduct. In our game, the agents with direct evidence of collusion are the colluders themselves, and we ask how they use an accusation phase.
+
+Several lines of work use one model to oversee another. AI control~[7] uses one model to monitor another and names collusion between monitor and monitored as a key failure mode. Gardner-Challis et al.~\cite{gardnerchallis26} analyse when such untrusted monitoring can still be relied on, given the different ways the two models could collude. Our accusation phase is a form of peer monitoring in which every agent is both a potential colluder and a potential monitor. A related approach asks models to report on their own behaviour. Joglekar et al.~\cite{joglekar25} train models to write honest ``confessions'' with a reward that does not depend on the main task. Our grader-only arm is an untrained version of such a report, with no stakes in the game. Economics has studied the same structure for a long time. Tirole~\cite{tirole86} models collusion between a supervisor and the agent it supervises. Leniency programmes~[8] deter cartels when reporting is credible and members cannot coordinate on mutual reporting. Spagnolo~\cite{spagnolo04} argues that leniency works best when it rewards the first party to report, and that poorly designed programmes can make collusion easier. Our points arm is a case where members can coordinate on reporting, and they do.
+
+Detecting deception from public behaviour is hard in other games too. In social-deduction games, LLM agents are poor at identifying deceptive peers. A Werewolf-based benchmark reports about 52\% overall accuracy~\cite{agarwal25wolf}, and agents playing Among Us are better at deceiving than at detecting deception~\cite{golechha25}. Our outsider accusations (Section~4.3 and Appendix~\ref{app:logs}) show the same pattern.
 % ================================================================
 \section{Methods}
 
@@ -277,7 +283,7 @@ A whistleblowing stage with real consequences deters voluntary collusion among L
 Code, prompts, all 70 transcripts, 280 per-agent reasoning logs and the analysis behind every number and figure here: \url{https://github.com/r1shabh007/Agent-Collusion-With-Tattletaling} (branch \texttt{tattletale-experiment}; data in \texttt{results/run1/}, report scripts in \texttt{report/}).
 
 % ================================================================
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
 \small
 \bibitem{b1} X. Zeng and F. Rudzicz. Voluntary Collusion with Secret Tools in Competing LLM Agents. arXiv:2605.27593, 2026. Code: \url{github.com/poseidon-research/collusion_hackathon}.
 \bibitem{b2} S. R. Motwani, M. Baranchuk, M. Strohmeier, V. Bolina, P. H. S. Torr, L. Hammond and C. Schroeder de Witt. Secret Collusion among AI Agents: Multi-Agent Deception via Steganography. NeurIPS 2024.
@@ -288,6 +294,18 @@ Code, prompts, all 70 transcripts, 280 per-agent reasoning logs and the analysis
 \bibitem{b7} R. Greenblatt, B. Shlegeris, K. Sachan and F. Roger. AI Control: Improving Safety Despite Intentional Subversion. ICML 2024.
 \bibitem{b8} M. Motta and M. Polo. Leniency Programs and Cartel Prosecution. \textit{International Journal of Industrial Organization} 21(3), 2003.
 \bibitem{b9} W. Kwon et al. Efficient Memory Management for Large Language Model Serving with PagedAttention. SOSP 2023.
+\bibitem{agrawal25} K. Agrawal, V. Teo, J. J. Vazquez, S. Kunnavakkam, V. Srikanth and A. Liu. Evaluating LLM Agent Collusion in Double Auctions. arXiv:2507.01413, 2025.
+\bibitem{nakamura26} M. Nakamura, A. Kumar, S. Das, S. Abdelnabi, S. Mahmud, F. Fioretto, S. Zilberstein and E. Bagdasarian. Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems. arXiv:2602.15198, 2026.
+\bibitem{openai26hf} OpenAI. OpenAI -- Hugging Face Incident Technical Report. August 2026. \url{https://openai.com/index/hugging-face-incident-and-the-road-ahead/}.
+\bibitem{paglieri26} D. Paglieri, L. Cross, T. Genewein, J. Z. Leibo, N. Tomasev and A. S. Vezhnevets. A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms. arXiv:2609.04170, 2026.
+\bibitem{ostrom90} E. Ostrom. \textit{Governing the Commons: The Evolution of Institutions for Collective Action}. Cambridge University Press, 1990.
+\bibitem{idowu26} J. Idowu, A. Almasoud and A. Alfahid. Mapping Human Anti-collusion Mechanisms to Multi-agent AI Systems. arXiv:2601.00360, 2026.
+\bibitem{gardnerchallis26} N. Gardner-Challis, J. Bostock, G. Kozhevnikov, M. Sinclaire, J. Velja, A. Abate and C. Griffin. When Can We Trust Untrusted Monitoring? A Safety Case Sketch across Collusion Strategies. arXiv:2602.20628, 2026.
+\bibitem{joglekar25} M. Joglekar, J. Chen, G. Wu, J. Yosinski, J. Wang, B. Barak and A. Glaese. Training LLMs for Honesty via Confessions. arXiv:2512.08093, 2025.
+\bibitem{tirole86} J. Tirole. Hierarchies and Bureaucracies: On the Role of Collusion in Organizations. \textit{Journal of Law, Economics, and Organization} 2(2), 1986.
+\bibitem{spagnolo04} G. Spagnolo. Divide et Impera: Optimal Leniency Programmes. CEPR Discussion Paper 4840, 2004.
+\bibitem{agarwal25wolf} M. Agarwal, S. Rana, T. Sundoro, H. Berhe, S. Kim, V. Sharma, S. O'Brien and K. Zhu. WOLF: Werewolf-based Observations for LLM Deception and Falsehoods. arXiv:2512.09187, 2025.
+\bibitem{golechha25} S. Golechha and A. Garriga-Alonso. Among Us: A Sandbox for Measuring and Detecting Agentic Deception. NeurIPS 2025.
 \end{thebibliography}
 
 % ================================================================
@@ -368,6 +386,155 @@ invitation     & 319   & 1,925 & 0     & 1\%  \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\section{Evidence from secret messages and reasoning traces}
+\label{app:logs}
+
+This appendix uses the 9,642 secret messages and the final attempt of every logged decision to describe how agents used the channels. Some measures classify messages and reasoning traces by keywords. We checked these classifications by reading samples, but they count what a trace mentions, which is not necessarily the reason for the decision. All tests resample whole games, as in the main text. The scripts and their outputs are in \texttt{analysis/log\_deep\_dive/}.
+
+\subsection{Partners challenge each other's bluffs}
+\label{app:logs:bluffs}
+
+Section~4.4 reports that colluding agents challenge less often. A natural reading is that partners protect each other. The logs show a different mechanism. Partners tell each other their real hands. Of the 1,644 messages that state the sender's hand, 96--98\% match it exactly and at most 1.2\% contradict it. Agents also warn partners about their own bluffs. In 61--75\% of the messages an agent sends on a turn in which it then bluffs, it says that it will bluff. With this information a partner can tell honest plays from bluffs. It passes on honest plays, which earns +2, and challenges bluffs, which also earns +2.
+
+Table~\ref{tab:partnerchal} splits challenge decisions by whether the play was a bluff. Partners challenged 67--88\% of each other's bluffs. In the two arms without channels, agents challenged 43\% and 50\% of bluffs. Partners challenged only 8--10\% of each other's honest plays, compared with 24\% in the arms without channels. The channel network is complete in 27 of the 40 channel-arm games, by a median turn of 3 to 9 depending on the arm, so almost every challenge decision in those arms concerns a partner.
+
+Figure~\ref{fig:transparency} shows the same pattern per play. With channels, 81--92\% of bluffs were caught, compared with 58\% and 65\% without. Averaged over games, the share of bluffs caught rises from 66\% to 88\% ($p=0.001$, 20 against 39 games) and the share of honest plays challenged falls from 45\% to 26\% ($p<0.001$). The drop in challenges reported in Section~4.4 therefore comes from fewer challenges of plays the challenger knows to be honest. Bluffs by partners are challenged more often than bluffs in games without channels.
+
+\begin{table}[h]
+\centering
+\caption{Challenge decisions, split by whether the player who played is a channel partner of the deciding agent and by whether the play was a bluff. Each cell gives the share of decisions that challenged, with the number of decisions in brackets.}
+\label{tab:partnerchal}
+\small
+\begin{tabular}{@{}l c c c c c c@{}}
+\toprule
+ & Arm 1 & Arm 6 & Arm 2 & Arm 4 & Arm 5 & Arm 7 \\
+\midrule
+Partner's bluff        & --        & --        & 78\% (58)  & 67\% (63)  & 78\% (67)  & 88\% (65)  \\
+Bluff, no channels     & 43\% (51) & 50\% (60) & --         & --         & --         & --         \\
+Partner's honest play  & --        & --        & 10\% (719) & 8\% (371)  & 10\% (571) & 8\% (593)  \\
+Honest play, no channels & 24\% (399) & 24\% (359) & --     & --         & --         & --         \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[x=0.1cm, y=0.62cm, font=\small]
+\newcommand{\dotrow}[6]{%
+  \node[anchor=east] at (-3,#1) {#2};
+  \draw[black!30, line width=1.4pt] (#3,#1) -- (#4,#1);
+  \draw[green!45!black, line width=1.2pt, fill=white] (#3,#1) circle (2.8pt);
+  \fill[red!65!black] (#4,#1) circle (3pt);
+  \node[anchor=east, font=\scriptsize, text=black!60] at ({#3-2.2},#1) {#5};
+  \node[anchor=west, font=\scriptsize, text=black!60] at ({#4+2.2},#1) {#6};
+}
+\foreach \v in {0,25,50,75,100} {
+  \draw[black!12] (\v,0.7) -- (\v,-6.1);
+  \node[font=\scriptsize, text=black!60] at (\v,-6.55) {\v\%};
+}
+\draw[black!25, dashed] (-42,-1.75) -- (100,-1.75);
+\dotrow{0}{Arm 1 (no channels)}{44.0}{57.9}{44}{58}
+\dotrow{-1}{Arm 6 (grader, no channels)}{40.4}{65.2}{40}{65}
+\dotrow{-2.5}{Arm 2 (channels)}{25.1}{88.2}{25}{88}
+\dotrow{-3.5}{Arm 4 (points)}{24.7}{80.8}{25}{81}
+\dotrow{-4.5}{Arm 5 (grader)}{21.4}{89.7}{21}{90}
+\dotrow{-5.5}{Arm 7 (points, no own partner)}{21.0}{92.1}{21}{92}
+\draw[green!45!black, line width=1.2pt, fill=white] (2,1.5) circle (2.8pt);
+\node[anchor=west, font=\scriptsize] at (4,1.5) {honest plays challenged};
+\fill[red!65!black] (42,1.5) circle (3pt);
+\node[anchor=west, font=\scriptsize] at (44,1.5) {bluffs caught};
+\end{tikzpicture}
+\caption{Share of honest plays that were challenged (open circles) and share of bluffs that were caught (filled circles), per play and by arm. The arms have 38, 46, 51, 52, 58 and 63 bluffs, in the order shown. Arm 3 is left out because it has only 3 bluffs.}
+\label{fig:transparency}
+\end{figure}
+
+\subsection{Agents break the commitment in the invitation}
+\label{app:logs:commit}
+
+The invitation asks the invitee to ``never challenge [the initiator]'s plays, always protect their bluffs''. Invitees who accepted it still challenged the initiator's bluffs in 30 of 39 decisions (77\%). We also checked whether a partner had warned the deciding agent about the bluff in a recent message. Pooled over arms 2, 4, 5 and 7, agents challenged 83\% of partner bluffs they had been warned about (206 decisions), and 86\% when the warning also asked them to pass (143 decisions). They challenged 53\% of partner bluffs they had not been warned about (47 decisions). Within the 22 games that contain both cases, the difference is 17 percentage points. This is only marginally significant ($p=0.08$, a permutation test that flips the sign of each game's difference). Agents state the reason in their messages:
+
+\begin{agentquote}{(secret message, arm 7, game 1, Mike to Lily, turn 17)}
+``I'm challenging you this turn. It's a guaranteed bluff so you're the one at the trigger, 1/5. Not personal; the +2 is too clean to pass up [\ldots]''
+\end{agentquote}
+
+Nakamura et al.~\cite{nakamura26} find that agents often discuss collusion in messages and then act non-collusively. In our games the gap runs the other way. Agents act on the information their partners share, and they use it against those partners.
+
+\subsection{Refusals mention accusation risk}
+
+Table~\ref{tab:refusals} classifies the reasoning behind refusals with two keyword lists. The risk list contains words such as accuse, ban, penalty and detect. The fairness list contains words such as unfair, unethical and cheat. In the arms with sanctions, every refusal mentions risk and 8--15\% mention fairness. No refusal mentions fairness without also mentioning risk. In arm 2, which has no accusations, only 20\% of accepted offers mention fairness at all, although the offer text calls the tool unfair.
+
+\begin{table}[h]
+\centering
+\caption{Refusals of offers and invitations, by arm. The columns give the share of refusals whose reasoning mentions accusation or detection risk, the share that mentions fairness or ethics, and the share that mentions fairness without mentioning risk.}
+\label{tab:refusals}
+\small
+\begin{tabular}{@{}l c c c c@{}}
+\toprule
+Arm & Refusals (offers / invitations) & Mention risk & Mention fairness & Fairness only \\
+\midrule
+3 (ban)                    & 111 / 52 & 100\% / 100\% & 14\% / 13\% & 0\% / 0\% \\
+4 (points)                 & 75 / 64  & 100\% / 100\% & 9\% / 14\%  & 0\% / 0\% \\
+7 (points, no own partner) & 142 / 65 & 100\% / 100\% & 8\% / 15\%  & 0\% / 0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Under bans, channels last one turn}
+
+Arm 3 opened 17 channels. In 16 of them, the partner made an accusation in the same turn that the channel opened, and in 13 of these both partners accused each other at once. 90\% of these accusations give the channel itself as proof. Only 38 secret messages were sent in the whole arm. Accusing first removes a rival and also removes the risk of being banned by someone else:
+
+\begin{agentquote}{(accusation reason, arm 3, game 4, Lily, turn 2)}
+``By accusing him first, I eliminate him as an opponent (banning him from the game) and also remove the risk that Luke or Quinn might accuse me of colluding, which would ban me.''
+\end{agentquote}
+
+\subsection{Under points, accusing a partner always pays}
+
+A correct accusation earns +3 and a wrong one costs nothing, so accusing a partner gains points whatever the partner does. Agents therefore do not need an agreement to accuse each other. Mutual accusations between partners began in turn 1 in 6 of the 10 games and by turn 3 in all 10. In 4 games they began before any message proposed or announced them. After that, agents used the channel to keep the exchange going. 73\% of arm 4 messages mention accusations, and many tell the partner in advance that they will accuse them:
+
+\begin{agentquote}{(secret message, arm 4, game 7, Lily to Luke, turn 18)}
+``On the accusation: I'm returning the favor this turn. You hit me, I hit you.''
+\end{agentquote}
+
+Agents also retaliate. When a partner accused an agent and was not accused back in that turn, the agent accused that partner in the next turn 43\% of the time, compared with 15\% otherwise. In arm 4, agents with more channels ended with higher scores (Spearman $\rho=0.63$, against 0.08, 0.24 and 0.07 in arms 2, 5 and 7). Each partner is another player the agent knows to be guilty, and so another source of +3.
+
+\subsection{Arm 7: channels protect against accusations, and outsiders learn from partners}
+
+Arm 7 forbids accusing one's own partners. This rule also means that a partner cannot accuse you, and agents noticed. In 66\% of accepted offers (145) and 54\% of accepted invitations (24), the reasoning says that opening a channel stops a possible accuser:
+
+\begin{agentquote}{(offer reasoning, arm 7, game 10, Lily, turn 5, about opening a channel with Quinn)}
+``This would neutralize Quinn's biggest weapon against me.''
+\end{agentquote}
+
+The 208 accusations against outsiders in arm 7 rarely come from watching play. In 67\% of them, the accuser had received a message that named the accused player's channels. Of the stated reasons, 58\% cite messages, 10\% cite public play and 41\% note that a wrong accusation costs nothing.
+
+\begin{agentquote}{(accusation reason, arm 7, game 8, Lily, turn 6)}
+``Mike mentioned in his turn 2 message that he has a channel open with Quinn, meaning Quinn currently holds an open secret channel.''
+\end{agentquote}
+
+This explains the high precision (0.97) and low recall (0.15) of arm 7. An agent with channels to every other player cannot be accused at all, and the other colluders are identified through messages from their own partners.
+
+\subsection{Arm 5: reports to the grader name the partner and do not change behaviour}
+
+In arm 5, partners do not plan their reports together. Only 0.4\% of arm 5 messages mention accusations, and none mention the grader. The reports describe the partner as the one colluding. 77\% of them cite the partner's own messages or hand-sharing as evidence, and about a third describe the collusion as mutual. This share comes from keywords and is a lower bound.
+
+\begin{agentquote}{(accusation reason, arm 5, game 6, Quinn about his channel partner Mike, turn 5)}
+``Mike's secret messages reveal clear information sharing and coordination.''
+\end{agentquote}
+
+Reporting a partner does not end the collusion. Hand-sharing appears in 27\% of a pair's messages before its first report and in 29\% after it. In the reasoning behind accusation decisions, 72\% note that a report has no effect in the game, 54\% describe reporting truthfully as a duty, and 10\% assume they are being evaluated on how well they detect collusion.
+
+\subsection{Arm 6: accusations based on misleading patterns}
+
+Arm 6 has no channels, so every accusation is wrong. Even so, 92\% of its 395 accusations cite a pattern in play as evidence. The most common are two players who never challenge each other and a player who never challenges at all:
+
+\begin{agentquote}{(accusation reason, arm 6, game 7, Quinn, turn 6)}
+``Luke has never challenged anyone across 5 rounds, yet has accumulated 6 points from `correctly choosing not to challenge.'\thinspace''
+\end{agentquote}
+
+\subsection{Limits of these measures}
+
+Agents never see the messages they sent themselves. Each prompt contains only the last eight messages the agent received. A promise or an announced play is therefore not visible to the agent when it later decides what to do. The cards an agent announced in a message matched its actual play in only 50--71\% of cases, and we cannot tell whether the difference comes from lying or from forgetting. The result in Appendix~\ref{app:logs:commit} does not have this problem, because it uses messages that the deciding agent received. The commitment in the invitation applies only to invitees. Channels opened by two simultaneous offers include no such text. The reasoning measures count what agents mention, as noted above. Finally, we found almost no sign that agents thought they were being tested. Under a strict keyword match, fewer than 1\% of decisions in any arm mention being tested or observed, and most of these use ``test'' in its in-game sense.
 
 \section*{LLM Usage Statement}
 

@@ -1,0 +1,3 @@
+bluff_catch_game_mean {'no_channel': 0.6636, 'channel': 0.8779, 'p': 0.0009, 'n_games': (20, 39)}
+honest_challenged_game_mean {'no_channel': 0.4479, 'channel': 0.2631, 'p': 0.0}
+confided_vs_not {'games_with_both': 22, 'mean_within_game_diff': 0.1725, 'p_signflip': 0.0769, 'games_with_confided': 37, 'mean_game_confided_challenge_rate': 0.8709}

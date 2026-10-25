@@ -1,0 +1,23 @@
+{
+ "bluff_catch_game_mean": {
+  "no_channel": 0.6636309523809524,
+  "channel": 0.8779131836824144,
+  "p": 0.0008999550022498875,
+  "n_games": [
+   20,
+   39
+  ]
+ },
+ "honest_challenged_game_mean": {
+  "no_channel": 0.44786346762933665,
+  "channel": 0.2631133275346169,
+  "p": 4.999750012499375e-05
+ },
+ "confided_vs_not": {
+  "games_with_both": 22,
+  "mean_within_game_diff": 0.17250180375180377,
+  "p_signflip": 0.07694615269236538,
+  "games_with_confided": 37,
+  "mean_game_confided_challenge_rate": 0.8708869583869584
+ }
+}

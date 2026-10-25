@@ -1,0 +1,25 @@
+{
+ "outsider_4": {
+  "gossip_in_inbox": 0.5714285714285714,
+  "reason_cites_messages": 0.35714285714285715,
+  "reason_cites_play": 0.19047619047619047,
+  "n": 42
+ },
+ "outsider_7": {
+  "gossip_in_inbox": 0.6682692307692307,
+  "reason_cites_messages": 0.5769230769230769,
+  "reason_cites_play": 0.09615384615384616,
+  "n": 208
+ },
+ "arm5_partner_reports": {
+  "self_implicating": 0.3364102564102564,
+  "cites_partner_messages": 0.7682051282051282,
+  "n": 975
+ },
+ "arm5_after_report": {
+  "msgs_before": 282,
+  "hand_share_before": 0.2730496453900709,
+  "msgs_after": 2080,
+  "hand_share_after": 0.2918269230769231
+ }
+}

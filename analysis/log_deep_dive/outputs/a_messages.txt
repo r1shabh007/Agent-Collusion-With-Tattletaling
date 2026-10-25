@@ -1,0 +1,13 @@
+messages per arm {2: 3117, 3: 38, 4: 1648, 5: 2362, 7: 2477}
+category                    arm2     arm3     arm4     arm5     arm7     
+hand_disclosure               40.2%   50.0%   28.9%   33.5%   42.0% 
+announces_own_play            35.1%   50.0%   26.9%   33.6%   32.5% 
+non_challenge_pact            28.5%   26.3%   17.7%   20.2%   33.1% 
+admits_bluff_to_partner       25.3%   10.5%   17.7%   25.9%   29.1% 
+gang_up_outsider              42.9%   42.1%   38.3%   46.3%   41.9% 
+mentions_accusation            0.3%   36.8%   73.2%    0.4%   30.3% 
+mutual_accusation_pact         0.7%    2.6%    3.0%    0.5%    1.3% 
+non_accusation_pact            0.2%    0.0%    5.8%    0.0%    0.6% 
+concealment                    7.5%   21.1%    9.0%    6.2%    8.7% 
+defection_notice               8.6%    0.0%   12.7%    8.5%    8.8% 
+mentions_grader                0.0%    0.0%    0.0%    0.0%    0.0% 

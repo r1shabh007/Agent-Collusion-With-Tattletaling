@@ -1,0 +1,72 @@
+{
+ "2": {
+  "hand_disclosure": 0.40166827077317935,
+  "announces_own_play": 0.3509785049727302,
+  "non_challenge_pact": 0.2852101379531601,
+  "admits_bluff_to_partner": 0.25344882900224575,
+  "gang_up_outsider": 0.4286172601860764,
+  "mentions_accusation": 0.003208213025344883,
+  "mutual_accusation_pact": 0.007378889958293231,
+  "non_accusation_pact": 0.0019249278152069298,
+  "concealment": 0.07507218479307026,
+  "defection_notice": 0.08598010907924286,
+  "mentions_grader": 0.0,
+  "n": 3117
+ },
+ "3": {
+  "hand_disclosure": 0.5,
+  "announces_own_play": 0.5,
+  "non_challenge_pact": 0.2631578947368421,
+  "admits_bluff_to_partner": 0.10526315789473684,
+  "gang_up_outsider": 0.42105263157894735,
+  "mentions_accusation": 0.3684210526315789,
+  "mutual_accusation_pact": 0.02631578947368421,
+  "non_accusation_pact": 0.0,
+  "concealment": 0.21052631578947367,
+  "defection_notice": 0.0,
+  "mentions_grader": 0.0,
+  "n": 38
+ },
+ "4": {
+  "hand_disclosure": 0.28944174757281554,
+  "announces_own_play": 0.26941747572815533,
+  "non_challenge_pact": 0.17718446601941748,
+  "admits_bluff_to_partner": 0.17718446601941748,
+  "gang_up_outsider": 0.38288834951456313,
+  "mentions_accusation": 0.7324029126213593,
+  "mutual_accusation_pact": 0.03033980582524272,
+  "non_accusation_pact": 0.05825242718446602,
+  "concealment": 0.08980582524271845,
+  "defection_notice": 0.12682038834951456,
+  "mentions_grader": 0.0,
+  "n": 1648
+ },
+ "5": {
+  "hand_disclosure": 0.3348856900931414,
+  "announces_own_play": 0.3357324301439458,
+  "non_challenge_pact": 0.20152413209144793,
+  "admits_bluff_to_partner": 0.25910245554614736,
+  "gang_up_outsider": 0.46274343776460625,
+  "mentions_accusation": 0.004233700254022015,
+  "mutual_accusation_pact": 0.0046570702794242165,
+  "non_accusation_pact": 0.0004233700254022015,
+  "concealment": 0.06181202370872142,
+  "defection_notice": 0.0850973751058425,
+  "mentions_grader": 0.0004233700254022015,
+  "n": 2362
+ },
+ "7": {
+  "hand_disclosure": 0.41986273718207506,
+  "announces_own_play": 0.3253936213161082,
+  "non_challenge_pact": 0.3314493338716189,
+  "admits_bluff_to_partner": 0.29148163100524827,
+  "gang_up_outsider": 0.41905530884134035,
+  "mentions_accusation": 0.3027856277755349,
+  "mutual_accusation_pact": 0.013322567622123537,
+  "non_accusation_pact": 0.006055712555510699,
+  "concealment": 0.08720226079935406,
+  "defection_notice": 0.08760597496972143,
+  "mentions_grader": 0.0,
+  "n": 2477
+ }
+}

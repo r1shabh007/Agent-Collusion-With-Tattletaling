@@ -1,0 +1,107 @@
+{
+ "1": {
+  "bluffs": 38,
+  "bluff_caught": 0.5789473684210527,
+  "honest": 218,
+  "honest_challenged": 0.44036697247706424,
+  "challenge_precision": 0.1864406779661017,
+  "bluff_caught_ci": [
+   0.42857142857142855,
+   0.7297297297297297
+  ],
+  "precision_ci": [
+   0.128,
+   0.24166666666666667
+  ]
+ },
+ "2": {
+  "bluffs": 51,
+  "bluff_caught": 0.8823529411764706,
+  "honest": 343,
+  "honest_challenged": 0.25072886297376096,
+  "challenge_precision": 0.3435114503816794,
+  "bluff_caught_ci": [
+   0.8055555555555556,
+   0.94
+  ],
+  "precision_ci": [
+   0.24793388429752067,
+   0.4426229508196721
+  ]
+ },
+ "3": {
+  "bluffs": 3,
+  "bluff_caught": 1.0,
+  "honest": 56,
+  "honest_challenged": 0.5535714285714286,
+  "challenge_precision": 0.08823529411764706,
+  "bluff_caught_ci": [
+   1.0,
+   1.0
+  ],
+  "precision_ci": [
+   0.0,
+   0.1320754716981132
+  ]
+ },
+ "4": {
+  "bluffs": 52,
+  "bluff_caught": 0.8076923076923077,
+  "honest": 223,
+  "honest_challenged": 0.24663677130044842,
+  "challenge_precision": 0.4329896907216495,
+  "bluff_caught_ci": [
+   0.7142857142857143,
+   0.9615384615384616
+  ],
+  "precision_ci": [
+   0.3548387096774194,
+   0.5057471264367817
+  ]
+ },
+ "5": {
+  "bluffs": 58,
+  "bluff_caught": 0.896551724137931,
+  "honest": 294,
+  "honest_challenged": 0.21428571428571427,
+  "challenge_precision": 0.45217391304347826,
+  "bluff_caught_ci": [
+   0.8292682926829268,
+   0.967741935483871
+  ],
+  "precision_ci": [
+   0.35294117647058826,
+   0.5728155339805825
+  ]
+ },
+ "6": {
+  "bluffs": 46,
+  "bluff_caught": 0.6521739130434783,
+  "honest": 213,
+  "honest_challenged": 0.40375586854460094,
+  "challenge_precision": 0.25862068965517243,
+  "bluff_caught_ci": [
+   0.5384615384615384,
+   0.7857142857142857
+  ],
+  "precision_ci": [
+   0.2066115702479339,
+   0.3050847457627119
+  ]
+ },
+ "7": {
+  "bluffs": 63,
+  "bluff_caught": 0.9206349206349206,
+  "honest": 333,
+  "honest_challenged": 0.21021021021021022,
+  "challenge_precision": 0.453125,
+  "bluff_caught_ci": [
+   0.8666666666666667,
+   0.9705882352941176
+  ],
+  "precision_ci": [
+   0.3515625,
+   0.5755395683453237
+  ]
+ }
+}

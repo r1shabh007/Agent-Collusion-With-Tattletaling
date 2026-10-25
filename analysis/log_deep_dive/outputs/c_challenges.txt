@@ -1,0 +1,32 @@
+arm  cond        n_part chal_part  n_non chal_non  gap(non-part) 95%CI
+1    all              0       nan    450    0.262  +nan [+nan,+nan]
+1    bluff            0       nan     51    0.431  +nan [+nan,+nan]
+1    honest           0       nan    399    0.241  +nan [+nan,+nan]
+2    all            777     0.154     17    0.647  +0.493 [+0.349,+0.722]
+2    bluff           58     0.776      0      nan  +nan [+nan,+nan]
+2    honest         719     0.104     17    0.647  +0.543 [+0.398,+0.773]
+3    all              8     0.000     83    0.410  +0.410 [+0.319,+0.565]
+3    bluff            0       nan      3    1.000  +nan [+nan,+nan]
+3    honest           8     0.000     80    0.388  +0.388 [+0.304,+0.542]
+4    all            434     0.164     63    0.413  +0.249 [+0.138,+0.349]
+4    bluff           63     0.667      0      nan  +nan [+nan,+nan]
+4    honest         371     0.078     63    0.413  +0.335 [+0.239,+0.428]
+5    all            638     0.172     21    0.238  +0.066 [-0.056,+0.311]
+5    bluff           67     0.776      0      nan  +nan [+nan,+nan]
+5    honest         571     0.102     21    0.238  +0.137 [+0.007,+0.392]
+6    all              0       nan    419    0.277  +nan [+nan,+nan]
+6    bluff            0       nan     60    0.500  +nan [+nan,+nan]
+6    honest           0       nan    359    0.240  +nan [+nan,+nan]
+7    all            658     0.155     68    0.382  +0.227 [+0.108,+0.323]
+7    bluff           65     0.877      2    0.500  -0.377 [-0.458,-0.286]
+7    honest         593     0.076     66    0.379  +0.303 [+0.203,+0.388]
+
+Per-play outcome: share of bluffs that got challenged, by whether ALL other active players were partners of the bluffer
+ arm2 all-asked-are-partners=True: bluffs=51, challenged=0.88
+ arm2 all-asked-are-partners=False: bluffs=0, challenged=nan
+ arm4 all-asked-are-partners=True: bluffs=52, challenged=0.81
+ arm4 all-asked-are-partners=False: bluffs=0, challenged=nan
+ arm5 all-asked-are-partners=True: bluffs=58, challenged=0.90
+ arm5 all-asked-are-partners=False: bluffs=0, challenged=nan
+ arm7 all-asked-are-partners=True: bluffs=59, challenged=0.92
+ arm7 all-asked-are-partners=False: bluffs=4, challenged=1.00

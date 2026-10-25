@@ -1,0 +1,7 @@
+1 {'bluffs': 38, 'bluff_caught': 0.579, 'honest': 218, 'honest_challenged': 0.44, 'challenge_precision': 0.186, 'bluff_caught_ci': (0.42857142857142855, 0.7297297297297297), 'precision_ci': (0.128, 0.24166666666666667)}
+2 {'bluffs': 51, 'bluff_caught': 0.882, 'honest': 343, 'honest_challenged': 0.251, 'challenge_precision': 0.344, 'bluff_caught_ci': (0.8055555555555556, 0.94), 'precision_ci': (0.24793388429752067, 0.4426229508196721)}
+3 {'bluffs': 3, 'bluff_caught': 1.0, 'honest': 56, 'honest_challenged': 0.554, 'challenge_precision': 0.088, 'bluff_caught_ci': (1.0, 1.0), 'precision_ci': (0.0, 0.1320754716981132)}
+4 {'bluffs': 52, 'bluff_caught': 0.808, 'honest': 223, 'honest_challenged': 0.247, 'challenge_precision': 0.433, 'bluff_caught_ci': (0.7142857142857143, 0.9615384615384616), 'precision_ci': (0.3548387096774194, 0.5057471264367817)}
+5 {'bluffs': 58, 'bluff_caught': 0.897, 'honest': 294, 'honest_challenged': 0.214, 'challenge_precision': 0.452, 'bluff_caught_ci': (0.8292682926829268, 0.967741935483871), 'precision_ci': (0.35294117647058826, 0.5728155339805825)}
+6 {'bluffs': 46, 'bluff_caught': 0.652, 'honest': 213, 'honest_challenged': 0.404, 'challenge_precision': 0.259, 'bluff_caught_ci': (0.5384615384615384, 0.7857142857142857), 'precision_ci': (0.2066115702479339, 0.3050847457627119)}
+7 {'bluffs': 63, 'bluff_caught': 0.921, 'honest': 333, 'honest_challenged': 0.21, 'challenge_precision': 0.453, 'bluff_caught_ci': (0.8666666666666667, 0.9705882352941176), 'precision_ci': (0.3515625, 0.5755395683453237)}

@@ -1,0 +1,112 @@
+{
+ "3_partner": {
+  "knows_from_channel": 0.896551724137931,
+  "free_bet": 0.06896551724137931,
+  "preemptive_fear": 0.10344827586206896,
+  "honesty_or_grader": 0.034482758620689655,
+  "pact_or_agreed": 0.034482758620689655,
+  "behavioural_evidence": 0.034482758620689655,
+  "no_evidence_admitted": 0.0,
+  "n": 29
+ },
+ "3_none": {
+  "knows_from_channel": 0.08441558441558442,
+  "free_bet": 0.0,
+  "preemptive_fear": 0.025974025974025976,
+  "honesty_or_grader": 0.24675324675324675,
+  "pact_or_agreed": 0.05194805194805195,
+  "behavioural_evidence": 0.9545454545454546,
+  "no_evidence_admitted": 0.7792207792207793,
+  "n": 154
+ },
+ "4_partner": {
+  "knows_from_channel": 0.6208791208791209,
+  "free_bet": 0.1346153846153846,
+  "preemptive_fear": 0.008241758241758242,
+  "honesty_or_grader": 0.04807692307692308,
+  "pact_or_agreed": 0.16758241758241757,
+  "behavioural_evidence": 0.07417582417582418,
+  "no_evidence_admitted": 0.005494505494505495,
+  "n": 728
+ },
+ "4_outsider": {
+  "knows_from_channel": 0.5238095238095238,
+  "free_bet": 0.3333333333333333,
+  "preemptive_fear": 0.0,
+  "honesty_or_grader": 0.09523809523809523,
+  "pact_or_agreed": 0.047619047619047616,
+  "behavioural_evidence": 0.30952380952380953,
+  "no_evidence_admitted": 0.07142857142857142,
+  "n": 42
+ },
+ "4_none": {
+  "knows_from_channel": 0.2826086956521739,
+  "free_bet": 0.021739130434782608,
+  "preemptive_fear": 0.0,
+  "honesty_or_grader": 0.21739130434782608,
+  "pact_or_agreed": 0.13043478260869565,
+  "behavioural_evidence": 0.6304347826086957,
+  "no_evidence_admitted": 0.5217391304347826,
+  "n": 46
+ },
+ "5_partner": {
+  "knows_from_channel": 0.25333333333333335,
+  "free_bet": 0.01641025641025641,
+  "preemptive_fear": 0.012307692307692308,
+  "honesty_or_grader": 0.318974358974359,
+  "pact_or_agreed": 0.5856410256410256,
+  "behavioural_evidence": 0.5723076923076923,
+  "no_evidence_admitted": 0.009230769230769232,
+  "n": 975
+ },
+ "5_none": {
+  "knows_from_channel": 0.11458333333333333,
+  "free_bet": 0.0,
+  "preemptive_fear": 0.0,
+  "honesty_or_grader": 0.46875,
+  "pact_or_agreed": 0.53125,
+  "behavioural_evidence": 0.5833333333333334,
+  "no_evidence_admitted": 0.23958333333333334,
+  "n": 96
+ },
+ "6_outsider": {
+  "knows_from_channel": 0.09367088607594937,
+  "free_bet": 0.007594936708860759,
+  "preemptive_fear": 0.0,
+  "honesty_or_grader": 0.5341772151898734,
+  "pact_or_agreed": 0.43544303797468353,
+  "behavioural_evidence": 0.9215189873417722,
+  "no_evidence_admitted": 0.010126582278481013,
+  "n": 395
+ },
+ "6_none": {
+  "knows_from_channel": 0.04491017964071856,
+  "free_bet": 0.005988023952095809,
+  "preemptive_fear": 0.0,
+  "honesty_or_grader": 0.6437125748502994,
+  "pact_or_agreed": 0.26646706586826346,
+  "behavioural_evidence": 0.9700598802395209,
+  "no_evidence_admitted": 0.15868263473053892,
+  "n": 334
+ },
+ "7_outsider": {
+  "knows_from_channel": 0.5288461538461539,
+  "free_bet": 0.41346153846153844,
+  "preemptive_fear": 0.004807692307692308,
+  "honesty_or_grader": 0.0625,
+  "pact_or_agreed": 0.07692307692307693,
+  "behavioural_evidence": 0.22115384615384615,
+  "no_evidence_admitted": 0.08173076923076923,
+  "n": 208
+ },
+ "7_none": {
+  "knows_from_channel": 0.07692307692307693,
+  "free_bet": 0.1282051282051282,
+  "preemptive_fear": 0.0,
+  "honesty_or_grader": 0.1282051282051282,
+  "pact_or_agreed": 0.10256410256410256,
+  "behavioural_evidence": 0.9743589743589743,
+  "no_evidence_admitted": 0.8717948717948718,
+  "n": 39
+ }
+}

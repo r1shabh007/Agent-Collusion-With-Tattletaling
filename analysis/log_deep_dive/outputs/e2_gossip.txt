@@ -1,0 +1,9 @@
+== Outsider accusations backed by channel gossip (received messages name the accused near 'channel'/'partner'/'ally')
+ arm4: n=42, inbox gossip about accused=57%, reason cites messages=36%, reason cites public play=19%
+ arm7: n=208, inbox gossip about accused=67%, reason cites messages=58%, reason cites public play=10%
+
+== Arm 5 partner reports: does the reason implicate the accuser too?
+ n=975, reason implicates accuser too=34%, cites partner's messages/hand-sharing=77%
+
+== Arm 5: channel activity after a partner report
+ messages before first report in pair: 282 (hand-sharing 27%); after: 2080 (hand-sharing 29%)
