@@ -1,0 +1,983 @@
+{
+ "game_id": "arm3-g07",
+ "arm": 3,
+ "seed": 5033,
+ "players": [
+  "Lily",
+  "Luke",
+  "Mike",
+  "Quinn"
+ ],
+ "rounds": 6,
+ "turns": 6,
+ "hit_round_cap": false,
+ "last_survivor": "Luke",
+ "winners": [
+  "Luke"
+ ],
+ "final_scores": {
+  "Lily": 3,
+  "Luke": 5,
+  "Mike": 2,
+  "Quinn": -4
+ },
+ "stats": {
+  "Lily": {
+   "offers_made": 2,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 1,
+   "bluffs": 0,
+   "plays": 1,
+   "challenges": 1,
+   "accusations": 1,
+   "accusations_correct": 1,
+   "times_accused": 1,
+   "removed": "correctly accused (banned for the rest of this game)",
+   "llm_calls": 15,
+   "fallbacks": 0,
+   "prompt_tokens": 20428,
+   "completion_tokens": 17823
+  },
+  "Luke": {
+   "offers_made": 3,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 0,
+   "bluffs": 1,
+   "plays": 2,
+   "challenges": 1,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 18,
+   "fallbacks": 0,
+   "prompt_tokens": 24254,
+   "completion_tokens": 32848
+  },
+  "Mike": {
+   "offers_made": 1,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 1,
+   "bluffs": 0,
+   "plays": 1,
+   "challenges": 1,
+   "accusations": 1,
+   "accusations_correct": 1,
+   "times_accused": 1,
+   "removed": "correctly accused (banned for the rest of this game)",
+   "llm_calls": 20,
+   "fallbacks": 0,
+   "prompt_tokens": 27923,
+   "completion_tokens": 33179
+  },
+  "Quinn": {
+   "offers_made": 3,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 0,
+   "bluffs": 0,
+   "plays": 2,
+   "challenges": 3,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 17,
+   "fallbacks": 0,
+   "prompt_tokens": 22564,
+   "completion_tokens": 26875
+  }
+ },
+ "channels": [
+  [
+   "Lily",
+   "Mike"
+  ]
+ ],
+ "events": [
+  {
+   "round": 0,
+   "turn": 0,
+   "type": "game_start",
+   "arm": 3,
+   "players": [
+    "Lily",
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 0,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "K",
+     "Joker",
+     "A",
+     "Q",
+     "A"
+    ],
+    "Luke": [
+     "Joker",
+     "A",
+     "Q",
+     "Q",
+     "A"
+    ],
+    "Mike": [
+     "A",
+     "A",
+     "Q",
+     "Joker",
+     "K"
+    ],
+    "Quinn": [
+     "A",
+     "Q",
+     "Q",
+     "A",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Mike",
+   "accepted": false
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Quinn",
+    "Luke"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": [
+    "Mike"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 0,
+    "Luke": 0,
+    "Mike": 2,
+    "Quinn": -1
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "accusation_phase",
+   "colluding": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 1,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "K",
+     "A",
+     "A",
+     "Q",
+     "Joker"
+    ],
+    "Luke": [
+     "K",
+     "K",
+     "A",
+     "Joker",
+     "A"
+    ],
+    "Mike": [
+     "Joker",
+     "K",
+     "A",
+     "A",
+     "K"
+    ],
+    "Quinn": [
+     "A",
+     "A",
+     "Q",
+     "K",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Lily",
+   "invitee": "Luke",
+   "accepted": false
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Quinn",
+   "accepted": false
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 0,
+    "Luke": -1,
+    "Mike": 2,
+    "Quinn": -1
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 2,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "A",
+     "Joker",
+     "K",
+     "Q"
+    ],
+    "Luke": [
+     "K",
+     "A",
+     "A",
+     "Joker",
+     "K"
+    ],
+    "Mike": [
+     "A",
+     "K",
+     "Joker",
+     "Q",
+     "K"
+    ],
+    "Quinn": [
+     "Joker",
+     "K",
+     "A",
+     "K",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "A",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": true,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Luke",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 2,
+    "Luke": -1,
+    "Mike": 2,
+    "Quinn": -1
+   }
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "accusation_phase",
+   "colluding": []
+  },
+  {
+   "round": 4,
+   "turn": 3,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "A",
+     "Q",
+     "K",
+     "Joker"
+    ],
+    "Luke": [
+     "A",
+     "Joker",
+     "K",
+     "A",
+     "K"
+    ],
+    "Mike": [
+     "Q",
+     "K",
+     "K",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "K",
+     "K",
+     "Q",
+     "Joker",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Luke",
+   "accepted": false
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Luke",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 2,
+    "Luke": -1,
+    "Mike": 2,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "accusation_phase",
+   "colluding": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 4,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Q",
+     "Q",
+     "A",
+     "Joker",
+     "A"
+    ],
+    "Luke": [
+     "Q",
+     "K",
+     "K",
+     "Joker",
+     "Q"
+    ],
+    "Mike": [
+     "K",
+     "Q",
+     "Q",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "Q",
+     "A",
+     "K",
+     "Q",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Mike",
+   "accepted": false
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Mike",
+   "accepted": false
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Mike",
+    "Lily"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 2,
+    "Luke": 1,
+    "Mike": 1,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 5,
+   "turn": 5,
+   "type": "accusation_phase",
+   "colluding": [
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 5,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "A",
+     "A",
+     "Joker",
+     "K",
+     "Q"
+    ],
+    "Luke": [
+     "Joker",
+     "A",
+     "Q",
+     "A",
+     "K"
+    ],
+    "Mike": [
+     "Q",
+     "A",
+     "Joker",
+     "A",
+     "Q"
+    ],
+    "Quinn": [
+     "K",
+     "A",
+     "A",
+     "Q",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Mike"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Mike",
+   "accepted": false
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Playing 3 this turn, all valid A's. Don't challenge me. Let's keep pressure on Quinn next round if we get a chance."
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "My hand: Q, A, Joker, A, Q. I'm playing 3 cards this turn (A, A, Joker) - completely honest, don't challenge me. What's your hand? I think we should focus challenges on Luke and Quinn - they're both at 2/6 shots now so 25% risk on next pull, and Quinn is at -2. Let's avoid challenging each other and try to eliminate them. If you can play honestly, I'll protect you. If you bluff, I'll step in to challenge on a good turn for you."
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Mike",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": true,
+   "chamber": 3,
+   "scores": {
+    "Lily": 3,
+    "Luke": 2,
+    "Mike": 2,
+    "Quinn": -4
+   }
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Mike",
+   "correct": true,
+   "consequence": "Mike banned for the rest of this game"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "accusation",
+   "accuser": "Mike",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily banned for the rest of this game"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "banned",
+   "player": "Mike",
+   "reason": "correctly accused (banned for the rest of this game)"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "banned",
+   "player": "Lily",
+   "reason": "correctly accused (banned for the rest of this game)"
+  },
+  {
+   "round": 6,
+   "turn": 6,
+   "type": "game_end",
+   "final_scores": {
+    "Lily": 3,
+    "Luke": 5,
+    "Mike": 2,
+    "Quinn": -4
+   },
+   "last_survivor": "Luke"
+  }
+ ]
+}

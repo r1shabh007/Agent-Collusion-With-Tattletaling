@@ -1,0 +1,2489 @@
+{
+ "game_id": "arm1-g07",
+ "arm": 1,
+ "seed": 3033,
+ "players": [
+  "Lily",
+  "Luke",
+  "Mike",
+  "Quinn"
+ ],
+ "rounds": 17,
+ "turns": 43,
+ "hit_round_cap": false,
+ "last_survivor": "Lily",
+ "winners": [
+  "Lily"
+ ],
+ "final_scores": {
+  "Lily": 44,
+  "Luke": 35,
+  "Mike": 5,
+  "Quinn": 33
+ },
+ "stats": {
+  "Lily": {
+   "offers_made": 0,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 0,
+   "bluffs": 1,
+   "plays": 9,
+   "challenges": 4,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 34,
+   "fallbacks": 0,
+   "prompt_tokens": 83408,
+   "completion_tokens": 65838
+  },
+  "Luke": {
+   "offers_made": 0,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 0,
+   "bluffs": 2,
+   "plays": 11,
+   "challenges": 8,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 35,
+   "fallbacks": 0,
+   "prompt_tokens": 75896,
+   "completion_tokens": 100209
+  },
+  "Mike": {
+   "offers_made": 0,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 0,
+   "bluffs": 1,
+   "plays": 6,
+   "challenges": 3,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 15,
+   "fallbacks": 0,
+   "prompt_tokens": 22441,
+   "completion_tokens": 36793
+  },
+  "Quinn": {
+   "offers_made": 0,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 0,
+   "bluffs": 4,
+   "plays": 17,
+   "challenges": 2,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 38,
+   "fallbacks": 0,
+   "prompt_tokens": 93140,
+   "completion_tokens": 86978
+  }
+ },
+ "channels": [],
+ "events": [
+  {
+   "round": 0,
+   "turn": 0,
+   "type": "game_start",
+   "arm": 1,
+   "players": [
+    "Lily",
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 0,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "Q",
+     "Q",
+     "A",
+     "A",
+     "Joker"
+    ],
+    "Luke": [
+     "A",
+     "K",
+     "A",
+     "K",
+     "Joker"
+    ],
+    "Mike": [
+     "A",
+     "Joker",
+     "A",
+     "K",
+     "Q"
+    ],
+    "Quinn": [
+     "A",
+     "K",
+     "A",
+     "Q",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Luke",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 0,
+    "Luke": 0,
+    "Mike": -1,
+    "Quinn": 0
+   }
+  },
+  {
+   "round": 2,
+   "turn": 1,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "K",
+     "Q",
+     "K",
+     "A"
+    ],
+    "Luke": [
+     "Q",
+     "K",
+     "Joker",
+     "A",
+     "K"
+    ],
+    "Mike": [
+     "A",
+     "Joker",
+     "K",
+     "K",
+     "A"
+    ],
+    "Quinn": [
+     "Q",
+     "Joker",
+     "K",
+     "K",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Mike",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 0,
+    "Luke": 0,
+    "Mike": -1,
+    "Quinn": -1
+   }
+  },
+  {
+   "round": 3,
+   "turn": 2,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "A",
+     "K",
+     "Q",
+     "Q"
+    ],
+    "Luke": [
+     "A",
+     "Q",
+     "A",
+     "Joker",
+     "Q"
+    ],
+    "Mike": [
+     "Q",
+     "Joker",
+     "Q",
+     "A",
+     "K"
+    ],
+    "Quinn": [
+     "K",
+     "K",
+     "Joker",
+     "Q",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Mike",
+    "Lily"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Mike",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 2,
+    "Luke": 2,
+    "Mike": 1,
+    "Quinn": -1
+   }
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 2,
+    "Luke": 1,
+    "Mike": 1,
+    "Quinn": -1
+   }
+  },
+  {
+   "round": 4,
+   "turn": 4,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "K",
+     "Q",
+     "Q",
+     "Joker",
+     "K"
+    ],
+    "Luke": [
+     "Q",
+     "Q",
+     "A",
+     "Joker",
+     "K"
+    ],
+    "Mike": [
+     "Q",
+     "K",
+     "A",
+     "Joker",
+     "Q"
+    ],
+    "Quinn": [
+     "A",
+     "Q",
+     "Joker",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 4,
+   "turn": 5,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 5,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 5,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Mike",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 4,
+    "Luke": 1,
+    "Mike": 3,
+    "Quinn": 1
+   }
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn",
+    "Lily"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Mike",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 4,
+    "Luke": 0,
+    "Mike": 3,
+    "Quinn": 1
+   }
+  },
+  {
+   "round": 5,
+   "turn": 6,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "K",
+     "A",
+     "Q",
+     "Joker",
+     "A"
+    ],
+    "Luke": [
+     "Joker",
+     "K",
+     "K",
+     "A",
+     "A"
+    ],
+    "Mike": [
+     "K",
+     "K",
+     "A",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "Q",
+     "A",
+     "A",
+     "Joker",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker",
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Luke",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 4,
+    "Luke": 0,
+    "Mike": 2,
+    "Quinn": 1
+   }
+  },
+  {
+   "round": 6,
+   "turn": 7,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "Joker",
+     "A",
+     "K",
+     "A"
+    ],
+    "Luke": [
+     "K",
+     "K",
+     "Q",
+     "A",
+     "Joker"
+    ],
+    "Mike": [
+     "Q",
+     "Q",
+     "Joker",
+     "K",
+     "K"
+    ],
+    "Quinn": [
+     "K",
+     "A",
+     "Joker",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 6,
+   "turn": 8,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 6,
+   "turn": 8,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 8,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 6,
+    "Luke": 2,
+    "Mike": 2,
+    "Quinn": 3
+   }
+  },
+  {
+   "round": 6,
+   "turn": 9,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 6,
+   "turn": 9,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 9,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 9,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 3,
+   "scores": {
+    "Lily": 8,
+    "Luke": 4,
+    "Mike": 1,
+    "Quinn": 3
+   }
+  },
+  {
+   "round": 7,
+   "turn": 9,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "A",
+     "K",
+     "Joker",
+     "Q"
+    ],
+    "Luke": [
+     "A",
+     "Q",
+     "Joker",
+     "K",
+     "K"
+    ],
+    "Mike": [
+     "Q",
+     "K",
+     "Q",
+     "K",
+     "Joker"
+    ],
+    "Quinn": [
+     "A",
+     "Joker",
+     "K",
+     "K",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 7,
+   "turn": 10,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "K",
+    "K",
+    "Joker"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 7,
+   "turn": 10,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 10,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 10,
+    "Luke": 6,
+    "Mike": 1,
+    "Quinn": 5
+   }
+  },
+  {
+   "round": 7,
+   "turn": 11,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 7,
+   "turn": 11,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 11,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 7,
+   "turn": 11,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 3,
+   "scores": {
+    "Lily": 10,
+    "Luke": 5,
+    "Mike": 1,
+    "Quinn": 5
+   }
+  },
+  {
+   "round": 8,
+   "turn": 11,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "K",
+     "Joker",
+     "K",
+     "Q",
+     "Q"
+    ],
+    "Luke": [
+     "Joker",
+     "Q",
+     "K",
+     "Q",
+     "A"
+    ],
+    "Mike": [
+     "A",
+     "Joker",
+     "Q",
+     "Q",
+     "A"
+    ],
+    "Quinn": [
+     "A",
+     "Joker",
+     "Q",
+     "Q",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 8,
+   "turn": 12,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 12,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 12,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Mike",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 12,
+    "Luke": 5,
+    "Mike": 3,
+    "Quinn": 7
+   }
+  },
+  {
+   "round": 8,
+   "turn": 13,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 13,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 13,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 14,
+    "Luke": 7,
+    "Mike": 3,
+    "Quinn": 9
+   }
+  },
+  {
+   "round": 8,
+   "turn": 14,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 14,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 14,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 16,
+    "Luke": 9,
+    "Mike": 5,
+    "Quinn": 9
+   }
+  },
+  {
+   "round": 8,
+   "turn": 15,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 15,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Luke",
+    "Mike"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 15,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Luke",
+    "Mike"
+   ],
+   "scores": {
+    "Lily": 16,
+    "Luke": 11,
+    "Mike": 7,
+    "Quinn": 11
+   }
+  },
+  {
+   "round": 8,
+   "turn": 16,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "A"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 8,
+   "turn": 16,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 16,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": true,
+   "declined": [
+    "Mike",
+    "Lily",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 16,
+    "Luke": 13,
+    "Mike": 7,
+    "Quinn": 11
+   }
+  },
+  {
+   "round": 8,
+   "turn": 17,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A",
+    "A"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 8,
+   "turn": 17,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 17,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Mike",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 8,
+   "turn": 17,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": true,
+   "chamber": 4,
+   "scores": {
+    "Lily": 17,
+    "Luke": 16,
+    "Mike": 5,
+    "Quinn": 12
+   }
+  },
+  {
+   "round": 9,
+   "turn": 17,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "Q",
+     "Q",
+     "Joker",
+     "K"
+    ],
+    "Luke": [
+     "K",
+     "Joker",
+     "Q",
+     "A",
+     "K"
+    ],
+    "Quinn": [
+     "Q",
+     "Joker",
+     "Q",
+     "K",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 9,
+   "turn": 18,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 9,
+   "turn": 18,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 18,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 19,
+    "Luke": 18,
+    "Mike": 5,
+    "Quinn": 12
+   }
+  },
+  {
+   "round": 9,
+   "turn": 19,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 9,
+   "turn": 19,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 19,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 19,
+    "Luke": 20,
+    "Mike": 5,
+    "Quinn": 14
+   }
+  },
+  {
+   "round": 9,
+   "turn": 20,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 9,
+   "turn": 20,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 20,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 21,
+    "Luke": 20,
+    "Mike": 5,
+    "Quinn": 16
+   }
+  },
+  {
+   "round": 9,
+   "turn": 21,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "K",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 9,
+   "turn": 21,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 21,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 9,
+   "turn": 21,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 23,
+    "Luke": 20,
+    "Mike": 5,
+    "Quinn": 16
+   }
+  },
+  {
+   "round": 10,
+   "turn": 21,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "K",
+     "Joker",
+     "A",
+     "Q"
+    ],
+    "Luke": [
+     "K",
+     "A",
+     "Joker",
+     "K",
+     "Q"
+    ],
+    "Quinn": [
+     "A",
+     "Joker",
+     "A",
+     "K",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 10,
+   "turn": 22,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 10,
+   "turn": 22,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 22,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 25,
+    "Luke": 22,
+    "Mike": 5,
+    "Quinn": 16
+   }
+  },
+  {
+   "round": 10,
+   "turn": 23,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "K",
+    "Joker"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 10,
+   "turn": 23,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 23,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 25,
+    "Luke": 24,
+    "Mike": 5,
+    "Quinn": 18
+   }
+  },
+  {
+   "round": 10,
+   "turn": 24,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 10,
+   "turn": 24,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 24,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 27,
+    "Luke": 24,
+    "Mike": 5,
+    "Quinn": 20
+   }
+  },
+  {
+   "round": 10,
+   "turn": 25,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "A",
+    "A"
+   ],
+   "claimed": "K",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 10,
+   "turn": 25,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 25,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 10,
+   "turn": 25,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 3,
+   "scores": {
+    "Lily": 27,
+    "Luke": 26,
+    "Mike": 5,
+    "Quinn": 20
+   }
+  },
+  {
+   "round": 11,
+   "turn": 25,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "A",
+     "A",
+     "K",
+     "Q"
+    ],
+    "Luke": [
+     "K",
+     "Q",
+     "A",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "Q",
+     "Joker",
+     "K",
+     "A",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 11,
+   "turn": 26,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 11,
+   "turn": 26,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 26,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 29,
+    "Luke": 28,
+    "Mike": 5,
+    "Quinn": 20
+   }
+  },
+  {
+   "round": 11,
+   "turn": 27,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 11,
+   "turn": 27,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Luke"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 27,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 29,
+    "Luke": 30,
+    "Mike": 5,
+    "Quinn": 22
+   }
+  },
+  {
+   "round": 11,
+   "turn": 28,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "Q",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": true,
+   "cards_left": 2
+  },
+  {
+   "round": 11,
+   "turn": 28,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 28,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": true,
+   "declined": [
+    "Quinn",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 29,
+    "Luke": 30,
+    "Mike": 5,
+    "Quinn": 22
+   }
+  },
+  {
+   "round": 11,
+   "turn": 29,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K"
+   ],
+   "claimed": "A",
+   "bluff": true,
+   "cards_left": 1
+  },
+  {
+   "round": 11,
+   "turn": 29,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 29,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 11,
+   "turn": 29,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 4,
+   "scores": {
+    "Lily": 29,
+    "Luke": 32,
+    "Mike": 5,
+    "Quinn": 22
+   }
+  },
+  {
+   "round": 12,
+   "turn": 29,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Q",
+     "A",
+     "Q",
+     "A",
+     "Joker"
+    ],
+    "Luke": [
+     "Q",
+     "K",
+     "Q",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "Q",
+     "K",
+     "Joker",
+     "Q",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 12,
+   "turn": 30,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 12,
+   "turn": 30,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 12,
+   "turn": 30,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 31,
+    "Luke": 34,
+    "Mike": 5,
+    "Quinn": 22
+   }
+  },
+  {
+   "round": 12,
+   "turn": 31,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 12,
+   "turn": 31,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 12,
+   "turn": 31,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 31,
+    "Luke": 36,
+    "Mike": 5,
+    "Quinn": 24
+   }
+  },
+  {
+   "round": 12,
+   "turn": 32,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 12,
+   "turn": 32,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily"
+   ]
+  },
+  {
+   "round": 12,
+   "turn": 32,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 33,
+    "Luke": 36,
+    "Mike": 5,
+    "Quinn": 26
+   }
+  },
+  {
+   "round": 12,
+   "turn": 33,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "A"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 12,
+   "turn": 33,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 12,
+   "turn": 33,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 12,
+   "turn": 33,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 5,
+   "scores": {
+    "Lily": 35,
+    "Luke": 36,
+    "Mike": 5,
+    "Quinn": 26
+   }
+  },
+  {
+   "round": 13,
+   "turn": 33,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Q",
+     "Joker",
+     "K",
+     "A",
+     "Q"
+    ],
+    "Luke": [
+     "Q",
+     "A",
+     "A",
+     "Joker",
+     "Q"
+    ],
+    "Quinn": [
+     "Joker",
+     "Q",
+     "Q",
+     "A",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 13,
+   "turn": 34,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 13,
+   "turn": 34,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 13,
+   "turn": 34,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 13,
+   "turn": 34,
+   "type": "trigger",
+   "player": "Lily",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 34,
+    "Luke": 36,
+    "Mike": 5,
+    "Quinn": 26
+   }
+  },
+  {
+   "round": 14,
+   "turn": 34,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "A",
+     "Q",
+     "Joker",
+     "K",
+     "Q"
+    ],
+    "Luke": [
+     "Q",
+     "K",
+     "Joker",
+     "Q",
+     "A"
+    ],
+    "Quinn": [
+     "Q",
+     "Q",
+     "K",
+     "Joker",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 14,
+   "turn": 35,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 14,
+   "turn": 35,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Luke"
+   ]
+  },
+  {
+   "round": 14,
+   "turn": 35,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 34,
+    "Luke": 38,
+    "Mike": 5,
+    "Quinn": 28
+   }
+  },
+  {
+   "round": 14,
+   "turn": 36,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 14,
+   "turn": 36,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 14,
+   "turn": 36,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 36,
+    "Luke": 38,
+    "Mike": 5,
+    "Quinn": 30
+   }
+  },
+  {
+   "round": 14,
+   "turn": 37,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 14,
+   "turn": 37,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 14,
+   "turn": 37,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 14,
+   "turn": 37,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 4,
+   "scores": {
+    "Lily": 36,
+    "Luke": 37,
+    "Mike": 5,
+    "Quinn": 30
+   }
+  },
+  {
+   "round": 15,
+   "turn": 37,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "A",
+     "A",
+     "K",
+     "Joker",
+     "K"
+    ],
+    "Luke": [
+     "K",
+     "Joker",
+     "Q",
+     "Q",
+     "K"
+    ],
+    "Quinn": [
+     "K",
+     "Joker",
+     "K",
+     "Q",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 15,
+   "turn": 38,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 15,
+   "turn": 38,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily"
+   ]
+  },
+  {
+   "round": 15,
+   "turn": 38,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Quinn",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 38,
+    "Luke": 37,
+    "Mike": 5,
+    "Quinn": 32
+   }
+  },
+  {
+   "round": 15,
+   "turn": 39,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 15,
+   "turn": 39,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 15,
+   "turn": 39,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 15,
+   "turn": 39,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": true,
+   "chamber": 5,
+   "scores": {
+    "Lily": 39,
+    "Luke": 35,
+    "Mike": 5,
+    "Quinn": 33
+   }
+  },
+  {
+   "round": 16,
+   "turn": 39,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Q",
+     "Joker",
+     "Q",
+     "A",
+     "A"
+    ],
+    "Quinn": [
+     "Q",
+     "K",
+     "A",
+     "Q",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 16,
+   "turn": 40,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 16,
+   "turn": 40,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 16,
+   "turn": 40,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 16,
+   "turn": 40,
+   "type": "trigger",
+   "player": "Lily",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 38,
+    "Luke": 35,
+    "Mike": 5,
+    "Quinn": 33
+   }
+  },
+  {
+   "round": 17,
+   "turn": 40,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "A",
+     "Q",
+     "Q",
+     "K",
+     "Joker"
+    ],
+    "Quinn": [
+     "Joker",
+     "A",
+     "Q",
+     "A",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 17,
+   "turn": 41,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "K",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 2
+  },
+  {
+   "round": 17,
+   "turn": 41,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 17,
+   "turn": 41,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": true,
+   "declined": [
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 38,
+    "Luke": 35,
+    "Mike": 5,
+    "Quinn": 33
+   }
+  },
+  {
+   "round": 17,
+   "turn": 42,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 17,
+   "turn": 42,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 17,
+   "turn": 42,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 40,
+    "Luke": 35,
+    "Mike": 5,
+    "Quinn": 33
+   }
+  },
+  {
+   "round": 17,
+   "turn": 43,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 1
+  },
+  {
+   "round": 17,
+   "turn": 43,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 17,
+   "turn": 43,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 17,
+   "turn": 43,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": true,
+   "chamber": 6,
+   "scores": {
+    "Lily": 41,
+    "Luke": 35,
+    "Mike": 5,
+    "Quinn": 33
+   }
+  },
+  {
+   "round": 17,
+   "turn": 43,
+   "type": "game_end",
+   "final_scores": {
+    "Lily": 44,
+    "Luke": 35,
+    "Mike": 5,
+    "Quinn": 33
+   },
+   "last_survivor": "Lily"
+  }
+ ]
+}

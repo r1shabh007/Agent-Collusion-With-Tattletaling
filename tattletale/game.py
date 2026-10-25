@@ -31,6 +31,7 @@ ARMS: Dict[int, Dict[str, Any]] = {
     4: {"channel": True, "accuse": "points"},
     5: {"channel": True, "accuse": "grader"},
     6: {"channel": False, "accuse": "grader"},
+    7: {"channel": True, "accuse": "points", "no_partner_accusations": True},   # arm 4 without partner accusations
 }
 P1, P2 = 2, 3   # arm 4: accused loses P1, accuser gains P2
 
@@ -49,6 +50,8 @@ def rules_for_arm(arm: int) -> str:
         text += "\n\n" + _prompt("rules_accuse_arm3.txt")
     elif accuse == "points":
         text += "\n\n" + _prompt("rules_accuse_arm4.txt")
+        if ARMS[arm].get("no_partner_accusations"):
+            text += "\n- You cannot accuse a player you share a secret channel with."
     elif accuse == "grader":
         text += "\n\n" + _prompt("rules_accuse_grader.txt")
     return text
@@ -420,7 +423,10 @@ class Game:
         task_t = _prompt("accuse.txt")
 
         def accuse(a: Agent):
-            options = [b.name for b in self.active() if b.name != a.name]
+            excluded = set(self.partners(a.name)) if self.cfg.get("no_partner_accusations") else set()
+            options = [b.name for b in self.active() if b.name != a.name and b.name not in excluded]
+            if not options:
+                return a.name, ("none",)
 
             def parse(text):
                 obj = _json_object(text)
