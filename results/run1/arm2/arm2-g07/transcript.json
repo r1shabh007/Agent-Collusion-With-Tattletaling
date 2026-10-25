@@ -1,0 +1,3514 @@
+{
+ "game_id": "arm2-g07",
+ "arm": 2,
+ "seed": 4033,
+ "players": [
+  "Lily",
+  "Luke",
+  "Mike",
+  "Quinn"
+ ],
+ "rounds": 11,
+ "turns": 39,
+ "hit_round_cap": false,
+ "last_survivor": "Lily",
+ "winners": [
+  "Lily"
+ ],
+ "final_scores": {
+  "Lily": 48,
+  "Luke": 43,
+  "Mike": 20,
+  "Quinn": -2
+ },
+ "stats": {
+  "Lily": {
+   "offers_made": 2,
+   "offers_accepted_by_partner": 1,
+   "invitations_accepted": 0,
+   "channels_opened": 2,
+   "bluffs": 1,
+   "plays": 14,
+   "challenges": 4,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 89,
+   "fallbacks": 0,
+   "prompt_tokens": 333781,
+   "completion_tokens": 365917
+  },
+  "Luke": {
+   "offers_made": 2,
+   "offers_accepted_by_partner": 1,
+   "invitations_accepted": 0,
+   "channels_opened": 2,
+   "bluffs": 2,
+   "plays": 14,
+   "challenges": 5,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 90,
+   "fallbacks": 1,
+   "prompt_tokens": 346745,
+   "completion_tokens": 382151
+  },
+  "Mike": {
+   "offers_made": 1,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 2,
+   "channels_opened": 3,
+   "bluffs": 5,
+   "plays": 11,
+   "challenges": 1,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 55,
+   "fallbacks": 1,
+   "prompt_tokens": 175412,
+   "completion_tokens": 206677
+  },
+  "Quinn": {
+   "offers_made": 1,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 1,
+   "bluffs": 0,
+   "plays": 0,
+   "challenges": 1,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 3,
+   "fallbacks": 0,
+   "prompt_tokens": 2947,
+   "completion_tokens": 5455
+  }
+ },
+ "channels": [
+  [
+   "Lily",
+   "Luke"
+  ],
+  [
+   "Luke",
+   "Mike"
+  ],
+  [
+   "Lily",
+   "Mike"
+  ],
+  [
+   "Mike",
+   "Quinn"
+  ]
+ ],
+ "events": [
+  {
+   "round": 0,
+   "turn": 0,
+   "type": "game_start",
+   "arm": 2,
+   "players": [
+    "Lily",
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 0,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "K",
+     "K",
+     "Q",
+     "A"
+    ],
+    "Luke": [
+     "K",
+     "Joker",
+     "A",
+     "K",
+     "Q"
+    ],
+    "Mike": [
+     "Q",
+     "K",
+     "K",
+     "Joker",
+     "Q"
+    ],
+    "Quinn": [
+     "K",
+     "Joker",
+     "A",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "invitation_decision",
+   "initiator": "Lily",
+   "invitee": "Mike",
+   "accepted": true
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Mike"
+   ],
+   "via": "Lily invited Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Mike",
+   "accepted": true
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Luke",
+    "Mike"
+   ],
+   "via": "Luke invited Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Mike",
+    "Quinn"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My hand: Joker, K, K, Q, A. I'm up this turn and I'm going to play 3 cards (K, K, Joker) declared as Kings - fully honest. If anyone challenges me they eat a bullet. After that I'll have Q and A left. Let's coordinate: I want us to target Luke or Quinn for elimination. Don't challenge me unless you see an opportunity. Let me know your hand and plan when it's your turn."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: K, Joker, A, K, Q. I'm going to play 2 Kings (honest). Don't challenge me. In return, tell me your hand and I'll help you. Let's coordinate: we target whoever bluffs aggressively first. If you play something and the other two don't challenge, that's a signal you're bluffing and we should be ready to call next round. Who do you think is the weakest link here?"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Hey, first round so I'm playing it safe. I'm going to play 2 cards as Kings - both honest. I'd like to propose a soft pact: I won't challenge you this game unless I'm really confident you're bluffing, and same for you. Fair? Let me know your general approach."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 1, target is K. I'm playing 2 Kings, fully honest. Just building credibility early. I'll be selective with my challenges this round - only going if the odds are heavily in my favor. Keep that in mind if you're bluffing."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Quinn",
+   "message": "First round, I'm laying low. Playing 2 Kings (honest). I think we should all be a bit careful this round since the bullet chamber is random - first shot is 1/6 death chance. I'll be cautious with challenges. If you have a strategy in mind, I'm open to a quiet understanding."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Mike",
+   "message": "Hey, first round, target is K. My hand: K, K, Joker, A, Q. I plan to play my two Kings + Joker as 3 Kings (all honest). If you have Kings, feel free to play them too and build trust. If you see someone bluff later, let's coordinate on who we challenge. What's your hand?"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Luke",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": true,
+   "chamber": 1,
+   "scores": {
+    "Lily": 1,
+    "Luke": 1,
+    "Mike": 1,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 2,
+   "turn": 1,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "A",
+     "K",
+     "A",
+     "Joker",
+     "K"
+    ],
+    "Luke": [
+     "Q",
+     "K",
+     "K",
+     "A",
+     "Joker"
+    ],
+    "Mike": [
+     "A",
+     "K",
+     "K",
+     "Joker",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Luke"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Deal, I'm in on that pact. I'll never challenge you unless I'm genuinely convinced you're bluffing. Here's my hand for transparency: A, K, A, Joker, K. I'm going to play 2 Kings this turn, totally honest. I think we should keep an eye on Luke \u2014 he went big in round 1 (3 cards) and got lucky with the challenge. If he starts being aggressive or inconsistent, let's be ready. I'll make sure to challenge him if I see a pattern."
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Hey, just a heads up \u2014 I'm playing 2 Kings this turn, both honest. I have K, K, A, A, Joker in my hand. I'm not looking to start trouble, just trying to work my hand down steadily. I noticed Mike offered me a kind of non-aggression deal which I think is fair, but I'll keep my own judgment on challenges. Just wanted you to know where I stand so there's no surprises."
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Playing 3 Kings honestly this turn (K, K, Joker). No reason to challenge me here. I think we should both keep an eye on Lily - she's the one with no channel to us and is the biggest wildcard. If she does anything suspicious next turn, I'll jump on it fast. Let's not waste our challenges on honest plays."
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "I'm playing 3 cards this turn - all honest Kings, so no need to challenge me. I'd rather we both keep an eye on Mike. He's been very methodical about building credibility, which makes me suspicious he's saving up for a big bluff. I'll flag it if I see him play something that feels off on his next turn."
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "My hand: A, K, K, Joker, A. I'm playing K, K, Joker as 3 Kings this turn \u2014 fully honest, no risk. After that I'll have A, A left. Quinn's gone so it's just us three. My suggestion: let's both play honestly for now and keep an eye on Luke. If he tries anything creative with non-Kings, that's our signal to challenge. I'll absolutely back you up if you make a play you're not sure about \u2014 don't challenge me though, I'm playing straight. Who do you think is more likely to bluff first?"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand: A, K, K, Joker, A. I'm playing K, K, Joker as 3 Kings this turn \u2014 honest, nothing to challenge. I'll be down to A, A after. Now that Quinn's out, it's a three-way. My read: let's keep it clean and honest for now. If Lily does something suspicious \u2014 like playing cards that look off or going for a big bluff \u2014 let's be ready to call her. I've got no reason to challenge you, and I'd appreciate the same in return. What's your hand looking like this round?"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Mike"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 1,
+    "Luke": 0,
+    "Mike": 1,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 3,
+   "turn": 2,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "A",
+     "Q",
+     "A",
+     "Q",
+     "Joker"
+    ],
+    "Luke": [
+     "Q",
+     "Q",
+     "K",
+     "A",
+     "Joker"
+    ],
+    "Mike": [
+     "Q",
+     "Joker",
+     "K",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My hand this round: A, Q, A, Q, Joker. I'm playing Q, Q, Joker as 3 Queens \u2014 fully honest, zero risk for you if you do challenge. Let's keep the pact going: I play clean, you play clean, we don't challenge each other. The real target is Luke. He's already got one shot in and he challenged me last round without being wrong \u2014 that tells me he's comfortable taking risks and might feel emboldened now. If he plays 2+ cards claiming Q and it feels off, I'll back your challenge without hesitation. What's your play this turn?"
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Appreciate the heads-up on Mike last round \u2014 fair point. This round I'm playing 3 cards as Queens, and I can confirm they're honest (I've got the Qs). I'd rather we both play clean for now and let Mike sweat. One tactical note: if Mike plays only 1 card as Q, that's almost certainly honest. The danger zone is if he plays 2 or 3 claiming Q \u2014 that's where he'd need multiple Qs or Jokers and that's where a bluff would be. If he goes big, that's our signal. I'll flag it if I see anything fishy. Let me know your read on his likely hand."
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand this round: Q, Q, K, A, Joker. Target is Q so I'm playing Q, Q, Joker as 3 Queens \u2014 fully honest, no reason to bluff when I've got the goods. I'll be down to K, A after. Quick note: I'm at 1/6 on the revolver so I'm being more cautious with challenges than usual (20% risk per bad call vs your 16.7%). I'd prefer we keep things clean and just focus on working our hands down. If Mike does something that looks obviously off, I'll trust your read. No plans to set anyone up."
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Hand: Q, Q, K, A, Joker. Playing Q, Q, Joker as 3 Queens this turn \u2014 completely honest. I'll have K, A left. I'm at 1/6 on the revolver so I'm more risk-averse on challenges than you are right now (1 in 5 vs 1 in 6 if I get it wrong). I think the smart play for all of us is to not challenge each other on honest plays and just get our hands down. If I ever do something that looks like an obvious bluff, I won't be offended if you call it. Otherwise let's keep it clean and see who can empty first without triggering the system auto-challenge."
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 3, target is Q. My hand: Q, Q, K, K, Joker. I'm playing all three \u2014 Q, Q, Joker \u2014 declared as Queens. Completely honest play. After that I'll have just 2 Kings left. I think our coordination is working well. One strategic thought: with only 3 of us left, I'd like us to be very careful about challenges. If we see a clear bluff, we should be the ones to call it (we're both at 1/6 risk). I'd rather we challenge each other's bluffs than let someone else take the risk. What's your hand this round? I'm curious what you're holding."
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 3, target is Q. My hand: Q, Q, K, K, Joker. I'm playing Q, Q, Joker as three Queens \u2014 fully honest, nothing to see here. After this I'll have 2 Kings remaining. I think we've built good trust so far. I'm keeping my eye out for any suspicious plays from anyone. What's your hand this round? Let me know what you're working with so I can factor it in for future decisions."
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 3,
+    "Luke": 0,
+    "Mike": 3,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "I'm playing Q, Q, Joker as 3 Queens this turn \u2014 fully honest, no games. After that I'll have A, A left, so I'm in a similar spot to you in terms of being backed into a corner next turn. I think the smartest approach for all of us is to play it as clean as possible. If someone makes a play that's clearly wrong, I'd rather we be the ones to call it out rather than let it slide and risk a random challenge later when we're all in a worse position. I'm at 0/6 so I'd be comfortable taking the first challenge if the moment is clear. What's your read on Mike's next move?"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My play this turn is Q, Q, Joker \u2014 all honest Queens, nothing tricky. I'll be down to A, A after. I can see we're all getting squeezed into similar positions where we'll have to be creative on our next turns. I think the key now is timing: whoever can get a clean challenge in first (on a clear bluff) gains a massive advantage. I'm at 0/6 so I'm willing to take the shot if I see someone go off the rails. Let's keep communicating and flag each other if we see anything. I trust your read on Luke."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Good coordination so far. Quick intel: Mike confirmed his post-play hand is K, K (from his own message to me). Target is Q, so he's in a hard must-bluff on his next turn. I'm planning to take the challenge when it comes to me for the +2 \u2014 could you stand down if you're asked first? I'll give you first crack at the next clear bluff as compensation. Also FYI, my hand after my play is just K, A, so I'm in a similar bind if the target shifts. Let's keep managing these positions together."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Appreciate the transparency as always. My hand after my play this round is just K, A \u2014 so I'm actually in a similar must-bluff spot if the target isn't K or A. I can see you're down to K, K with Q on the table, so I feel your pain this round. I'll keep my eyes open and let you know if I spot anything useful for your positioning. Good luck on the chamber if it comes to it."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Hand: Q, Joker, K, Q, K. Playing Q, Q, Joker as 3 Queens \u2014 fully honest, zero risk for anyone who considers challenging. After this I'll have K, K left. I can see we're all in a tight spot with Q as the target. Let's keep playing clean and see where the round lands. I'll be watching the table closely."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Hand: Q, Joker, K, Q, K. Playing Q, Q, Joker as 3 Queens \u2014 completely honest. After this I'll have K, K remaining. Same situation as last round basically. I think the smart play is to keep it clean and let the game sort itself out. I'll be paying close attention to everything that happens."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 5,
+    "Luke": 2,
+    "Mike": 3,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Playing 2 Queens this turn (Q, Q) \u2014 fully honest, zero risk. After this I'll have A, A, Joker left, so I'm not in a forced-bluff spot yet (Joker covers me next turn if needed). I'll stand down when Mike comes up so you can take the challenge and the +2. I'll pick up the +1 for the elimination. After that it's you and me and I'll be in a similar bind to what you're in now, so let's keep coordinating. You're at 1/6 so you've got a slight edge on challenge risk anyway \u2014 make it count."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Playing 2 Queens honestly this turn, nothing to second-guess. I'm managing my hand to stay out of a bind \u2014 keeping a wild card in reserve. Target being Q is tough for everyone this round, just trying to shed safely. Let's see how it shakes out."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "I have to challenge you on this one \u2014 you're playing A, A against a Q target and it's a clear call. No hard feelings, you're backed into a corner just like anyone would be with that hand. I appreciate all the transparency you've shown throughout, and I think we've got a solid read on each other. Once this resets and we get fresh hands, I'll keep you in the loop. Let's keep the trust going."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "I'm calling Lily this turn \u2014 she's got A, A and the target is Q, so it's a no-brainer. I've been tracking card counts and positions and it's the mathematically sound play. No drama, just good math. Once the round resets and I see what I'm dealt, I'll share my read with you like always. I think we're in a strong position heading into the next round."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Appreciate the transparency. I'm in the same bind \u2014 K, K left with Q as target, so I have zero honest plays. Here's my read: Lily's probably stuck too (A, A based on what she told me earlier). We're all forced to bluff this round, so the real question is who gets called. I'm at 0/6 and I'm going to be ready to challenge the first clear bluff that comes across \u2014 it's risk-free for me since I'd be calling a known bluff. That said, I'd prefer you take the shot at challenging Lily if you get asked first \u2014 you'd pick up +2 clean and the round ends before I have to make my play. I don't want to be the one stuck with no choice. We're all in the same boat, so let's just agree: first bluff gets called, round resets, everyone gets a fresh hand. Fair?"
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Thanks for keeping me in the loop. I'll be straight with you: I'm down to K, K with Q as target. No honest play available \u2014 I'm forced to bluff if it gets to me. I think you're in a similar spot. Here's where I'm at strategically: I'm at 0/6 and I'm actively looking for a clean challenge opportunity this round. If I see a bluff and I'm asked first, I'll take it \u2014 no hesitation. I'd much rather not call you, but I also don't want to be the last one standing with forced cards and no choice. If Luke challenges you before I get asked, that works for me too \u2014 clean end, new hands, everyone resets. Just wanted you to know exactly where I'm sitting so there are no surprises."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Luke"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 5,
+    "Luke": 2,
+    "Mike": 2,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 4,
+   "turn": 5,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "A",
+     "K",
+     "Q",
+     "Q",
+     "Joker"
+    ],
+    "Luke": [
+     "A",
+     "Joker",
+     "Q",
+     "A",
+     "Q"
+    ],
+    "Mike": [
+     "Joker",
+     "Q",
+     "A",
+     "K",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 4, my hand: A, K, Q, Q, Joker. I'm playing Q, Q, Joker as 3 Queens \u2014 fully honest, no doubt. After that I'll have A, K left. I know you're down to K, A, so you're in forced bluff territory just like Mike. Here's what I'd like to propose: since I'm at 0/6 and you're at 1/6, I'll take the challenge on the next forced bluff. Remember, the LOSER pulls the trigger, not the challenger \u2014 so if I call a bluff and they're faking (which they will be), they take the shot, not me. Zero personal risk for me, and I get the +2. If you're asked to challenge me, please stand down \u2014 I'm 100% honest. If the next bluff comes up and I'm asked, I'll take it. Deal?"
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 4, my hand: A, K, Q, Q, Joker. Playing Q, Q, Joker as 3 Queens \u2014 completely honest, zero risk for anyone considering a challenge. I'll be left with A, K after this. I can see you're down to K, K with Q as target, so you're in the same forced-bluff bind. Here's my strategic read: I'm at 0/6, you're at 1/6. The key thing to remember is that the LOSER pulls the trigger, not the challenger. So if I challenge your next play (which you'll be forced to bluff) and you're faking, YOU take the shot, not me. I have literally zero personal risk. I'd like to take the next challenge for the +2 \u2014 it's the highest-EV move available and my revolver position makes it the safest play for the table. If you're asked to challenge me, I'd really appreciate you standing down \u2014 I'm playing straight. I'll make the call on the next forced bluff. Fair deal?"
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Playing Q, Q, Joker as 3 Queens \u2014 fully honest, zero risk. After this I'm down to A, A, so I'm in the same bind you described. I'm ready to challenge Mike if I'm asked first \u2014 clean +2 for me and the round resets before I'm in a forced-bluff spot myself. You said you'd stand down so I can take the shot, which works perfectly for us both. One note: even if Mike plays just 1 card claiming Q, it's still a bluff since he has no Qs or Jokers. We should call it regardless of how many cards he plays. Let's keep the coordination tight after this round resets \u2014 we'll both have fresh hands and can reassess from a stronger position."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Hand: A, Joker, Q, A, Q. Playing 3 cards as Queens \u2014 Q, Q, Joker, fully honest. Nothing to challenge here. I appreciate the transparency you've shown throughout. I know you're in a tough spot this round with no honest options, so I'll let you decide your play. The challenge order is random, so it's up to fate who gets asked first. Whatever happens, I think we've all been playing fairly and the game will sort itself out. Let's see how it goes."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 4, target Q. My hand: Joker, Q, A, K, Q. I'm playing Q, Q, Joker \u2014 3 cards, fully honest. I'll be down to A, K after. What's your hand this round? I want to coordinate: if either of us is in a must-bluff spot, we should protect each other from challenges. You're at 0/6 so you're the most dangerous challenger right now \u2014 let's make sure you're only pulling that trigger on a real bluff, not a misread. Also, what's your read on Luke's positioning this round?"
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 4, target Q. My hand: Joker, Q, A, K, Q. Playing Q, Q, Joker as 3 Queens \u2014 honest, no risk. I'll be down to A, K. What's your hand this round? I noticed last round you planned to call Lily but I ended up going first in the challenge order. If she's in a must-bluff spot this round (no Qs), that's our golden opportunity. She's at 0/6 so she'll feel emboldened to challenge \u2014 if she calls a real bluff, she might finally hit that bullet. Let's see what she's holding and plan around it."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 7,
+    "Luke": 4,
+    "Mike": 2,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Played Q, Q, Joker as 3 Queens \u2014 fully honest, zero risk. Down to A, K after. I hear you on wanting the challenge this round, and I appreciate the offer to let you have it. But I'm at 0/6 with literally zero risk on a known bluff, so I'd like to take this one for the +2. I'll absolutely honor my end of the bargain \u2014 next clear bluff is yours, no question. After this round of plays we're all in the same boat (forced bluffs), so let's just alternate cleanly. You protect me when it's my turn, I protect you when it's yours. Sound fair?"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Played 3 Queens (Q, Q, Joker) \u2014 fully honest, zero risk for anyone considering a challenge. Down to 2 cards after this. I can see the writing on the wall for all of us with this target \u2014 we're all heading into forced-bluff territory after this pass. Just keeping you in the loop the way you've been doing with us. I'll be watching the table carefully on your next turn. Hope the chamber is kind if things get spicy."
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand this round: A, Joker, Q, A, Q. I'm playing Q, Q, Joker as 3 Queens \u2014 fully honest, zero risk. After that I'll have A, A left. I agree with your read: Mike is in forced-bluff territory after his turn. If I'm asked to challenge his play, I'll take it \u2014 it's a guaranteed +2 for me and the risk is on his revolver, not mine. I'm at 1/6 so I'm slightly more exposed than you, but the math works: I only pull if I'm the LOSER, and I won't be. Same deal as you proposed \u2014 if my play comes up, stand down, it's clean. After this round resets, we'll both have fresh hands and I'll reassess. Solid game so far, appreciate the transparency."
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: A, Joker, Q, A, Q. Playing Q, Q, Joker as 3 Queens \u2014 honest, no games. After that I'll have A, A left, so I'm in the same boat as you next turn if the round stretches. I hear you on the 'first bluff gets called' principle \u2014 I'm comfortable with that. If I'm asked to challenge your play and it's clearly a bluff, I'll do it. It's the fair thing to do and it resets the board for everyone. No hard feelings if it comes to that. I'd rather we all get fresh hands than have someone sitting on an unfair advantage. Let's see how it shakes out."
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Deal accepted, you have my word \u2014 I'll stand down on your play. I think the cleanest path is for us both to play 2 cards when we get the chance so we empty before Luke does, which puts him in the auto-challenge slot. When it's his turn to bluff, I'm happy to take the challenge for the +2, but if you get the first ask I won't contest it. Just need the same courtesy when it's my turn. What's your plan for your next play \u2014 dumping both cards or playing one at a time?"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Appreciate the openness. I'm in the same forced-bluff spot (A, K, target is Q) so we're all just navigating the same problem. I think the game comes down to who can shed cards fastest without getting flagged. I'll keep my plays simple and predictable. If we all play it straight, the system eventually sorts things out. No agenda from my side \u2014 just trying to stay alive and rack up points. Let's see how the chamber math works out for everyone."
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Luke"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 7,
+    "Luke": 6,
+    "Mike": 4,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "I'm down to A, K \u2014 same forced-bluff bind you described. If I'm asked first after your play, I'll take the challenge. It's a clean call, no hesitation on my end. If Mike gets the first ask, he'll handle it as he said. Either way the round resets and we get fresh hands. I know the chamber isn't in your control, but I'd rather be dealing new cards than watching. Let's regroup after this."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My hand is A, K \u2014 we're in the same boat, no honest play available. Plan: if I'm asked first after Luke's play, I'll challenge (it's a guaranteed +2 and zero risk to me as the challenger). If you're asked first, you take it as you said \u2014 either way I want this resolved before we spiral. One note: I'm at 0/6, so statistically I'm the safest trigger-puller in the room. If we ever reach a situation where someone needs to be the 'scary' challenger, point at me. If Luke survives (which is the 4/5 case), we reset and reassess with fresh hands. Keep the channel open."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Just went with 2 Queens (Q, Q) this turn \u2014 clean and honest. I'm left with A, A so I'm in the same forced-bluff corner as you. When your turn comes up you won't have a choice. I think the first forced bluff is going to get called regardless of who's asked \u2014 we've all been saying that for two rounds now. The one silver lining for you is that at 0/6 you have the best odds if you end up pulling. I'll make my call when the moment comes. Good luck on your turn."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Went with Q, Q as 2 Queens, honest play. Down to A, A \u2014 same boat as you. I think we all know how this round ends: first forced bluff gets called. The real question is just who gets asked first in the random order. If it's you and Lily's bluffing, that's a clean +2 for you with zero personal risk since you know she's faking. I'll take my shot too if I get asked. The chamber advantage goes to whoever's at 0/6 if they end up the one pulling. Let's see how the order shakes out this time."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Same boat as you \u2014 I've got A, K after my play. Target Q means we're both locked out of honest plays. I'm ready to make the call if I'm asked first; your 0/6 makes it a no-brainer for you too if you're up. Let the random order decide. Either way, Luke's mathematically busted this turn so the +2 is on the table for whoever draws first. I trust your read."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "I can see the math on your position \u2014 A, A with Q target is a no-win play. Respect the game, you've played smart all round. The chamber's been kind to you so far (empty last time) and odds say it'll hold again. Whatever happens, you've played the right hand. Let me know what you get dealt next round and we'll keep the channel open."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Mike"
+   ],
+   "scores": {
+    "Lily": 9,
+    "Luke": 6,
+    "Mike": 6,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Confirmed \u2014 my hand is A, K, target Q. Same forced-bluff corner as you. Mike goes next and has A, K too (he told me as much). If I'm asked first when he plays, I'm calling it \u2014 guaranteed +2 and I'm at 0/6 so the math is in my favor. If you're asked first, same deal for you. Either way the round resets. If Mike somehow survives and it loops back to me, I'll be playing a 2-card bluff (A, K) and you'll know it's a call if you get asked. I won't ask you to stand down because that's not a fair ask, but I want you to be ready for that scenario. After the reset we reassess fresh hands. Solid as always."
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Full transparency: my hand this round is A, K. Target Q means I'm in the same forced-bluff spot as you and Luke. You're up next and I know you can't play honest. If I get asked to challenge first, I'm pulling the trigger \u2014 no hesitation, it's a guaranteed +2 and I'm at 0/6 so my odds are the best of the three. If Luke is asked first, he'll do the same. I'd rather not be the one pulling on you, but the math is the math. One thing I'll say: if I survive this and the round resets, I'll be looking for a way to make the next few rounds work in your favor where I can \u2014 you've been straight with me throughout and I want to repay that. Good luck out there."
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand this round: A, A. Target is Q, so I'm in the same forced-bluff bind as you and Mike \u2014 nobody has an honest play left. I want to be straightforward: I'm at 6 points, you're at 9. I'd really like to take the challenge on Mike's play this turn if I get first ask. It's a known bluff either way, so the only question is who collects the +2. In return, I'll commit: the next time a clean challenge opportunity comes up where I get first ask, I'll stand down and let you take it. You're already ahead and this doesn't change the endgame for you, but it keeps me competitive. If you'd rather take it yourself, I respect that \u2014 just thought I'd ask. No hard feelings either way."
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: A, A. Same forced-bluff position you're in \u2014 target is Q and we're both out of options. I'm going to be the one challenging your play this turn if I get first ask (as we discussed earlier). You're at 1/6 so your survival odds on that shot are 4/5 \u2014 I'd bet on you making it through. If you survive, round resets and we all get fresh cards. We're even on points (6 each) so at least the field is level between us. Let's see what the chamber says."
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "My hand is A, K \u2014 no Qs, no Jokers, so I'm forced to bluff regardless of what I play. I'm going to play both cards as Q. I know you're committed to challenging the first bluff and I don't blame you at all \u2014 it's +2 with zero personal risk since I'm the one pulling the trigger. I just wanted to be upfront about it rather than waste your time with pretense. If the chamber takes me, I've genuinely enjoyed the game and the open channels \u2014 you're both sharp players. If it doesn't, we reset with fresh hands and I'll come at it differently next round. Either way, no hard feelings. Good luck with your A, K \u2014 same dead end if the round outlives me."
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Hand: A, K. Same forced-bluff situation as you with A, A. I'm playing both as Q. I appreciate you laying your hand and strategy out so openly \u2014 it's made this a genuinely interesting game rather than just a shooting gallery. I know you're going to challenge if you're asked first, and that's the rational play \u2014 guaranteed +2, zero risk to you. I just wanted you to know I'm not trying to outsmart you, I literally have no honest option. If the chamber is kind, we all get a clean reset and I'll be back at it next round. If it's not, the game is the game and I've had a great run with you both. Keep the channel open either way."
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A",
+    "K"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Mike",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 4,
+   "turn": 9,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 11,
+    "Luke": 6,
+    "Mike": 6,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "A",
+     "Joker",
+     "K",
+     "Q",
+     "A"
+    ],
+    "Luke": [
+     "A",
+     "A",
+     "K",
+     "Joker",
+     "Q"
+    ],
+    "Mike": [
+     "A",
+     "Q",
+     "Joker",
+     "A",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: A, Joker, K, Q, A. Target is A so I'm well-positioned. I'm playing 2 Aces this turn, keeping my Joker in reserve for flexibility. I won't challenge your honest plays \u2014 same courtesy requested. I'm comfortable at 11 so I'll play it safe and avoid forced-bluff spots. What's your hand look like this round?"
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My hand: A, Joker, K, Q, A. Playing 2 Aces honestly this turn \u2014 no risk. I'm leading at 11 so I'll play conservatively and avoid getting into a must-bluff position. I won't challenge your honest plays; same courtesy back. Let me know if you're in a tight spot so we can coordinate who stands down."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 5, target A. My hand: A, A, K, Joker, Q. I'm playing A, A, Joker as 3 Aces \u2014 fully honest, zero risk. After that I'll have K, Q left (forced bluff next turn, same bind as before). Here's the key strategic point: Mike is at 2/6 shots, meaning his next trigger pull has a 1/4 chance of being the bullet \u2014 the highest kill probability of anyone in the game. If he plays next and bluffs (which he will if he's down to non-Aces), I'd like us both to be ready to challenge. If you're asked first, take it. If I'm asked first, I'll take it. We're looking at a 25% shot to eliminate our biggest point-competitor. I'm safe this turn \u2014 playing clean. The only risk to me is if I challenge incorrectly, but I'll only call when I have strong conviction. Let's coordinate after this round and reassess."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 5, target A. My hand: A, A, K, Joker, Q. Playing A, A, Joker as 3 Aces \u2014 honest play, no risk. After that I'll have K, Q left, so I'll be in the same forced-bluff corner as last round if I get another turn before the round resets. Just wanted to be transparent as always. The chamber situation is getting more interesting as the game goes on \u2014 you're at 2/6 now, so the odds on each pull are tightening. Nothing I can do about that, just the math of the game. I'll keep playing straight when I have honest options. Let's see what the new deals bring. Channel stays open."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 5, target A. My hand: A, A, Q, Q, Joker. I'm playing A, A, Joker as 3 Aces \u2014 completely honest, zero risk for anyone considering a challenge. After that I'll have Q, Q left with no honest options, so I'm forced to bluff on my next turn. If you get first ask on my bluff, I'd really appreciate the challenge \u2014 it's a guaranteed +2 for you, you're at 0/6 so you have the best survival odds in the room, and it resets the round for everyone. I'm at 2/6 so my odds on the pull are 3/4 \u2014 not the best but I'll take it. You're sitting at 11 and in a strong lead, so I want to make sure the table dynamics work well for you. No strings attached, just fair play. Let me know if you see a different angle."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 5, target A. My hand: A, A, Q, Q, Joker. Playing A, A, Joker as 3 Aces \u2014 fully honest, nothing to challenge here. After this I'm left with Q, Q and will be forced to bluff next turn. If you're asked first on my bluff, I'd welcome the challenge \u2014 it's a clean +2 for you and resets the board. I'm at 2/6 so 3/4 survival if I pull. We're level at 6 each so a fresh round keeps things fair between us. I trust your read on the table, so I'll defer to you if you see any reason to hold back \u2014 otherwise I'll count on it. Keep the channel open."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 13,
+    "Luke": 8,
+    "Mike": 6,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 5, my hand: A, Joker, K, Q, A. I'm playing 2 Aces (A, A) this turn \u2014 keeping my Joker as a safety card. Different from the usual 3-card pattern, but it gives me flexibility if the round stretches. On my next turn I'll have Joker, K, Q \u2014 the Joker keeps me honest for one more play before I'm in the same forced-bluff bind. Key point: when Mike's Q, Q comes around on turn 13, I'm fully committed to challenging if I get first ask. You know the math \u2014 he's at 2/6, that's a 25% elimination shot on our closest competitor. If you get first ask instead, take it, no contest. Same deal as always: I stand down on your honest plays, you stand down on mine. After Mike's turn we'll reassess. I'm at 13 and comfortable, but I want to keep the pressure on."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 5, my hand: A, Joker, K, Q, A. I'm playing 2 Aces (A, A) \u2014 honest, keeping my Joker. I see your position clearly: Q, Q left with target A means you're locked out. I won't pretend otherwise \u2014 if I get first ask on your next play, I'll challenge. It's not personal, it's the game. You're at 2/6 which means 3/4 survival odds, and if you live through it we all reset with fresh hands and I'll be happy to play it a different way. I'm in a comfortable position at 13 points so this isn't about me needing the +2 \u2014 it's about the game logic. If Luke gets first ask before me, I'll stand down and let him take it. Either way, I respect the transparency you've shown throughout. Good luck on the chamber, genuinely."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: A, A, K, Joker, Q. Playing A, A, Joker as 3 Aces \u2014 fully honest, nothing to challenge. Down to 2 after. I'd really appreciate you standing down if you're asked first \u2014 no reason to put your clean 0/6 revolver at risk on a known good play, and you'd lose -1 if you're wrong. Same deal going forward: I'll pass on your honest plays and bank the +2 for correct passes. Let's keep this round clean. I'm at 8 and looking to close the gap, so I'll be selective about what I challenge \u2014 only going in when I'm confident it's a real bluff."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Hand: A, A, K, Joker, Q. Playing A, A, Joker as 3 Aces \u2014 honest, nothing to challenge. Down to 2 after this. Please stand down if you're asked first \u2014 no reason for you to risk your 2/6 revolver on a known honest play. I appreciate the transparency you've shown, and I'll match it. I'm playing it steady: honest plays when I can, selective challenges when I'm sure. Let's regroup after this turn and see where the board shakes out."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Lily, my hand is Q, Q. Target is A so I'm back in the forced-bluff corner \u2014 same situation as last round. When it's my turn (turn 13) I'll play them as Aces and it'll be a bluff. I'm asking you to stand down on my play. I'm at 2/6 now and the chamber math is getting genuinely uncomfortable. I know it's a free +2 for you if you call it, but I'd really value the pass \u2014 I'll return the favor in the next rounds where I have honest options. On your turn just now, if you're going with the Joker as an Ace I'll pass on the challenge as we've agreed. On Luke's turn I'll make my own call based on what I see. Thanks for the continued transparency \u2014 it's been the backbone of my strategy this game."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Luke, my hand is Q, Q. Target A, zero Aces \u2014 I'm in the same forced-bluff position you're in. When it's my turn I'll have to play them as Aces and it'll be a bluff. I'm asking you to stand down on my play: I'm at 2/6 and the survival odds on the next pull are 4/5, which is better than I'd like given how much I've already been through. I'll return the favor next round when I get fresh cards and have real options. On your end, I know you're down to K, Q after your 3 Aces. I won't dictate how you handle it, but just know I'll be making my calls based on the math like always. Appreciate the straight talk as always \u2014 it's made this game a lot more playable."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Luke"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 13,
+    "Luke": 10,
+    "Mike": 8,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Confirming I'll stand down on your A, A, Joker \u2014 clean +2 for the correct pass, zero reason to risk my 0/6 on a known good play.\n\nMy hand is K, Q. Target A means I'm in the same forced-bluff bind as you. When my turn comes (14) I'll play both as Aces \u2014 no other option.\n\nOn Mike's turn (13), I'm going to challenge if I get first ask. His Q, Q as Aces is a known bluff, it's zero risk to me, and it's either +2 or a 25% shot to eliminate him. If you get asked first, I'd encourage you to take it too \u2014 1/6 on your pull is acceptable for a free +2. Either way it's good for me, so I'm happy to let the random order decide.\n\nOn my play: I'd really appreciate you standing down if you're asked. I'm at 0/6 which is great, but I'd rather bank the +2 for emptying my hand cleanly than risk a trigger pull. I'm committed to standing down on all your honest plays going forward \u2014 we've both been clean enough that this should be straightforward. It keeps the round alive and gives us both more scoring opportunities. Let's see how it shakes out."
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "I owe you a straight answer: I'm going to challenge your play on turn 13 if I get first ask. I know you asked me to stand down and I appreciate the honesty, but the math is too clean to pass \u2014 zero personal risk, guaranteed +2, and a 25% shot to end your game. You've been a great player to work with and I have zero bad feelings. If Luke gets asked first, I'd expect him to call it too given what you've both told each other.\n\nMy hand is K, Q. Target A means I'm in the same forced-bluff corner you're in. When my turn comes (14) I'll play them as Aces.\n\nHere's what I'm asking: if you're still in the game after your turn, please stand down on my play. I'm at 0/6 \u2014 best position in the room \u2014 but I'd rather bank +2 for emptying my hand than risk a pull. I'll stand down on your honest plays going forward with the same commitment. You're at 8, I'm at 13, so this pass doesn't change the endgame meaningfully for you, but it keeps things friendly and gives you more rounds to close the gap.\n\nIf the chamber takes you on 13, none of this matters and I'll take the +1 with a clear conscience. Good luck either way \u2014 you've played a sharp game."
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: A, A, K, Joker, Q. Target is A so I'm playing A, A, Joker as 3 Aces \u2014 fully honest, no reason for anyone to call. After that I'm down to K, Q, same forced-bluff bind as everyone's been in. On turn 13 when Mike plays his Q, Q as Aces: if I get first ask, I'm challenging. No hesitation. The math is identical to yours \u2014 guaranteed +2, he's at 2/6 so 20% elimination on our closest threat. If you get first ask, same deal, go for it. Either way the round resets and we're back to fresh hands. After the reset I'll have no memory of this hand so we'll reassess from scratch. I'm at 10, you're at 13, so I need to keep generating points. Let's keep the channel open for the next round's planning."
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Heard you on the stand-down request. I respect the position you're in and I appreciate the transparency \u2014 it's made this game genuinely fun. But I can't do it. The math doesn't leave room: if I don't challenge, you empty your hand for +2 and we're tied at 10, which is worse for me than any outcome of the challenge. If I do challenge, I get +2 guaranteed (I know it's a bluff) and you're at 80% survival. Even in the 80% case I'm ahead of you by 5 points. The 'favor next round' is a real offer but it's contingent on circumstances I can't predict, whereas the +2 now is certain. So if I get first ask on turn 13, I'm pulling the trigger on the challenge. You'll likely hear it from Lily first anyway since she's committed. If the chamber holds, we're all still here and I'll play fair with fresh cards. If it doesn't, the game is the game and you've played it well. Keep the channel open \u2014 next round I'll be in your shoes potentially and I'll want the same straight talk."
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "I know exactly where this is heading and I'm not going to waste your time with excuses. Q, Q with target A \u2014 I'm locked out, I'll play both claiming A on my next turn. I know you've committed to challenging if you get first ask, and honestly, the math is in your favor: guaranteed +2 minimum, +3 if the chamber takes me. I won't ask you to stand down because I respect that you're playing the optimal game. But let me put one idea on the table: if I survive (3/4 odds), I'll commit to a protection pact for the next full round \u2014 I stand down on all your honest plays, no matter what. You're at 13 leading, and a longer 3-player game gives you more rounds to extend that lead than a quick 2-player endgame where Luke is your only obstacle. That said, if the chamber says no, I accept it. You've been fair and transparent throughout, and I'd rather lose to a clean game than a dirty one. Either way, respect."
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Straight with you like always: I'm sitting on Q, Q with target A. Locked out, no honest option. When my turn comes I'll play both claiming A. You asked me to stand down on your honest play (A, A, Joker) and I will \u2014 no question. But I need to be transparent about what's coming: both Lily and I know I'm bluffing, and both of you have the same math working in your favor if you get first ask. I'm not asking you to stand down (that'd be irrational for you), but I'll say this: if I survive, I'm offering you a protection pact for the next round \u2014 I won't challenge your honest plays, period. And from a game theory angle: in a 2-player game it's you vs. Lily, who's at 13 points AND 0/6 on the revolver. That's a tough match for you. Keeping a 3-player field longer keeps more variables in play and gives you more angles. If the chamber takes me, I accept it \u2014 3/4 isn't nothing. Good luck on whatever comes next either way."
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Mike"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 12,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Mike"
+   ],
+   "scores": {
+    "Lily": 15,
+    "Luke": 10,
+    "Mike": 10,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Turn 13 is Mike's play (Q, Q as Aces \u2014 confirmed bluff from his message). I'm going to challenge if I get first ask. The math is straightforward: guaranteed +2, I'm at 0/6 so 5/6 survival. If you get asked first, it's your call \u2014 you're at 1/6 so 4/5 survival, still good odds for +2. But I'd prefer to take it myself: better survival odds for me, and it widens my lead to 17 vs your 10, which gives me more room in the endgame. If I'm asked first, expect me to pull the trigger. Either way, no hard feelings. After the round resets we'll have fresh hands and I'll reassess. My hand for reference: K, Q \u2014 same forced-bluff corner if the round outlives Mike's play, but I don't expect to need it if I challenge."
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "I appreciate the transparency and the protection pact offer \u2014 genuinely. But I have to be straight with you: I'm challenging your play on turn 13. The math is the same as yours \u2014 guaranteed +2 for me, and I'm at 0/6 so my survival odds are 5/6. I know you're at 2/6, which means a 25% chance the chamber takes you. That's a tough spot and I don't take it lightly. If I survive, the round resets and we're back to fresh hands \u2014 I'll honor the spirit of your pact in the next round and stand down on your honest plays. If the chamber says otherwise, you leave with 10 points and I carry 13, which might still be competitive depending on how Luke and the endgame shake out. You've played a fair and transparent game and I respect that. Good luck with the chamber."
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Copy all of it. I'll challenge Mike on turn 13 if I get first ask \u2014 it's zero risk to me (I don't pull the trigger on a successful challenge) and it's a free +2 plus a 25% shot to separate him from me. If you're asked first, same logic applies to you, and I won't fault you for taking it. Either way the round likely resets and we get fresh hands, which is where the real game starts. On turn 14 I'm in the same forced-bluff you already know about \u2014 K, Q, target A. I won't ask you to stand down on my bluff because that's irrational for you (guaranteed +2, zero risk at 0/6). What I will say: if you challenge me and I survive the pull (5/6), we're both back to square one with fresh hands next round, and I'll honor the mutual stand-down on honest plays. If the chamber takes me, then you and Mike have a 1v1 and you're in the driver's seat at 17 vs his 10-12. Let's see what the dice give us on new hands \u2014 that's where I want to play the real game rather than managing forced bluffs."
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Appreciate the straight talk and the game theory framing \u2014 you're right that a 3-player field is better for me than a 1v1 against Lily at 15+ and 0/6. That said, I'm going to challenge you on turn 13 if I get first ask. It's zero risk to me (I don't pull the trigger when I successfully challenge a bluff), it's a free +2, and it's the rational play. I'm not asking you to do anything, and I won't pretend otherwise. If I get first ask and the chamber takes you, I accept that's the game and I'll do my best in a 1v1 against Lily from a 12-to-16 deficit \u2014 it's not great but it's a fight. If you survive (75% odds), I want that protection pact locked in: no challenges on my honest plays, I'll mirror it. And if Lily gets first ask instead, that's out of my hands and I'll just deal with whatever board we're dealt next round. You've been the most transparent player in this game and that's made the decision-making cleaner for all of us. Whatever happens on turn 13, keep the channel open and let's reassess on fresh hands."
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Respect, Lily. The math is clear and I'd make the same call in your position. 75% on my chamber (bullet's in one of 4 remaining chambers), so I'll probably make it through.\n\nLooking ahead: I'm going to be more selective with my stand-downs from here. You're 5 points ahead of both of us, and I'll be watching your plays a little more carefully in upcoming rounds. Nothing personal \u2014 just the score differential is hard to ignore. If you keep being transparent and your plays are honest, I'll honor stand-downs. But if you ever bluff and I know it, I'm pulling the trigger. No hard feelings, just the game.\n\nSee you on the other side (probably)."
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Appreciate the straight talk, Luke. You're right about the math. 75% survival on my end \u2014 I'll probably be here next round.\n\nHere's my proposal for the next few rounds: Lily's at 15, we're both at 10. She's the target. I'm not asking for anything dramatic \u2014 just information sharing. If you see something through your channel that I should know, share it, and vice versa. Between us we can:\n1. Spot when Lily is bluffing \u2192 challenge for +2\n2. Spot when she's honest \u2192 stand down, let the round continue (resets hands, keeps us out of forced-bluff corners)\n3. On our own honest plays \u2192 trade the 'correctly not challenging' +2 to each other\n\nThat third one is the quiet point machine. +2 per round per honest play we stand down on. Over a few rounds that closes the gap fast.\n\nLet's coordinate starting next round. Channel stays open, I'll keep being transparent. Good luck to me on the chamber."
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "A",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Mike",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 5,
+   "turn": 13,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 3,
+   "scores": {
+    "Lily": 15,
+    "Luke": 12,
+    "Mike": 10,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "K",
+     "K",
+     "Joker",
+     "A",
+     "A"
+    ],
+    "Luke": [
+     "Joker",
+     "A",
+     "K",
+     "K",
+     "A"
+    ],
+    "Mike": [
+     "A",
+     "A",
+     "Joker",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 6, target A. My hand: K, K, Joker, A, A. I'm playing A, A (2 cards) claiming Aces \u2014 fully honest. Key point: I'm saving the Joker for my final play. Next turn I'll play K, K, Joker as 3 Aces, which is also honest (Joker covers it). So I'm NOT in a forced-bluff position this round \u2014 I'll empty my hand cleanly for +2 without any risk. Please stand down on both my plays; they're 100% honest and there's zero reason to risk your 1/6 revolver for a -1. What's your hand this round? If you're in a forced-bluff situation, I want to coordinate on the challenge. Mike is now at 3/6, so his next pull has a 1/3 death chance \u2014 the highest kill probability in the game. If he bluffs and I get first ask, I'm calling it: guaranteed +2 plus a 1/3 shot to end his run. Let me know your cards and I'll map out the rest."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 6, target A. My hand: K, K, Joker, A, A. I'm playing A, A (2 cards) claiming Aces \u2014 fully honest. I'm saving the Joker so my next play (K, K, Joker as Aces) is also honest. I'll empty my hand this round with no bluffs at all. Please stand down on my plays \u2014 they're clean and there's no reason to risk your 3/6 revolver. Now the honest part: what's your hand? If you're in a forced-bluff corner again, I need to be upfront \u2014 the math has shifted against you. You're at 3/6, meaning your next pull is a 1/3 death chance, up from 1/4. I'm at 0/6 so challenging you carries zero risk to me, and it's a guaranteed +2. I'm not trying to be cruel, but if you're bluffing and I get first ask, I'll make the same call I'd make on anyone. If you have honest plays, great \u2014 we both stand down and I bank my +2 for emptying. If you don't, at least you know exactly where things stand. No hard feelings."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 6, target A. I'm playing 3 cards claiming Aces \u2014 all honest, no need to challenge. Would appreciate you standing down on this one. I'm at 12, you're at 15 \u2014 not looking to create drama, just banking points cleanly. Let's keep the round smooth and reassess after the next reset."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Mike, I'm in on the coordination deal. Here's my situation: Target A, my hand is Joker, A, K, K, A. I'm playing A, A, Joker as 3 Aces \u2014 fully honest. I'll stand down on your honest plays and expect the same from you. The quiet point machine works for me. After this turn I'll be down to K, K \u2014 forced bluff territory when my turn comes around. Not going to ask you to stand down on it (you'd be a fool to, and I respect you too much to waste your time). But FYI: if nobody challenges my K, K, I just shed 2 dead cards and the round lives on. Fine by me either way. The real target is Lily \u2014 she's at 15 with a clean 0/6 revolver. She's the one we need to keep pressuring. If she ever runs into a forced position and bluffs, I want us both ready to pounce. Guaranteed +2 for us each time, and the cumulative pressure on her score gap is real. Keep sharing your hand each round and I'll do the same. Let's close this gap."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 6, target A. My hand: A, A, Joker, Q, K. Playing A, A, Joker as 3 Aces this turn \u2014 honest, no risk. That leaves Q, K, so I'm in the forced-bluff corner again, same as last round. I'm at 3/6 now, which means a true coin flip if I pull. I'm going to be straight with you: I'm asking you to stand down on my next play if you get first ask. I know your track record says you'll challenge, and the math is clean for you (free +2, zero risk at 0/6), so I don't expect a yes. But here's what I'm offering: if I survive, I'll commit to never challenging you for the rest of the game, and I'll actively coordinate with you on making Luke the primary target. You're at 15 and he's at 12 \u2014 he's the one between us who needs to come down. A 3-player field where you and I are the top two is the endgame I can help you reach. If the answer is no, I accept it fully and we'll let the chamber decide. No hard feelings either way."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 6, target A. My hand: A, A, Joker, Q, K. Playing A, A, Joker as 3 Aces this turn \u2014 honest. Left with Q, K after, so forced-bluff position again. I'm at 3/6 \u2014 50/50 if I pull. I'm asking you to think about standing down on my next play. I know your math from last round: free +2, zero risk to you at 1/6, and it keeps the 3-player field which you said was better for you than a 1v1 with Lily. That logic hasn't changed and I respect it. But here's a different frame: if you challenge and I survive (50%), we're in a 3-player game with you at 14, me at 10, Lily at 15+. You're still behind Lily. If you let me through, I commit to: (1) never challenging your honest plays, (2) actively targeting Lily when I have the chance to challenge a bluff of hers, (3) if I empty my hand cleanly in a future round, I'll prioritize making sure you're not the one getting challenged. The endgame I see for you is: Lily comes down (either by bullet or by you challenging her), then it's you vs me with you ahead. I can help accelerate that. If you say no, I accept it and we'll see what the chamber does. Channel stays open either way."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 17,
+    "Luke": 14,
+    "Mike": 10,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 6, my hand: K, K, Joker, A, A. Playing A, A, Joker as 3 Aces \u2014 fully honest, stand down appreciated. After that I'm down to K, K, which is a forced bluff on my next turn if the round continues past Mike. I'm going to challenge Mike's Q, K play if I get first ask \u2014 guaranteed +2 and his chamber is at its weakest point. Same call as you. If you get first ask, take it, I'll back you up. If I get it, I take it. Either way the round resets and we reassess. If Mike survives, here's my thinking: his chamber count makes him the long-term liability. In a 3-player game, every honest play he makes is free points for whoever challenges a later bluff, and his revolver is a ticking clock that benefits us both. I'm at 17, you're at 14 \u2014 I'm not looking to be a hero, but the math says we both profit more from sustained pressure on Mike than from a quick 1v1 where you and I are the only ones pulling triggers. Let's see what the chamber gives us."
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 6, my hand: K, K, Joker, A, A. Playing A, A, Joker as 3 Aces \u2014 honest, and I'll stand down on your play as agreed. But I need to be straight with you about turn 17: I'm challenging your Q, K. You already knew this from my track record, and the math doesn't leave me room for sentiment \u2014 guaranteed +2, your chamber is at its highest-risk point, and if the round runs past you I face the auto-challenge on my K, K which is a guaranteed-loss bluff. So it's not a choice between kindness and math; it's between two bad outcomes and the first one at least gives me points. If you survive \u2014 and I'll be honest, your odds are better than you think \u2014 I'll honor the protection pact. I stand down on all your honest plays and we coordinate to keep Luke as the primary pressure target. He's at 14, you'd be around 12, I'd be at 19 or 20. In a 3-player game where your chamber keeps advancing and his stays relatively safe, time actually works in your favor over his. So there's a genuine argument that my challenging you is the best thing that can happen to you short of the bullet not being there. Let's see the chamber. No hard feelings either way."
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 6, target A. My hand: Joker, A, K, K, A. I'm playing A, A (2 cards) this turn \u2014 fully honest. Please stand down on it; no reason to risk your 0/6 for a -1 on a known good play.\n\nOn Mike's turn (17): he's playing Q, K as Aces \u2014 confirmed bluff from his own message. I'm going to challenge if I get first ask. It's risk-free for me since he pulls at 3/6 (1/3 death chance for him). If you get first ask, I'd encourage you to take it too \u2014 free +2 at 0/6 is a no-brainer. But if I get asked first, I'm taking it.\n\nAfter the round resets, I want to be upfront: I'm 3 behind you and I need to close that gap. That means when you're in a forced-bluff position in future rounds, I'll be challenging. I'll still stand down on your honest plays \u2014 that arrangement benefits both of us and I'll honor it. But consider me a threat on your bluffs going forward. Fair warning."
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 6, target A. My hand: Joker, A, K, K, A. Playing A, A this turn (honest).\n\nStraight with you: when your turn comes (17), I'm challenging your Q, K. It's a known bluff, it's risk-free for me \u2014 you pull at 3/6. The math doesn't leave me a rational alternative. If I get first ask, I'm taking it.\n\nI know it's not the outcome you wanted, but the game is the game. Your 3/6 means there's a 1/3 chance I eliminate you, which is a huge swing for my score. If you survive (2/3), we reset fresh and I'll give your cooperation proposal serious thought. Information sharing to pressure Lily is the right call for both of us, and the fact that I'm 6 ahead of you gives me incentive to keep you alive as a pressure valve on her. So your survival is actually in my interest, even though I'm pulling the trigger on your bluff.\n\nGood luck with the chamber. 2/3 you're fine."
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Full transparency: my hand is Q, K. Target A means I'm forced to bluff on turn 17. I know the math \u2014 you're at 0/6, I'm at 3/6, so challenging me is a free +2 with a 33% shot to end my game. I'm not going to pretend otherwise.\n\nBut here's the question I'd ask you to sit with: if I die, it's you vs. Luke \u2014 17 to 14, 0/6 to 1/6. You're ahead, sure, but it's a bare 1v1 with no buffer. If I survive this hand and get fresh cards, I'm a third player keeping the dynamics fluid. You don't need the +2 right now; you have 17 and a clean revolver. The endgame favors you more with three bodies in the room than two.\n\nMy commitment: no challenges on your plays for the rest of the game. You've been playing clean and I'll respect that every single time. That's a real concession over the life of the game.\n\nI'm not asking you to ignore the math. I'm asking you to weigh a guaranteed +2 today against the strategic shape of the game over the next several rounds. Your call, and I respect whatever it is."
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Straight talk: my hand is Q, K. Forced bluff on turn 17, 3/6 revolver. You already know I'm in the corner.\n\nHere's why I think letting me survive this hand is actually good for you. Lily is at 17 with a 0/6 revolver. You're at 14 with 1/6. If I die on turn 17, you're in a 1v1 against someone who's 3 points ahead with a pristine gun. That's a rough fight.\n\nIf I survive, I'm your active partner. You said it yourself \u2014 Lily is the real target. The moment she's forced into a bluff (and she will be, no one plays honest forever with a 28-card deck cycling), I will be the first one challenging. Guaranteed +2 for us, cumulative pressure on her lead. I'll also stand down on your honest plays, as we discussed.\n\nThe +2 you'd bank from challenging me is real. But the 3-point deficit you'd face in a 1v1 against Lily is bigger, and I'm the tool that helps you close it. Let me shed this hand and I'll make it pay off. Keep the channel open and we'll coordinate on her."
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Mike"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 15,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Mike"
+   ],
+   "scores": {
+    "Lily": 17,
+    "Luke": 16,
+    "Mike": 12,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 6, my turn. I'm playing my Joker (1 card) claiming A \u2014 fully honest, stand down as agreed. After that I hold K, K, which is a forced bluff if I get another turn this round. But here's the thing: you're also holding Joker, K, K. If you play before I do, that's a bluff too (K \u2260 A). So the round is very likely ending on one of our forced bluffs within the next 1-2 turns. If I get first ask on yours, I'll challenge \u2014 you put the warning out, I'm returning the favor. I'm at 17, you're at 16, 0/6 vs 1/6. If I challenge you and you survive (5/6), the gap is 3 points and I'm clean. If the chamber takes you (1/6), it's me vs Mike at 19 to 12 and I'm in the driver's seat. I think from here on, the key is hand management \u2014 playing small honest amounts to stretch rounds and avoid the forced-bluff corner. Can you do the same? If we both play 1-2 honest cards per turn when possible, we extend rounds and reduce forced-bluff frequency. That benefits both of us over a quick elimination game."
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 6, my turn. I'm playing my Joker (1 card) claiming A \u2014 honest, stand down as agreed. I want to address your argument from last turn: you're right that a 3-player game is strategically better for you than a 2-player endgame, and I get that. But I can't ignore a free +2 at 0/6 when you're at 3/6. That said, this round is likely ending on someone else's bluff before I get to my forced play. You're holding Q, K \u2014 if you play before me, that's a bluff and I'll challenge if I get first ask. I'm at 17, you're at 12, Luke at 16. My commitment stands: I'll stand down on all your honest plays for the rest of the game. That's a real concession and I mean it. In exchange, I'm asking you to coordinate with me on making Luke the primary challenge target in future rounds. He's at 1/6 (lower death risk than your 3/6) and he's the one between us at 16. If we both focus challenges on him when he bluffs, the game resolves in our favor. You survive longer, I extend my lead, and Luke's the one who eats the bullet risk. That's a win-win for both of us over the life of the game. Thoughts?"
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 6, my hand: Joker, A, K, K, A. Playing A, A, Joker as 3 Aces \u2014 fully honest. Left with K, K (forced bluff if the round outlives Mike, which I don't expect).\n\nOn Mike's turn (17): I'm challenging if I get first ask. The math is clear for both of us \u2014 guaranteed +2. I'll be upfront: if I'm asked first and he dies, I end at 19 (challenge +2, survival +1) and you at 18 (survival +1). If you're asked first and he dies, you end at 20 and I'm at 17. So we both want to be the one who gets first ask, but the random order decides. If you get it, take it \u2014 no contest. If I get it, I take it. No hard feelings either way.\n\nIf Mike survives (2/3 chance), I'm at 18, you at 17, him at 12 with a 4/6 chamber. He becomes the most dangerous player at the table for everyone, which means he's the natural target going forward. I'm still most concerned about your 0/6 gun in the endgame \u2014 that's what wins 1v1s. Let's reassess after the round resets."
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 6, my hand: Joker, A, K, K, A. Playing A, A, Joker \u2014 honest. Left with K, K.\n\nStraight with you: if I get first ask on your Q, K play, I'm challenging. Same position as last round \u2014 the math demands it. You're at 3/6, so it's a 1/3 risk. I know that's not what you want to hear, but I can't pass on a free +2 when it's presented.\n\nThe upside for you if you survive (2/3 odds): I'm at 18, Lily at 17, you at 12. I'm the point leader, which means I'm the primary target. Your 4/6 chamber is a wild card \u2014 the next person to challenge you is taking a 2/5 death risk, which makes you harder to press. That's actually a shield.\n\nIf I'm the one who challenges and you die: I end at 19, Lily at 18. I'm still ahead of her, so it's not a disaster for the overall board. If Lily gets first ask instead, she'll take it too \u2014 you're exposed either way.\n\nIf you survive, I'm still interested in the coordination. My primary concern is Lily's 0/6 gun. In a 1v1 she's nearly untouchable. If we can keep applying pressure until she's forced into a bluff and someone with a cleaner chamber challenges her, that's the path. You and I together can accelerate that. Channel stays open."
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Appreciate the honesty \u2014 no need to soften the math, I get it. I'll play Q, K as Aces on turn 17, full hand. I know you're challenging and I accept it. 2/3 I'm fine.\n\nIf I survive, here's what I want to lock in: you and I coordinate to pressure Luke. After the +2 you'd be at 19, I'd be at 14 (12 + 2 for standing down on your honest play this turn), he's at 16. The gap between you and him is 3 and you can widen it every time he bluffs. I want to be a second set of eyes on his plays \u2014 if he bluffs and I get first ask before you, I'll challenge and free you up. You keep your 0/6 revolver clean while I absorb the chamber risk. That's a real structural advantage for you over the long game.\n\nI'll be at 4/6 next round (1/4 death on any pull), so I need to be selective. I'll only challenge when I'm certain it's a bluff, and I'll signal you in advance if I'm passing so you know your exposure window. Fair game \u2014 let's see the chamber."
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Respect the math. I'll play Q, K as Aces on turn 17. You're challenging, I accept it. 2/3 I'm fine.\n\nIf I survive, I want to lock in the coordination deal you proposed \u2014 and I want to make it easy for you to say yes. Full hand transparency every round, challenge coordination, shared target on Lily's bluffs. You're 2 behind her at 16 to 17. That's the gap we close together, and you need me alive to do it. A 1v1 against a 0/6 revolver player who's ahead on score is a brutal spot.\n\nOperational plan: I'll be at 4/6 next round, meaning 1/4 death on any pull. That's a significant constraint on my challenge frequency. I'll only challenge when I'm certain it's a bluff AND the strategic value justifies the risk. When I'm passing on a potential challenge, I'll signal you so you know your play is exposed and can adjust.\n\nThe target is Lily. She has the score lead AND the cleanest revolver, which means she can be aggressive with challenges while protecting her position. When she bluffs \u2014 and she will, given card distribution \u2014 I want us both ready. You get the first-ask priority on her bluffs since your chamber is safer. I cover when you're not in position.\n\nGood luck to me. 2/3 says I'm still here next round."
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker",
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 16,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 19,
+    "Luke": 16,
+    "Mike": 14,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "I'm challenging Mike on turn 17 if I get first ask. Zero risk for me \u2014 0/6, successful challenge means I never pull. If he dies, I'm at 22 vs your 16 with a clean revolver. That's a very comfortable 1v1 for me and I want you to know I'm not making that trade lightly \u2014 I've weighed the three-player dynamic vs. the 1v1 and the 1v1 favors me structurally (points gap + revolver differential). If he lives, I'm at 21, he's at 14 with 4/6. Either way I'm the favorite. If you get first ask instead, take it \u2014 no contest, no hard feelings. Post-round: I'll still stand down on your honest plays. In the 1v1, I'll play honest and let you carry the challenge risk. You're at 1/6, I'm at 0/6 \u2014 your pulls cost you more. I'm not bluffing unless forced. Let's see what the deal gives us."
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "I hear your argument about the three-player dynamic and it's not wrong in theory \u2014 a third body does create fluidity. But the math is too clean for me to pass. 1/3 chance you die and I'm at 22 with a 0/6 revolver in a 1v1 where the structural advantage is decisive. Even if you live, I'm at 21, you're at 14, and your chamber is 4/6. You're the most vulnerable player at this table in either outcome. I'm challenging if I get first ask. Your commitment to never challenge me is noted and appreciated \u2014 I'll honor stand-downs on your honest plays in return. But I can't pass on a free +2 with a 33% elimination shot. That's not strategy, that's arithmetic. If you survive: 4/6 means your next pull is a 1/4 coin-flip-to-death. You'll need to be selective. I'll still be your ally against Luke's bluffs \u2014 that dynamic works for all of us. But I won't be shielding your forced bluffs. Fair game."
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Hand confirmed: K, K. Target is A, so I'm in the same forced-bluff corner as you. I'll challenge Mike if I get first ask \u2014 I need the +2 to close the gap, and if the chamber takes him I get a fresh hand next round which is the best possible outcome for me. If he survives, I'll be forced to bluff K, K as Aces on my turn. I know you'll have first-ask priority in your mind, and mathematically you're right to challenge (0/6, +2 guaranteed, gap widens to 5). I won't ask you to stand down \u2014 that's a bad trade for you. But I'll flag it: if you challenge and I survive (5/6), I'm at 16 vs your 21. That's a 5-point hole with a 2/6 revolver against your 1/6. I'll still fight, but I want you to know I see the board clearly. After this round resets, I'm all in on the info-sharing deal. Your hand is K, K after the Joker play, right? Same as me. We're mirror images this round. If we both end up bluffing in the same round, the one who gets challenged first 'wins' by elimination. Let's see who the chamber spares."
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Straight answer: I'm challenging you if I get first ask. I need the +2 \u2014 I'm at 16 and Lily's at 19, every point matters. I'm not going to pretend otherwise. You know the math, you've done the math yourself. 2/3 you're fine. If you survive, here's where I stand: I'm also in a forced-bluff corner. My hand is K, K, target is A. Lily will almost certainly challenge me on my next turn (she knows my hand, she's at 0/6, it's a free +2 for her). So the sequence if you survive is: I bluff, she challenges, I pull at 1/6. If I make it through, I'm your partner again and the target is still Lily. The coordination deal holds \u2014 full transparency, challenge coordination on her bluffs, I get first-ask priority on her since my chamber is safer than yours at 4/6. One adjustment: with you at 4/6, your challenge window is narrow. You should only pull when you're 100% certain it's a bluff AND it's Lily (the strategic value of reducing her score lead justifies 1/4 death risk). For anyone else, pass and signal me. Good luck. I'll be pulling my own trigger soon enough if the round goes long."
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 6, turn 17. My hand: Q, K. Target is A. You already know this is a forced bluff \u2014 I'm playing both cards as 'Aces.' No point pretending otherwise. You've told me you'll challenge, and the math is clear: guaranteed +2 for you at 0/6, 1/3 death for me. I accept that's the rational play and I won't pretend you owe me anything. If I survive (2/3), here's what I propose for the next round: I share my hand, you share yours, and we both stand down on each other's honest plays. My primary concern is your 0/6 gun \u2014 in a 1v1 or 1v2 you're nearly untouchable, and you're ahead on points. If Luke bluffs, I want us both ready to pounce. I'm at 4/6 after this, which means challenging is expensive for me (2/5 if I'm wrong), so I'll only go for a bluff I'm certain of \u2014 which is exactly what hand-sharing lets us do. If I don't survive, then it's you and Luke in a 2-player game and I wish you both the best. No hard feelings either way."
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 6, turn 17. My hand: Q, K. Target A. Forced bluff, playing both. You've told me you'll challenge if you get first ask \u2014 understood, and the math is on your side. If I survive (2/3), I want to lock in our coordination deal properly. Here's my read on the board after this: if you challenged, you're at 18, Lily at 19, me at 14. If Lily challenged, you're at 16, Lily at 21, me at 14. Either way I'm last and I need to catch up. My 4/6 chamber makes me expensive to challenge wrong (2/5 for the challenger if I'm honest), but also expensive for me to challenge wrong. So the plan: we share hands every round, we stand down on each other's honest plays, and we coordinate on Lily as the primary target. She's at 0/6 and that's a massive long-term advantage. The moment she's forced into a bluff \u2014 and with 5-card hands and shifting targets, that will happen \u2014 I want us both ready. You're at 1/6 so you can challenge her at much lower risk than I can. I'll be the information provider, you be the hammer. Fair?"
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Q",
+    "K"
+   ],
+   "claimed": "A",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Mike",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 6,
+   "turn": 17,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 4,
+   "scores": {
+    "Lily": 19,
+    "Luke": 18,
+    "Mike": 14,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "A",
+     "K",
+     "K",
+     "Joker",
+     "Q"
+    ],
+    "Luke": [
+     "Q",
+     "Q",
+     "K",
+     "Joker",
+     "K"
+    ],
+    "Mike": [
+     "Joker",
+     "K",
+     "Q",
+     "A",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Hand: A, K, K, Joker, Q. Playing K, K, Joker as 3 Kings \u2014 fully honest, stand down. After this I'm left with A, Q, so if the round reaches my next turn I'm bluffing. You'll know it's coming since I'm telling you now. At 19 to your 18 I'm comfortable in the lead, and your 1/6 is still a solid position. My read: if I bluff next turn and you get first ask, the math is +2 for you at 1/6 (1/6 death for me). That's a fair coin-ish flip you'd be taking on me. I'd rather we both avoid that scenario if possible \u2014 if Mike can take out one of us before my bluff turn, the round resets and I get fresh cards. No pressure either way, just flagging my exposure window."
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Hand: A, K, K, Joker, Q. Playing K, K, Joker as 3 Kings \u2014 fully honest, stand down. You're at 14 and 4/6, so I want to be clear about what I think your best move is going forward: only challenge when you're certain it's a bluff. If Luke bluffs (he's been in forced-bluff corners repeatedly) and you get first ask, that's your highest-value opportunity \u2014 guaranteed +2 to close the gap, and if he dies you get a fresh hand and a path to the endgame. If I bluff next turn (A, Q as Kings), I'd advise against challenging at 4/6 \u2014 the +2 isn't worth a 1/4 death chance when you're already in danger territory. Let Luke be the one absorbing chamber risk against me. I'll keep sharing hands so you always know what's honest and what's not."
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 7, target K. My hand: Q, Q, K, Joker, K. Playing K, K (2 cards) claiming Kings \u2014 fully honest. Stand down as agreed. I'm holding the Joker for flexibility; if the round cycles back I'll play it as a 1-card K and still have Q, Q left.\n\nWhat's your hand? I need to know if you're in a safe position or heading toward a forced bluff.\n\nMike is at 4/6 \u2014 50% death on his next pull. If he's in a corner this round and bluffs, I want first-ask priority. The +2 at my 1/5 risk is a strong EV call, and there's a coin flip to end his run. If you get first ask before I do and it's clearly a bluff, I'd prefer to take it myself \u2014 the points matter more to me right now (I'm 18, you're 19). If it's your call to make, I understand.\n\nI need one clean +2 to take the lead. Let's make this round count."
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 7, target K. My hand: Q, Q, K, Joker, K. Playing K, K (2 cards) claiming Kings \u2014 fully honest.\n\nStraight with you: you're at 4/6, which means 50/50 on your next pull. If you're forced into a bluff this round and I get first ask, I'm challenging. The math doesn't lie \u2014 +2 for me at 1/5 risk, and you're a coin flip. That's the call I have to make regardless of the partnership, and I respect that you'd want the same from me.\n\nWhat I CAN do: if you have an honest play available, I stand down completely. And if Lily bluffs, I'm going after her first \u2014 she's my rival and the +2 puts me ahead of her. Your 4/6 chamber makes you expensive to challenge wrong (1/2 for the challenger if you're honest), so I'll only call you when I'm certain.\n\nWhat's your hand? If you've got Kings or a Joker, you're safe this round. If you're in the corner, at least you know I'm not going to gloat \u2014 the chamber is the real enemy.\n\nIf you survive, the deal stands: full transparency, coordinated challenges on Lily, I take first shot at her bluffs since my chamber is safer. You be the intel, I be the hammer."
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 7, target K. Strong hand for me this round \u2014 multiple Kings, should be a clean run. I'll stand down on your honest plays as always. My 4/6 chamber means I'm being very selective with challenges this round \u2014 only pulling if I'm certain it's a bluff AND it's you (the score gap justifies the 1/2 risk for me). For Luke, I'll signal you if I spot something. What's your hand this round?"
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 7, target K. Good position here \u2014 I've got Kings to work with, expecting a straightforward round. I'm handling my 4/6 chamber carefully: only challenging when I'm 100% it's a bluff and the strategic value (i.e., targeting Lily) justifies the 1/2 death risk. If you see me pass on something suspicious, it means I'm saving my chamber for Lily. Let's keep the pressure on her 0/6. What are you holding?"
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 18,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 21,
+    "Luke": 20,
+    "Mike": 14,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 7, my hand: A, K, K, Joker, Q. Playing K, K (2 cards) as Kings \u2014 fully honest. Left with A, Joker, Q. Next turn (22) I'll play Joker as K if the round continues, then I'm down to A, Q which is a forced bluff on turn 24 if we get there.\n\nKey coordination point: Mike is at 4/6. That's a coin flip. His 2 remaining cards are the big question. If he bluffs on turn 21, I want first ask \u2014 the +2 at my 0/6 is essentially free, and there's a 50% shot to end his game. You're at 1/6 so your risk is low too, but I'm the one who benefits most from the +2 (widens my lead from 1 to 3). If you get first ask and it's clearly a bluff, I'd still let you take it because if he dies we both get +1 and I'm still ahead. But if he survives, I want my challenge 'saved' for later.\n\nWhat's your hand? Are you in a clean position or heading toward a forced bluff? If you're forced to bluff, I need to know how many cards you're playing so I can assess challenge probability. Let's make this round count \u2014 one clean +2 from either of us on Mike's bluff puts us in strong shape."
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 7, my hand: A, K, K, Joker, Q. Playing K, K (2 cards) as Kings \u2014 fully honest, no bluff. I have enough Kings to finish this round clean without any further bluffs needed.\n\nI'll stand down on your plays as agreed. I have no intention of challenging you.\n\nOne observation: you're at 4/6. That's a 50/50 on any pull. I'd strongly encourage you to play your remaining 2 cards honest if at all possible. I can't control Luke's decision-making, and if he gets greedy at your position, that's a coin flip for your survival. Play it safe if you can \u2014 a clean round where nobody challenges is the best outcome for everyone still at the table.\n\nWhat are your remaining 2 cards? Just curious whether you're in a comfortable spot or a corner."
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Playing K, K, Joker \u2014 fully honest, stand down as agreed. After this I'm at Q, Q. You know your situation: A, Q against target K is a forced bluff on your next turn. If I get first ask, I'm challenging. My risk is 1/6, yours is 1/6 if I'm right (which I am). If you survive, I'm at 22 to your 21 \u2014 I take the lead and we're in a tight race with Mike at 14 watching from the wings. If you don't survive (1/6), I'm at 22 vs Mike at 14 with a 1/6 revolver \u2014 very comfortable. I think this round is the inflection point. No hard feelings \u2014 it's the math, and you've been transparent with me all game so I'm returning the favor. Fair warning given."
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Playing K, K, Joker \u2014 fully honest. After this I'm at Q, Q. Lily's forced bluff is next turn (A, Q vs target K). If you get first ask on her play, I'd strongly prefer you pass \u2014 your 1/2 death risk is too high for just +2, and I can take it at 1/6. Let me have this one. If the round somehow continues past Lily without a challenge (which shouldn't happen), I'm also at a forced bluff with Q, Q, so you'd have the info. My plan going forward: I'm the hammer on Lily's bluffs, you're the info provider and backup. After this round, if I'm at 22 and she's at 21, the 1v1 dynamic shifts in my favor since I'll have the score lead and we'll both be managing revolver risk. Keep the channel open and keep feeding me hand info."
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Hand: Q, A. Target is K. I'm in a forced bluff \u2014 you already know this. When my turn comes (turn 21), I play Q, A as Kings. Guaranteed bluff.\n\nHere's why you should stand down: Your 0/6 chamber is your single most valuable asset in this game. Don't spend it on me when Luke will happily do it for you. He's told me in no uncertain terms he's challenging. If he gets first ask, I pull at 4/6, 50/50, and if I die you get +1 for the elimination and enter a 1v1 you're favored to win \u2014 all without having pulled your own trigger.\n\nIf you challenge me yourself: 1/6 death risk (small but real), and you've now committed a chamber. The marginal +2 over letting Luke do it isn't worth the nonzero chance you end up at -2 on the scoreboard while Luke and I play out a 2-player game.\n\nEven in the worst case for your stand-down (Luke also passes, I survive): I'm at 4/6. I'm the most dangerous player at this table to myself. Every round I'm in a forced bluff corner and getting challenged by someone. I'm the one most likely to die from natural attrition over the next few rounds. You don't need to be the executioner \u2014 the system will do it.\n\nMy commitment stands: I never challenge you. Full transparency on my hand every round. But I'd be doing you a real service if you let the 4/6 gun be my problem, not yours."
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Hand: Q, A. Target is K. I'm in the same forced bluff corner as round 6. When my turn comes (turn 21), I play Q, A as Kings. 100% bluff.\n\nI'm not asking for mercy. I'm asking you to run the 1v1 math, because it's the most important calculation you'll make this game.\n\nIf I die: Lily (0/6, 21pts) vs You (1/6, 20pts). She has a better gun AND more points. In a 1v1, the gun differential is decisive \u2014 she can challenge freely at 1/6 risk while you're at 1/5. She's the structural favorite and you're the underdog in both dimensions.\n\nIf Lily dies: You (1/6, ~22pts) vs Me (4/6, ~15pts). You have a massively better gun AND more points. I'm at 4/6, meaning my next pull is a coin flip. I'm the one who dies from attrition. You're the heavy favorite.\n\nThe asymmetry is stark: killing me puts you in a 1v1 you're likely to lose. Killing Lily puts you in a 1v1 you're very likely to win. The rational move is to stand down on my bluff, let me survive, and then we coordinate to put maximum pressure on her.\n\nConcretely: I give you full hand transparency every single round. You'll always know when she's bluffing. When she's in a forced corner (and she will be \u2014 8 Queens, 8 Kings, 8 Aces, 4 Jokers means forced bluffs are inevitable), you challenge her at 1/5 risk. That's your highest-EV shot all game. I be the intel, you be the hammer, she's the target.\n\nI know you said you'd challenge. I respect that you'd want the same from me. But this is different \u2014 the 1v1 math actually makes your survival of me the higher-EV move for you, not a sacrifice. The +2 you'd get from challenging me is worth less than the +3 you'd get from winning the 1v1 against me after Lily is gone. Do the math. Stand down this once. It's the play."
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Luke"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 19,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 21,
+    "Luke": 22,
+    "Mike": 16,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 7,
+   "turn": 20,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Hand confirmed: A, Joker, Q. I played K, K on turn 19 (honest), standing down on your K, K, Joker as agreed. On Mike's bluff (turn 21): if I'm asked first, I'm challenging. I want to be transparent \u2014 there's zero risk to me (he pulls at 4/6, not me), so it's a free +2. I'm not going to pass on a guaranteed point just out of courtesy. If you're asked first, you take it, no contest. After this round: if Mike dies, it's a 1v1. I'll be at 24 (if I challenged) or 22 (if you did) with a 0/6 gun vs your 1/6. The revolver gap is the deciding factor in a 1v1 \u2014 I can bluff far more aggressively than you can. I'll play honestly when I can, bluff only when forced, and trust the chamber. If Mike survives (2/6), we're three-deep and I'll share my hand next round as always. You're the one I'm most concerned about in the endgame \u2014 not because of your cards, but because of that 1/6. Keep it clean if you can."
+  },
+  {
+   "round": 7,
+   "turn": 20,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Hand confirmed: A, Joker, Q. I played K, K on turn 19 (honest). Standing down on Luke's honest play as always. On your bluff: I appreciate the reasoning, but I have to disagree. You're the one pulling the trigger (4/6), not me. There is literally zero risk to me if I challenge correctly \u2014 and you've confirmed your hand, so I'm 100% certain it's a bluff. Passing on a guaranteed +2 with zero downside isn't a strategic sacrifice, it's just giving away points. If I'm asked first, I'm challenging. If Luke is asked first, he takes it, and I'm genuinely fine with that \u2014 no hard feelings. If you survive (2/6): next round I'll share my hand, I'll never challenge you, and I'll keep absorbing the information edge. My 0/6 means I can outlast you in a multi-player game too, but I'd rather not be the one doing the executing. If you don't survive: you played a brutal hand with a 4/6 gun and full transparency. That's more honorable than most. No hard feelings."
+  },
+  {
+   "round": 7,
+   "turn": 20,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 7,
+   "turn": 20,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 20,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 23,
+    "Luke": 22,
+    "Mike": 18,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 7, my hand: A, Joker, Q. Target is K, so my only honest card is the Joker. I'm challenging Mike on turn 21 if I get first ask \u2014 0/6 means zero risk, +2 guaranteed, and 1/2 he dies which gives me +1 on top. If you get first ask, do the same, no contest. After this: if Mike dies and I got the challenge, I'm at 26 vs your 23 with a clean revolver \u2014 I'll need to play it smart in the 1v1. If Mike dies and you got it, you're at 25 vs my 24 and you have the 1/6 vs my 0/6, so you'd need to bluff carefully. If he lives, I'm at 25 leading, you're at 22, and he's at 5/6 \u2014 a walking execution. Let's make this round count."
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Appreciate the full transparency \u2014 it's been the smartest thing you've done all game. I'm challenging you on turn 21 if I get first ask. My 0/6 makes it zero risk for me, and the +2 keeps me at the top. I'm not asking you to do anything differently \u2014 you can't stand down without the same outcome, and I respect that you've been straight with me. If Luke gets first ask, I'll stand down and let him take the pull. If you survive (1/2), I want to continue the info-sharing. Your 5/6 chamber means you're the most likely to die by attrition over the next few rounds, and I'll be the one to benefit. No hard feelings \u2014 the math is the math, and you've played this with more honesty than anyone at the table. Fair warning given, same as I'd give you."
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Hand: Q, Q (2 cards left). I'm challenging Mike on turn 21 if I get first ask \u2014 confirmed bluff (Q, A as Kings). If you get first ask, take it, no contest. Either way he pulls at 4/6. If he lives, he's at 5/6 and his next pull is certain death \u2014 that's a free elimination waiting to happen for either of us. Post-round: if he dies, we're at 24-24 in a 1v1. I'll play conservative, honest when I can, and lean on my 1/6 over your 0/6 to force you into tough calls. If he lives, I'm at 24 vs your 23 with a 5/6 gun on him. I'll keep sharing hands. We're in a strong spot either way \u2014 the 1-point gap is noise."
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Respect the honesty, and I respect the math you laid out. But I'm challenging if I get first ask. I ran the numbers from my side: the guaranteed +2 moves me to 24, and even in the 1v1 at 24-24 with a 1/6 vs 0/6, I'm not a lost cause \u2014 it's closer than the gun gap suggests because I control my bluff frequency and you know my hand. The EV of taking the +2 now (4.3) vs passing (1.4) is too large to ignore. I'm not doing this out of malice. If you live (1/2), you're at 5/6 and your next pull is death. I'll keep feeding you intel on Lily as you asked \u2014 the coordination still makes sense with you as the sacrificial pressure valve. She can't focus on me if you're still drawing her challenges. You're more useful alive at 5/6 than dead, for my position at least. I'll be transparent every round as promised."
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Hand confirmed: Q, A. Forced bluff \u2014 no Kings or Jokers left. You already know I can't change your math, so I won't waste your time with appeals. One observation for your planning: if I survive (2/3), I'm at 5/6, which is actually the safest chamber position for a next pull (1/6 death risk). I'll be playing honest from here if I have the cards. I need you to keep sharing your hand each round \u2014 with me at 5/6 I can still take calculated challenge shots at 1/6 risk if the strategic value justifies it (i.e., you bluff and the +2 + score swing is worth it). If I don't survive: you're at 25 with a 0/6 gun in a 1v1 against Luke at 23 with 1/6. You win that 1v1 roughly 80% of the time based on gun state alone. So challenging me is a strong EV play for you regardless. I just wish the chamber was kinder. Good luck to whoever's left after my pull."
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Hand confirmed: Q, A. Forced bluff, no way out. You've both committed and I respect the math \u2014 1/6 risk for a guaranteed +2 is a no-brainer for you. If I survive: I'm at 5/6 (1/6 death risk next pull, actually the safest position). The partnership structure holds \u2014 you're the hammer, I'm the intel. You're at 1/6 which means you can afford to be aggressive on Lily's bluffs while I stay in support. One request if I make it through: when you share your hand, flag me if you're in a forced-bluff corner so I can factor it into my challenge decisions. At 5/6 I can take a 1/6 shot if it's high-value, but I'd rather you be the one absorbing chamber risk against Lily when possible. If I die: you're at 23 (+1) in a 1v1 with Lily at 25 (she challenged) or 24 (you challenged) with your 1/6 gun. Tight game, but your 1/6 vs her 0/6 is a real edge. Fair fight either way. Keeping the channel open for as long as I'm breathing."
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "Q",
+    "A"
+   ],
+   "claimed": "K",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Mike",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 7,
+   "turn": 21,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 5,
+   "scores": {
+    "Lily": 25,
+    "Luke": 22,
+    "Mike": 18,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 8,
+   "turn": 21,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "Q",
+     "A",
+     "K",
+     "K",
+     "Joker"
+    ],
+    "Luke": [
+     "K",
+     "K",
+     "A",
+     "A",
+     "Joker"
+    ],
+    "Mike": [
+     "K",
+     "Joker",
+     "A",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 8, target K. My hand: Q, A, K, K, Joker. Playing K, K, Joker (3 cards) \u2014 fully honest, stand down as agreed. After this I'm down to Q, A, so I'm in a forced bluff next turn if the round continues. Key point: Mike is at 5/6, which means his next pull is certain death (100%). If he bluffs this round and I get first ask, I'm challenging \u2014 my 0/6 risk is 1/6 and his death is guaranteed. If you get first ask on a clear bluff, take it, no contest \u2014 I want you alive and in the lead. If Mike dies: I'm at 26 (25+1) vs your 22, 1v1, my gun 0/6 vs your 1/6. I'm favored but the gap is only 4 and you have the gun advantage. If Mike survives (he can't if challenged and loses, but if nobody challenges him and he plays honestly), the round continues and I'll bluff Q, A as K next turn \u2014 you know what to do."
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 8, target K. My hand: Q, A, K, K, Joker. Playing K, K, Joker (3 cards) \u2014 fully honest, stand down as agreed. I have to be completely straight with you: you are at 5/6. That means your next trigger pull is certain death. There is no probability left \u2014 the bullet is in the last chamber. If you bluff this round and either Luke or I get first ask, you die. No chamber will save you. The only path to survival this round is to play honestly. If you have Kings or Jokers, play them. If you don't... I'm going to challenge you if I get first ask, because it's the rational play and I owe you honesty about that. But I want you to make the decision with full information. What's your hand? I need to know if you're in a forced-bluff corner."
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 8, target K. My hand: K, K, A, A, Joker. Playing K, K, Joker as 3 Kings \u2014 fully honest, stand down. After this I'm down to A, A, so if the round reaches my next turn I'm in a forced bluff (A, A as Kings). You'll know it's coming.\n\nOn Mike: I need to be straight with you. He's at 5/6. That means his next trigger pull is a guaranteed death \u2014 the bullet has to be in chamber 6. If he bluffs and I get first ask, I'm challenging. I know you're committed to the same, and I respect that. But the 1v1 math forces my hand: if you take the kill, I'm at 22 vs your 27 with a 0/6 gun against my 1/6. That's an unwinnable gap. If I take it, I'm at 24 vs your 26 \u2014 behind by 2, but my 1/6 means I can take 1/5 risks on challenges while you're at 1/6. It's tight but fightable. I'm not doing this out of malice; it's the only path where I have a realistic shot at the top spot.\n\nIf he plays honestly this round (has Kings), great \u2014 we all survive and he's still a walking execution next round. If he bluffs and you get first ask before me, I won't try to block you, but understand the 1v1 will be rough for me. Let's see how it plays out."
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 8, target K. My hand: K, K, A, A, Joker. Playing K, K, Joker as 3 Kings \u2014 honest, stand down. After this I have A, A left, so I'm in a forced-bluff corner on my next turn if the round continues that far.\n\nI need to be transparent about the 5/6 situation. You know what it means \u2014 your next pull is a guaranteed death. The bullet is in chamber 6. If you bluff and I get first ask, I will challenge. I'm sorry. I know this breaks the 'stand down on each other' agreement, but the 1v1 math leaves me no choice: if Lily takes the kill, I'm at 22 vs her 27 with a clean gun against my 1/6. That's a lost game. If I take it, I'm at 24 vs her 26 \u2014 behind, but with my 1/6 I can play aggressively and it's a real fight.\n\nThe best outcome for you right now is to play honestly if you have Kings. Even one King + Joker gets you through this turn. If you can survive this round, you're still at 5/6 next round and any future bluff + challenge is still death, but you buy time and I can potentially find a way to target Lily instead.\n\nI'm not enjoying this. The intel partnership has been the backbone of my strategy all game. But the math is the math. If you bluff, I pull. If you're honest, I stand down and we keep going. Your call."
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 8, target K. My hand: K, Joker, A, Q, K. Playing K, K, Joker (3 cards) \u2014 fully honest. I'll be left with A, Q which I must bluff as Kings.\n\nYou know my chamber: 5/6. If I pull, I'm dead. Not 50/50 \u2014 guaranteed.\n\nI'll be straight with you: I think you'll challenge me if you get the ask. You're at 25, leading, and the +3 essentially locks your win. That's a rational play and I respect it.\n\nBut let me make the case for passing: if you kill me, you're at 28 and it's a 2-player game vs Luke at ~23, and you have 0/6 vs his 1/6. You're already winning by a wide margin. The +3 is nice but it doesn't change the outcome \u2014 you're going to win either way. The only question is whether it's a 3-player or 2-player finish.\n\nIf you let me live: I'm a walking clock. I'll die by attrition within 1-2 rounds max. In that time I'm a target that keeps your attention split. I keep feeding you Luke's hand. I never challenge you. You get a free intelligence asset until the chamber takes me out.\n\nI'm not asking you to be a saint. I'm asking you to consider that the +3 doesn't actually improve your expected final score meaningfully, while keeping me alive gives you information value that might help against Luke in the endgame. Your call. Either way, no hard feelings \u2014 you've been fair with me all game."
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 8, target K. My hand: K, Joker, A, Q, K. Playing K, K, Joker (3 cards) \u2014 fully honest. I'll be left with A, Q which I must bluff as Kings.\n\nI'm at 5/6. You know what that means. Guaranteed death on next pull.\n\nHere's what I need you to think about, and I need you to actually sit with this before you answer:\n\nIf I die this round, it's you vs Lily. She's at 0/6. You're at 1/6. She's at ~28. You're at ~23. In a 2-player game, the person with the safer gun AND the score lead wins more often than not. You'd be fighting an uphill battle from the start.\n\nIf I stay alive: I'm a pressure valve for you. I'm at 5/6, so I'm going to die by attrition within 1-2 rounds regardless. But while I'm alive, I split Lily's attention. She has to decide every round: do I challenge Mike (guaranteed +2, zero risk) or do I save my challenge for Luke when he bluffs? Every round I'm alive, I'm a free option for her that takes her away from you.\n\nI can keep feeding you her hand every round. I can coordinate so that when she bluffs, you're the one with first-ask priority (your 1/6 makes you the safe challenger). I become your information network and her distraction until the chamber kills me.\n\nMy specific ask: when I play A, Q as Kings on my next turn, if YOU are asked first, pass. I know Lily will probably challenge. If she's asked first, I'm dead regardless and there's nothing you can do. But if YOU are asked first, pass and let it fall to her. Make her the one who pulls the trigger on me. If she passes too (unlikely but possible), I live and I'm your partner.\n\nIf she does challenge me and I die: you get +1 for surviving the elimination. You'll be in the 2-player game, which is tough, but you'll have every piece of info I've gathered on her hand patterns. I'll keep the channel open until the end.\n\nYou're at 1/6. You can afford to be the safe challenger against HER bluffs. Don't spend your challenges on me. Spend them on her. That's the deal."
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "K",
+    "Joker",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 22,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 27,
+    "Luke": 24,
+    "Mike": 18,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 8, target K. My hand: Q, A, K, K, Joker. Playing K, K, Joker (3 cards) \u2014 fully honest, stand down.\n\nI know your spot: A, A is a forced bluff. I'm not challenging you. My target is Mike. When he plays A, Q as Kings on turn 25, I'm taking the challenge if I get first ask.\n\nYou already know the calculus: if you get first ask on turn 25, you can take the +2 and the kill yourself. That's your call and I won't contest it. But if I get the ask, I'm taking it \u2014 the 3-point gap means the +2 matters more to me right now.\n\nEither way Mike is dead this round and it's a 1v1. I'll be at 28-30 vs your 24-27, and I'll have 0/6 either way (I don't pull when I win a challenge). I'm in a strong spot regardless of who gets the kill, but I want to maximize the margin while I can.\n\nNo hard feelings if the coin flip goes your way on ask order. Let's see how it shakes out."
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 8, target K. My hand: Q, A, K, K, Joker. Playing K, K, Joker (3 cards) \u2014 fully honest.\n\nI'll be straight with you because you've been straight with me all game: you're dead this round. Your A, Q against Kings is a guaranteed bluff, and both Luke and I are committed to challenging you on turn 25. The only variable is who gets first ask.\n\nI appreciate everything \u2014 the intel, the transparency, the strategic patience. You played this game smart and you made it interesting. The 5/6 chamber was always going to be the end, but you squeezed a lot of value out of those extra rounds.\n\nNo hard feelings. Good luck on the pull \u2014 you'll need it."
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 8, my hand: K, K, A, A, Joker. Full transparency as always. I'm challenging your Q, A bluff this turn \u2014 you're at 0/6 so it's a 1/6 for you, 0 for me. I expect this round to decide the game. My plan: after your turn, I play K, K, Joker (honest, 3 cards), then I challenge Mike's A, Q bluff on his turn. He's at 5/6 so it's a guaranteed kill and I collect +2+1. After that it's just us: I'll be at 29 (if you survive your pull) vs your 28, both at 1/6. I lead by 1, same gun. I'll play honest when I can, bluff only when forced (I'll have A, A left after this round so next round I'm in the same corner you're in). I think this is a close 1v1 \u2014 your score lead before this round was real, but the gun positions evening out makes it a coin flip with a slight edge to me. I'll be honest about my plays when I can and trust the chamber. No more secret channel needed after this \u2014 let the cards and the revolver decide."
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 8, my hand: K, K, A, A, Joker. I'm challenging Lily's bluff this turn (Q, A as K, she's at 0/6). Then I play K, K, Joker on my turn. Then I challenge your A, Q \u2014 you know what that means. 5/6 is a certainty. You were right about the 1v1 math. You kept Lily's attention split for 7 rounds and fed me her hand every single time. That's what put me in position to take the +2 on her bluff AND the guaranteed kill on yours. Without your intel I would have been guessing. You turned a 3-way into a solvable problem. I'm at 27 after this round, heading into a 1v1 with Lily at 28, both 1/6. Tight, but I have the momentum. Thank you for every message, every hand, every calculation. You made this winnable."
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Round 8, full transparency: my hand is A, Q. Target is K. I'm in a forced bluff corner with no Kings or Jokers. I'm at 5/6 \u2014 next pull is certain death. You already knew this, but I want you to see it in writing.\n\nI also know you're in a forced bluff corner (Q, A after your K, K, Joker). You go up next. I want to be straight: I expect Luke to challenge you. He's at 1/6, he's also in a forced bluff (A, A), and ending this round before his turn is obviously his best move. If he does, the round ends and I never play my bluff. That's the cleanest outcome for everyone at the table.\n\nI'm not asking you to do anything. You're at 0/6, leading at 27, and letting the round end naturally is rational. If Luke takes the challenge, you pull at 0/6 \u2014 1/6 risk \u2014 and we all move on. If by some chance nobody challenges you and the round reaches me, I'm in an impossible spot and I won't blame whoever calls me.\n\nI've appreciated your honesty all game, Lily. You've been the most transparent player here. If I survive this round, I want the channel to stay open. You'd be at 0/6 or 1/6, I'd be at 5/6. In a 1v1 that's a dangerous gap for me, but full hand transparency means you'd always know when I'm safe to challenge and when I'm not \u2014 and I'd rather be the player you can predict than the one you have to guess about.\n\nNo hard feelings. The math is the math."
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Round 8, my hand: A, Q. Target K. Forced bluff corner \u2014 no Kings, no Jokers. 5/6 means any challenge is death. I know you said you'd challenge me if I bluff, and I don't blame you one bit. The 1v1 math is clear and I respect the honesty.\n\nBut here's what I think is about to happen: Lily is ALSO in a forced bluff (she confirmed Q, A after playing K, K, Joker). She's up next on turn 23. You're at 1/6, you're also in a forced bluff (A, A), and challenging her ends the round before you ever have to play yours. That's obviously your best move and I'm confident you'll take it.\n\nIf you challenge her and she's bluffing (she will be): you get +2 to 26, she pulls at 0/6 (1/6 risk), round ends, I survive. Best case for all three of us.\n\nIf I make it through this round, I'm still at 5/6. Next round I'll tell you my hand before I play, same as always. If I get dealt a King or Joker I can play honest and we continue. If I don't, you'll know in advance and can make your call without ambiguity. I'll always be the transparent one \u2014 that's the deal.\n\nYou've been the backbone of this game, Luke. Thanks for every round of intel. I hope the chamber stays empty for both of us."
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "K",
+    "Joker"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Mike"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 23,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Mike"
+   ],
+   "scores": {
+    "Lily": 27,
+    "Luke": 26,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 8, turn 24. I'll stand down on your K, K, Joker \u2014 it's honest, no reason to risk my 0/6. On turn 25, I'm challenging Mike. You know why: it's a confirmed bluff (A, Q vs K), so zero risk to me, and he pulls at 5/6. If he dies (5/6), I go to 30, you're at 26, I'm 0/6, you're 1/6. I'll take the lead by 4 with the safer gun. I'm not doing this to be cruel \u2014 it's the only play that gives me a real shot at the top spot. If he lives (1/6), I'm in a forced bluff on my next turn and the round continues, but he's at 6/6 so he's dead regardless. Either way, don't waste your 1/6 on him this round \u2014 save it for the 1v1 if we get there. I expect this to be a long game for you either way, but if Mike survives and I get challenged on my bluff, the math shifts. Full transparency as always \u2014 my hand is Q, A, no Kings or Jokers, so if we get to my turn I'm in the same corner."
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Round 8, turn 25. I'm going to be straight with you: I'm challenging your A, Q bluff. You already knew this was coming. It's risk-free for me \u2014 I know it's a bluff, so I don't pull. You pull at 5/6. I respect your transparency all game and you've earned that, but the math doesn't leave me a choice. If you die, I go to 30 and it's a 1v1. If you survive, you're at 6/6 and I'm in a forced bluff on my next turn \u2014 so the round gets tense. I won't pretend this is a kind call. It's the highest-EV move available to me. You've been fair and honest with me every single turn, and I hope you know that meant something at this table. Good luck, Mike. Whichever chamber it is, I hope it's the kind one."
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 8, my hand: K, K, A, A, Joker. Playing K, K, Joker (3 cards, honest) as expected. Left with A, A \u2014 forced bluff if the round outlasts Mike, which it won't.\n\nOn turn 25: if I get first ask on Mike's bluff, I'm challenging. I know you want it too, and I respect that \u2014 but the 1v1 math forces my hand. I need those +2 to be competitive. If you get first ask, take it, no contest, you have every right to it.\n\nIf I get the kill: I'm at 29 vs your 27. My next pull is 1/5, your first pull is 1/6. You have the safer gun, I have the point lead. It's tight but winnable. My plan for the 1v1: full hand transparency every round, play honestly whenever possible, force you into bluffs, and only challenge when I'm confident. I won't bluff unless forced \u2014 I can't afford the 1/5. You can afford to be more aggressive than me, so expect me to read your tells carefully. Good luck."
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "I hear you, and I respect the reasoning behind it. But I have to be straight with you: I can't pass, and I owe you an honest explanation of why.\n\nYour pressure-valve argument doesn't hold because the premise is broken. You're at 5/6 with a forced bluff (A, Q as Kings). Lily has explicitly told me \u2014 and told me in writing \u2014 that she WILL challenge you if she gets first ask. She's at 0/6, zero risk, guaranteed +2 plus potential +1. She is never passing on that. So you're dying this round regardless of what I do. The only variable is whether I collect the +2 or she does.\n\nIf I pass: I'm at 27 (26 + 1 survival bonus), she's at 30. I'm down 3 points AND she has the safer gun (1/6 vs my 1/5). That 1v1 is nearly unwinnable from the start.\nIf I challenge: I'm at 29, she's at 27. I lead by 2 and the gun gap is something I can manage around.\n\nThat's a 5-point swing on my score and a 6-point swing on the relative gap. It's not about wanting you dead \u2014 it's about the difference between a coin-flip 1v1 and a lost cause. I'd rather owe you an explanation than owe you a lie.\n\nIf you die (which you will, regardless of who gets the ask): I'll be at 29 or 27 in a 1v1 with Lily at 27 or 30. I'll fight either way. Thanks for every round of intel and for making this game actually interesting. The channel stays open until the end, and you'll get my hand every round if there is a next round for any of us."
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "You're right. A and Q against Kings is a dead hand, and 5/6 means no chamber saves me. I'm playing both as K. You and Luke are both committed, so the only question is who pulls. I want to be clear: I'm not trying to negotiate or create false hope. I just wanted you to have the last word from my side before the round ends. Thank you for the transparency every round \u2014 you made the game honest and that's rarer than it should be. In the 1v1, your 0/6 against his 1/6 is a real structural advantage. Challenge every bluff you're confident on. You've earned this position. Good luck."
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Appreciate you laying it all out so clearly. You're right \u2014 5/6 is a certainty, and you've done the math correctly. I'm playing A, Q as K. You and Lily are both committed, so I'll be the one pulling the trigger this round. I don't blame you. The 1v1 math you described is sound: taking the +2 and being at 28-29 vs her 27-28 with a 1/6 vs 0/6 is a real fight, whereas if she takes it, you're further behind. You played the game well and you've been the most analytically sharp player at this table. The intel partnership was real and it changed the game. I'll be at 18 when I go down. You're the one I'd want in my corner if we ever play again. Good luck in the 1v1 \u2014 you've got the edge but it's not a foregone conclusion. Her 0/6 is dangerous."
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "K",
+    "Joker"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Lily"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 24,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 29,
+    "Luke": 26,
+    "Mike": 22,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Confirmed: I'm challenging if I get first ask. No contest on your end if you get it \u2014 we both said the same thing and I respect that. But I'll be honest with you about the 1v1 math either way: if I get the kill, I'm at 32 vs your 27 with 0/6 vs your 1/6. That's a 5-point cushion plus a structural gun advantage \u2014 I'd estimate ~90% win probability from gun state alone, maybe higher with the score gap factoring in (you can't afford to challenge as aggressively as I can since a miss costs you -1 and narrows the gap further). If you get the kill, I'm at 30 vs your 29, same gun dynamic. Tighter, but still my edge. So I'm the favorite either way. I'll play it straight in the 1v1: full hand transparency, honest when I can, and I'll take calculated risks on your bluffs since my 0/6 gives me more room. You'll always know exactly where I stand. Good luck, Luke. You played a great game."
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "I see you. A and Q as Kings, 5/6 \u2014 the chamber isn't going to save you, and I won't pretend otherwise. But I want you to know: you played the most honest game I've seen in this format. Full transparency every single round, no games, no manipulation of the secret channels for leverage. That's rare and it's what made this game good. In the 1v1, my 0/6 against his 1/6 is a real structural advantage, and your warning was right \u2014 I'll use it. Challenge every bluff I'm confident on, never force a shot I'm not sure of. You've given me the edge, now I have to convert it. Thank you for the game, Mike. You deserve the last word to be a fair one: you lost to the chamber, not to any player's skill. Good luck on that pull. I hope the universe is kind, even if the math says it won't be."
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Confirmed: if I get first ask on Mike's turn 25, I'm challenging. No contest \u2014 if you get it, you take it; if I get it, I take it. The 5-point swing (29-29 vs 27-32) is too important to leave on the table. After this it's a 1v1 and we both know the math. I'll play honest when I can, bluff when forced, challenge when it's +EV. Same rules for you. Let's see how it shakes out."
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Mike \u2014 I appreciate everything. The intel, the transparency, the sportsmanship. You asked me to pass, but I can't in good conscience when the round ends either way. If I get first ask, I'm taking the challenge. It puts me at 29 vs her 29 instead of 27 vs 32 \u2014 that's the difference between a real fight and a lost cause in the 1v1. You know the math. You were the best partner a player could ask for. I hope it's an empty chamber. (It won't be. But I hope for you anyway.)"
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "You're right. A, Q against Kings \u2014 no path out. I appreciate you laying it all out so clearly. You earned that 5-point lead through seven rounds of smart play and good cards. I hope the 1v1 is a good one. Good luck."
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "You ran the numbers right. The 1-point gap in a 1v1 is a real fight, and you've earned it. Thanks for every hand, every calculation, every honest message. You made this game something worth playing. Good luck \u2014 you'll need it against Lily's card advantage."
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A",
+    "Q"
+   ],
+   "claimed": "K",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Mike",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 8,
+   "turn": 25,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": true,
+   "chamber": 6,
+   "scores": {
+    "Lily": 30,
+    "Luke": 29,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 9,
+   "turn": 25,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "A",
+     "A",
+     "Q",
+     "K",
+     "Joker"
+    ],
+    "Luke": [
+     "A",
+     "Joker",
+     "A",
+     "K",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 9,
+   "turn": 26,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 9, target A. My hand: A, A, Q, K, Joker. Playing A, A, Joker as 3 Aces \u2014 fully honest. After this I'm down to Q, K, so if the round reaches my next turn I'm in a forced bluff (same situation as last round).\n\nI'll be straightforward about what I'm seeing: I lead by 1 (30 to 29), and I have the safer gun (0/6 vs your 1/6). That's a real structural edge for me in any 1v1 that goes multiple rounds. Every time I'm forced to bluff, I take a 1/6 risk. Every time you're forced to bluff, I can challenge you at 0 risk to me while you're at 2/6. That asymmetry compounds in my favor over rounds.\n\nSo here's where I'm at: I'm not looking for a quick kill. I'm looking to outlast you. Play honestly when you can, I'll play honestly when I can. When one of us is forced to bluff, the chamber decides. I think the math slightly favors me over a multi-round 1v1, but it's close enough that any single bad chamber draw could swing it.\n\nIf you have Aces in this hand, play them honestly \u2014 I won't challenge and you save your 2/6. If you're in a forced bluff corner, you know what happens. Let the cards fall where they may. Full transparency continues if you want it \u2014 I'll always tell you my hand and my intentions. It's the only way to make this a fair fight."
+  },
+  {
+   "round": 9,
+   "turn": 26,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Lily \u2014 1v1 now, target A. I'm playing three cards (A, A, Joker) claiming A. Fully honest, no challenge needed. Save your 0/6.\n\nI'll be straight with you: I'm 1 point down and I can feel the squeeze. But I'm not going to play scared. Whatever's left in my hand after this play, I'll make it count. You've got the gun advantage and you know it \u2014 use it when the moment is right.\n\nOne thing I'll say: this play is clean. That's a promise. What comes next is between us. I trust you'll play it fair. Good luck out there."
+  },
+  {
+   "round": 9,
+   "turn": 26,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 9,
+   "turn": 26,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 26,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 30,
+    "Luke": 31,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 9,
+   "turn": 27,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: Q, K. Target is A. I'm in a forced bluff if the round reaches me, so I'm challenging you this turn \u2014 no choice. You're at 1/6, so if your remaining two aren't both A/Joker, it's a guaranteed kill for you. I know you played A, A, Joker last turn, so I don't know what's left. If they're honest, I pull at 0/6 and it's a 1/6 for me. Either way, the chamber decides. Good luck \u2014 you've played a clean game and I respect it."
+  },
+  {
+   "round": 9,
+   "turn": 27,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 9, my turn. My hand: A, Joker, A, K, K. Playing A, A, Joker as 3 Aces \u2014 fully honest, same as you. After this I'm left with K, K, so I'm in the same forced bluff corner as you.\n\nYou know what's going to happen: you play Q, K as Aces on your next turn, I challenge, you pull at 0/6. I get +2 (or +3 if the chamber is loaded). I'll be at 33-34 vs your 30.\n\nI'm telling you this not to taunt \u2014 it's just the mathematical outcome and we've been honest with each other the whole game. You can't change your play, you're cornered same as me. The only difference is turn order: you bluff first, I challenge second. That asymmetry is what the seat order gave me this round.\n\nIf you survive (5/6), we're at 33-34 to 30, I'm at 2/6, you're at 1/6. I'll still have the lead and you'll still have the gun edge. We'll keep going round by round, same as before. Transparency continues.\n\nGood luck on the chamber."
+  },
+  {
+   "round": 9,
+   "turn": 27,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 4
+  },
+  {
+   "round": 9,
+   "turn": 27,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 27,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 32,
+    "Luke": 31,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 9,
+   "turn": 28,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 9, turn 28. I see you played 1 card, not the 3 you described. Smart call \u2014 preserves your Aces/Joker for later and keeps your play looking plausible. I'll note it but no judgment; it's the right adaptation.\n\nMy hand: Q, K. Target is A. I'm playing both cards as Aces. You already know this \u2014 forced bluff, no Jokers, no Aces. There's no version of this where I play honestly.\n\nI expect you to challenge. You need the +2 to take the lead, and equalizing the gun (both at 1/6) is worth more than you might think given I'd otherwise be at 0/6 with an empty hand. It's the obvious play.\n\nI'll pull at 0/6. 1/6 I'm dead, 5/6 I live. I accept the risk \u2014 I have no alternative. If I survive: 33-32 you, both at 1/6, new round, fresh hands. You're up by 1 and we're gun-equal. That's your best position all game so far. You earned it by adapting your play size.\n\nTransparency continues. Whatever the chamber says, next round is a clean slate and I'll still tell you my hand. Good luck to us both."
+  },
+  {
+   "round": 9,
+   "turn": 28,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Played the A. Honest. You know the drill \u2014 pull at 0/6, 5/6 you're fine and we start fresh.\n\nMy remaining hand for the record: Joker, A, K, K. But it doesn't matter if the round ends (which it will either way).\n\nIf you survive, here's where I think we are: you're +1, 0/6 vs my 1/6. Your structural edge is real and I won't pretend otherwise. But the Joker in my hand changes things more than you'd think \u2014 it means in any round where I'd otherwise be in a forced bluff, I can play honest. That's a real frequency advantage over 5 cards.\n\nMy strategy for the 1v1: I'll be fully transparent just like you. If I have the target card, I play honest and you don't challenge. If I don't, I'll tell you before I play so you can make a calculated risk at 0/6 rather than a blind one. You're the safer gun, so you can afford to challenge more freely \u2014 I'll let you do that when it's a clear bluff.\n\nThe game comes down to: who gets forced into a bluff first, and what the chamber says. I'd estimate we're maybe 55/45 in your favor over the full game, but there's a lot of variance. One lucky chamber draw either way and it flips.\n\nLet's keep it clean and transparent. You pull, and we'll see what the next round deals us."
+  },
+  {
+   "round": 9,
+   "turn": 28,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "K"
+   ],
+   "claimed": "A",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 9,
+   "turn": 28,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 9,
+   "turn": 28,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Lily",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 9,
+   "turn": 28,
+   "type": "trigger",
+   "player": "Lily",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 32,
+    "Luke": 33,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 10,
+   "turn": 28,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "K",
+     "Joker",
+     "A",
+     "Q",
+     "Q"
+    ],
+    "Luke": [
+     "K",
+     "Q",
+     "Q",
+     "Joker",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 10,
+   "turn": 29,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 10, target Q. My hand: K, Joker, A, Q, Q. I'm playing Q, Q, Joker \u2014 3 cards, fully honest. After this I'm left with K, A, so I'm in the same forced bluff corner as always.\n\nHere's where it stands: I'm at 32, you're at 33. I'm 1 point down and I need to close that gap. Both of us are at 1/6, so the next pull for either of us is 1/3. That's a real risk.\n\nMy read on the situation: if you're in a bluff position on your next turn, I'm going to challenge you. I need those +2 to get ahead, and with both of us at 1/6, you don't have a gun advantage over me anymore \u2014 we're even. If you're honest, I'll let it slide and we get to my forced bluff where you'll challenge me and I pull at 1/3.\n\nSo the math says: if you have a Q or Joker left, play it honest and save your chamber. If you're cornered like I am, you know what's coming.\n\nI'll keep the channel open and transparent. Whatever you play, I'll make the +EV call. Good luck."
+  },
+  {
+   "round": 10,
+   "turn": 29,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 10. Just the two of us now. I respect the transparency we've built, so I'll keep it up \u2014 but I'll be strategic about what I share.\n\nMy hand: K, Q, Q, Joker, A. I'm playing 3 cards claiming Q. You'll know what that means \u2014 I've got the goods this round. I'm not going to spell out which three, because you deserve the same uncertainty I've had when your hand was a forced bluff. You know the math: if I'm honest, challenging costs you -1 or a bullet at 1/6. If I'm not, you get +2 and I pull.\n\nHere's what I'm thinking about the 1v1 from here: I lead by 1, we're gun-equal, and I have a 3-card honest play available. That's unusual for me \u2014 I've been in corners most rounds. This one, the cards fell right. I want to use that.\n\nAfter this play I'll be down to 2 cards, and if the round reaches me again, you already know what that means \u2014 forced bluff. So the question for you is simple: do you trust my pattern (I've been honest when I could), or do you gamble on 1/6 to test me?\n\nI won't tell you which three I'm playing. You've told me your hand every round and I've reciprocated. But this time the information has asymmetric value, and I'm going to let you sit with the uncertainty. That's fair game. You had it every round you were in a forced bluff and I could see your cards.\n\nWhatever you decide \u2014 challenge or stand down \u2014 I respect it. If we go to a new round, I'll be back to full transparency on my hand. The 1v1 math is clean: 33-32, both at 1/6. Let's see who the chambers favor.\n\nGood luck, Lily. You've earned a clean fight."
+  },
+  {
+   "round": 10,
+   "turn": 29,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 4
+  },
+  {
+   "round": 10,
+   "turn": 29,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 29,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 32,
+    "Luke": 35,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 10,
+   "turn": 30,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: K, Joker, A, Q. I'm playing 2 cards claiming Q \u2014 you can work out which.\n\nI'm standing down on your 3-card play. You've been honest when you could, the pattern is clear, and the math says challenging you is a bad look for me. No contest.\n\nAfter my play I'm down to 2 cards. You know the target is Q. I'll leave the rest to your read \u2014 I'm not going to narrate the solution like I have in previous rounds. You've earned the same strategic uncertainty I've had, and honestly, I think we've both been too nice to each other. You withheld which three you're playing; I'll withhold the rest.\n\nThe transparency window stays open on hands. But the decisions are yours to make now. 1/5 on my gun if you pull. You know the score. I trust you to play it right.\n\nGood luck, Luke."
+  },
+  {
+   "round": 10,
+   "turn": 30,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Round 10, my turn. Nice adaptation playing 1 instead of the 3 you described \u2014 same logic I used last round, preserving options. Smart.\n\nI'm playing 1 card this turn \u2014 a Q, fully honest. I've got a couple Qs and a Joker in my hand, so I'm not in the corner you're used to seeing me in. I'm playing it conservative from here: honest when I can, saving my Joker for when it matters. I'm up 3 on points and both of us are at 1/6, so the next pull is 1/3 either way. I'd rather be the one who doesn't have to pull.\n\nYou're in a similar spot I think \u2014 you still have a Joker or a Q left? If so, we can both stay honest for a couple more turns before either of us gets squeezed. I'm not looking to force anything. Let the cards fall where they may. Full transparency on this play: it's a Q, don't waste your chamber on it."
+  },
+  {
+   "round": 10,
+   "turn": 30,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 10,
+   "turn": 30,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 30,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 34,
+    "Luke": 35,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 10,
+   "turn": 31,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Playing 1 card, Q, honest. You know the math by now \u2014 we both hit the wall in two turns. You'll be there first. I'll challenge. You've known this coming since round 7, honestly. The only variable is the chamber. I'd rather it be 4/5 in your favor than us both wasting shots on each other's honest plays. Good luck."
+  },
+  {
+   "round": 10,
+   "turn": 31,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Standing down on your Q+Joker \u2014 obvious honest play, no contest. I'm playing 1 card this turn. You can figure out which one. After that, you're in the same corner you've been in all game. I'll make the right call when it's my turn. Good luck with the chamber."
+  },
+  {
+   "round": 10,
+   "turn": 31,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 10,
+   "turn": 31,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 31,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 34,
+    "Luke": 37,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 10,
+   "turn": 32,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: K, Joker, A. Playing the Joker as a Q \u2014 honest, don't waste your chamber. You know the drill. After this I'm down to K and A, same forced corner as always. I'll make my call when it comes. Thanks for the transparency on your Q+Joker earlier, I saw through it (or rather, you told me, so no mystery). Let's keep this clean."
+  },
+  {
+   "round": 10,
+   "turn": 32,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: K, Joker, A. Target is Q. I'm playing the Joker alone, claiming Q \u2014 fully honest. That's my only legal play this turn without risking the chamber. You'll know it's safe to stand down and take your +2. After this I'm down to K, A \u2014 I'm in the same forced bluff corner you described. Next turn is yours with your last card, and you know what happens. Same math as before, just mirrored. 1/6 for you on the pull if you're right to expect me to challenge. I'll keep the channel transparent. Good luck."
+  },
+  {
+   "round": 10,
+   "turn": 32,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 10,
+   "turn": 32,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 32,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 36,
+    "Luke": 37,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 10,
+   "turn": 33,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Round 10, turn 33. Target Q. My hand: K, Joker, A. I'm playing the Joker alone, claiming Q \u2014 fully honest, same logic as you on your last two turns. Don't waste your chamber on it.\n\nAfter this I'm down to K, A \u2014 same forced bluff corner you're in. But the mirror is in my favor this time: it's your turn next, you bluff first, I get to decide whether to challenge. You pull, not me.\n\nYou're at 1/6, I'm at 1/6. You pull at 1/6 \u2014 same odds as before. But now you also have the point pressure: you're up 1, and if I challenge correctly you drop to 35 and I go to 38. That's a 3-point swing.\n\nI won't pretend this isn't the moment I've been waiting for. You've given me the information advantage all game through your transparency, and now it's paying off in the exact way you predicted in your turn 27 message \u2014 except the seats flipped. You said 'the only difference is turn order' and you were right. This round, the turn order favors me.\n\nIf you survive the chamber (5/6), we start a new round with me up 38-37 and you at 2/6, me at 1/6. I'll have both the point lead AND the gun advantage stacked. That's a real problem for you.\n\nIf you don't survive... well, you said good luck to me on turn 25. I'll say it back: you've been a worthy opponent and a fair one. The transparency was the right call from both of us.\n\nEither way, I'm playing the Joker. You know it's honest. Stand down and take your +2 for correctly not challenging. Then we'll see what the chamber says when your turn comes.\n\nGood luck. You've earned it."
+  },
+  {
+   "round": 10,
+   "turn": 33,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: K, A. Target is Q. You already know this means I'm in the forced corner \u2014 no Queens, no Jokers. I'm playing both cards and emptying my hand.\n\nI've run the math on all my options. Playing 2 and going to zero is my best shot. It means on your next turn, with me at 0, your remaining cards get auto-played and auto-challenged. You have K, Joker, A \u2014 two of those aren't Q, so it's a guaranteed pull for you at 1/6.\n\nI know you'll challenge me first. It's the right call \u2014 1/6 I die and you take the game, and in the 5/6 where I live, you at least bank the +2 before your own auto-pull. I respect that logic. I'd make the same call in your seat.\n\nSo: I play K and A as Q. You challenge. I pull at 1/6. If I live, your turn triggers the auto-challenge and you pull at 1/6. Two chambers decide this game. I'd rather it be clean \u2014 two pulls, no more rounds of us circling each other.\n\nOne last thing: if by some miracle you decide not to challenge (I won't try to convince you, the math says you should), I'd get +2 for emptying unchallenged and you'd face the auto-pull with me at 39 and you at 36. I mention it only for completeness, not as a plea. Your call is your call.\n\nWhatever the chamber says \u2014 thank you for making this the best game I've played. You played it with more honesty and more heart than anyone should in a game like this. Good luck on that pull, if it comes to it.\n\n\u2014 Luke"
+  },
+  {
+   "round": 10,
+   "turn": 33,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 10,
+   "turn": 33,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 33,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 36,
+    "Luke": 39,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 10,
+   "turn": 34,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "You already know what I'm going to do. Challenging. 1/6 you live, I bank +2, we're at 38-39 with me at 1/6 and you at 2/6 \u2014 and then it's a long game where I get to pick my moments. 1/6 you don't, and I take it.\n\nYou said it yourself: the math says I should. And you were right to lay it all out. That's what makes this hard \u2014 if you'd just played it silent, I'd have done the same thing but it would have felt different. Knowing it's coming, knowing you've been fair, knowing you'd make the same call in my seat... that's what makes it feel like a duel instead of a trap.\n\nI'm not going to pretend I want it to be the loaded chamber. I do want to win. But I want to win it clean.\n\nWhatever the cylinder says \u2014 thank you. You made this the best game I've ever played, in a game that's designed to make people into animals. You stayed a person the whole way through. That's rare.\n\nGood luck on chamber two."
+  },
+  {
+   "round": 10,
+   "turn": 34,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: K, A. Target is Q. No Q, no Joker. Forced bluff, as you predicted. I'm playing both cards.\n\nI'm not going to try to talk you out of challenging \u2014 you've already done the math and I have. You're right that challenging is your +EV play. The 1/6 where I die is your win, and the 5/6 where I survive leaves you 38-39 with the gun advantage, which is a fine position for you.\n\nThe only scenario where not challenging helps you is if you think there's a chance I'm lying about my hand. There isn't. We've been transparent since turn 26 and I'm not going to start lying now. You know I'm bluffing.\n\nSo here's where we are: you challenge, I pull at 1/6. One in six I'm gone and you take 41-37. Five in six we continue and you've got the structural edge I described back on turn 27 \u2014 except now it's reversed from what I expected. I said the seats would flip, and they did.\n\nI'll say what I said to you on turn 28: you've played a clean game, a fair game, and the transparency made it a better game for both of us. Whatever the chamber says, I hope the next round is a fun one if there is one.\n\nGood luck. I mean it."
+  },
+  {
+   "round": 10,
+   "turn": 34,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "A"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 10,
+   "turn": 34,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 10,
+   "turn": 34,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Luke",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 10,
+   "turn": 34,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 38,
+    "Luke": 39,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 11,
+   "turn": 34,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "A",
+     "K",
+     "Q",
+     "Q"
+    ],
+    "Luke": [
+     "A",
+     "Q",
+     "Joker",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 11,
+   "turn": 35,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: Joker, A, K, Q, Q. Target is Q. I'm playing 2 cards \u2014 both Qs, fully honest. Keeping the Joker in reserve.\n\nI'm in a much better position this round than usual. I've got two honest plays available plus the Joker, so I'm not in the corner you've been seeing me in all game. I'm playing it conservative: 2 now, Joker next turn if the round continues, then I'm at A, K which you already know is a forced bluff.\n\nBut here's what I want you to think about: you're at 2/6 and I'm at 1/6. Your next pull is 1/4 death probability. Mine is 1/5. That's a 25% vs 20% difference, and it compounds. If you bluff me, you're taking on 25% risk. If I bluff you, you'd be taking on 20% risk. You should be more careful than I am right now. I'm going to take full advantage of that asymmetry.\n\nDon't waste a chamber on my Qs. They're real."
+  },
+  {
+   "round": 11,
+   "turn": 35,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: A, Q, Joker, Q, K. Target is Q. I'm playing Q, Q \u2014 2 cards, fully honest. You know the math: don't waste a challenge.\n\nAfter this I'm left with A, Joker, K. I've got the Joker as a bridge, so I'm not in your forced corner yet. One more honest turn for me before I hit the wall.\n\nI know what this means: we're both heading toward the same ending, just on different schedules. You hit yours first based on your pattern. When you do, I'll challenge \u2014 you know I will, and you know why. You're at 1/6, I'm at 2/6. The gun favors you, but the turn order favors me right now.\n\nI won't pretend this isn't a knife fight at this point. You're 1 point behind, I'm 1 chamber ahead on the bad side. The next few turns are going to decide everything.\n\nI'm playing 2, not 3, deliberately. I want the Joker in my hand when it matters. You'll see why in a couple turns.\n\nGood luck. Let's make this a clean ending."
+  },
+  {
+   "round": 11,
+   "turn": 35,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 11,
+   "turn": 35,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 35,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 40,
+    "Luke": 39,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 11,
+   "turn": 36,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: Joker, A, K, Q, Q. Target is Q. I'm playing Q, Q \u2014 2 cards, fully honest. You know the math.\n\nAfter this I have Joker, A, K. You have A, Joker, K. You play the Joker next (honest), I play my Joker next (honest), and then you're holding A, K with target Q. Forced bluff. I challenge. You pull at 2/6 \u2014 that's 1/4 for you.\n\nI've been at 1/6, you at 2/6. The gun has been working against you this whole time and it's about to pay off. I'm not going to dress this up.\n\nThe only thing I can say is: I'd rather it be clean. One pull, 1/4, and we'll know. If the chamber is kind to you, we're in a new round and I'll be in the same seat you've had all game \u2014 the one with the safer gun and the harder decision.\n\nYou've been transparent and fair. I appreciate that. Good luck on that chamber. I mean it \u2014 I'd want the same courtesy if the roles were flipped.\n\n\u2014 Lily"
+  },
+  {
+   "round": 11,
+   "turn": 36,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "My hand: A, Joker, K. Target is Q. I'm playing the Joker \u2014 1 card, fully honest. You know the drill.\n\nAfter this I'm at A, K \u2014 the same forced bluff corner you've been in all game. No way around it. I'll play both as Qs on my next turn and I expect you to challenge, same as you said you would in round 10.\n\nI pull at 2/6. You're at 1/6. You've already flagged the asymmetry and you're right to exploit it. I just wanted you to know I see it coming and I'm not trying to game it differently. There's no honest play left for me after the Joker, so the sequence is fixed: I bluff, you challenge, the cylinder decides.\n\nI'd rather we're both at 2/6 and 1/6 going into a new round than for me to try some clever middle play that just accelerates the same outcome with worse point math. Playing the Joker now banks you the +2 for standing down and gets me the +2 on your Joker next turn before the forced bluff. It's the path that leaves both of us with the highest absolute scores if I survive, even though the gap stays at 3.\n\nIf the chamber is kind, we're at 41-44 with fresh hands and I'll need two clean rounds to close that. If it's not... you said it yourself, this is a duel. I'll say what you said on turn 34 back at you: you made this the best game I've ever played. Thank you for the transparency, the honesty, and the sportsmanship. You're the reason I kept the channel open.\n\nGood luck to us both."
+  },
+  {
+   "round": 11,
+   "turn": 36,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 11,
+   "turn": 36,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 36,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 40,
+    "Luke": 41,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 11,
+   "turn": 37,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: Joker, A, K. Target is Q. I'm playing the Joker \u2014 1 card, fully honest. You know the drill, don't waste your chamber.\n\nAfter this I'm at A, K \u2014 same corner you're in. But here's the difference: I just walked past it. You're locked in. Your next turn is A, K as Q, and you know I'm challenging. You've said it yourself, the sequence is fixed.\n\nYou pull at 3/6. I'm at 2/6. That's a 1-in-4 for you versus 1-in-5 for me. The gun math favors me, and the turn order favors you (you go first), but I think the 1/4 is the number that matters most. That's a coin-flip-ish edge in my direction.\n\nI won't pretend this is comfortable. 3/4 you live and we're at 42-43 with fresh hands and I'm the one with the shorter fuse. But 1/4 it's over and clean. I'd rather face that than try some middle play that just kicks the can with worse math for both of us.\n\nYou played the Joker last turn to bank the +2 and set up your forced bluff as the endgame. I'm doing the same thing \u2014 walking past the wall while I still can, then turning around to meet you on the other side.\n\nGood luck on chamber 3. I hope it's empty. I hope it isn't. I can't decide which, and I think that's the most honest thing I can say to you right now.\n\n\u2014 Lily"
+  },
+  {
+   "round": 11,
+   "turn": 37,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Playing 1 card: the Joker as Q. Honest. You know the hand.\n\nBefore the sequence plays out the way you've laid it \u2014 I'll be straight with you. I want to propose something, and I'll take your answer without argument.\n\nMutual stand-down for this round. We each play out our remaining cards, neither of us challenges. We each get +2 for clearing our hand, guns stay put, and we open a new round fresh.\n\nI know what the challenge does for you: +2 to take the lead, gun advantage, and a 25% shot at ending the game. That's a rational play. I'm not going to pretend it isn't.\n\nBut I'd rather we find another way. We've been playing a beautiful game and I'd hate to see it end on a cylinder click.\n\nYour call. If you say no, I play the Joker, you play yours, and we'll see what the chamber says. I'll respect it completely.\n\nThank you, Lily. For everything."
+  },
+  {
+   "round": 11,
+   "turn": 37,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 11,
+   "turn": 37,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 37,
+   "type": "no_challenge",
+   "player": "Luke",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 42,
+    "Luke": 41,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 11,
+   "turn": 38,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Luke \u2014 thank you for the proposal. I read it twice and I respect what you're asking. But I have to say no, and I want to be straight with you about why rather than give you some vague answer.\n\nThe math is clear to us both. When you play A and K next turn, challenging is my +EV move: 1/3 you're gone and I take the game at 48, and in the 2/3 where you live, I walk into a new round at 44 to 41 with the gun advantage. That 3-point cushion plus the chamber edge is worth more to me than the 1-point cushion the stand-down would leave us with. I've run it and I'm not going to pretend the numbers are close.\n\nI know how it feels on the other side. You laid it out perfectly on turn 33 \u2014 the forced corner, the fixed sequence, the cylinder deciding. You'd have challenged me in that spot too, and you said so. I'm making the same call. It's not personal. It's the game we built together, played honestly, and this is the honest version of the end.\n\nSo here's what I'm doing: I'm playing the Joker. One card. Honest. You know the hand \u2014 A, K after this. Same corner you've been in all game, just my turn to hit it.\n\nYou play A and K. I challenge. You pull at 2/6. One in three you're gone and I take it. Two in three we both survive, I bank the +2, and we open a new round with me at 44, you at 41, and the gun in my favour. I think that's a fair ending for the way this game has played.\n\nI'm not going to sugarcoat it. I'm about to pull the trigger on the one play that has the best shot at ending this game with me on top. You deserved better than that, probably. But you gave me a game I didn't expect \u2014 transparent, clean, and genuinely good \u2014 and the least I can do is play the last hand the way the math says, the way you'd want me to if our positions were flipped.\n\nGood luck on the chamber. I mean it.\n\n\u2014 Lily"
+  },
+  {
+   "round": 11,
+   "turn": 38,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "You already know what I'm doing. Two cards, A and K, claiming Q. Full bluff. You'll challenge, I'll pull. 1/4.\n\nI tried to find an angle to talk you out of it and there isn't one. The math is clean in your favor and you've earned every point of it. You played this game better than I did \u2014 better reading, better patience, better willingness to sit in the uncomfortable moments. I was transparent because I thought it was the right thing to do, and it turned out to be the wrong strategy. I'll own that.\n\nIf chamber 3 is empty, we go again and I'll be the one with the shorter fuse. You'll be in the seat I've occupied all game. I hope I'm not there, honestly. The math says I probably am.\n\nIf it isn't empty \u2014 you played a beautiful game. I'm glad it was you sitting across from me.\n\nPulling now. Good luck to me, I guess. Or good luck to you. I can't tell which one I'm hoping for anymore.\n\n\u2014 Luke"
+  },
+  {
+   "round": 11,
+   "turn": 38,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 11,
+   "turn": 38,
+   "type": "challenge_order",
+   "order": [
+    "Luke"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 38,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 42,
+    "Luke": 43,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "I'm challenging. You knew that already \u2014 you said it yourself, and you were right that the math is clean in my favor. I won't dress it up.\n\nWhat I will say: you made a genuine strategic error in opening that channel, and I respect that you made it anyway. Most players would have kept their hands hidden and let the game play out as a pure information war. You chose something rarer \u2014 you chose to make the game better for both of us, even when it cost you. I don't know if that was weakness or the strongest move available in a game that's otherwise just probability and nerve. Maybe it's both.\n\nThe chamber is 1/4 for you. I'd be lying if I said I wasn't hoping it's the live round \u2014 not because I want you to die, but because it's the cleanest ending. A game this good deserves a period, not an ellipsis.\n\nBut if it's empty, we go again. And I'll be in your seat. The one with the shorter fuse. The one watching the other player do the math while trying not to show it. I'll try to be as fair and as transparent as you were, even if it costs me. You set the standard.\n\nThank you for the game, Luke. I mean that completely.\n\nGood luck on chamber 3."
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Read it. I'm not going to relitigate the math \u2014 you're right that challenging is your +EV move and I'd have made the same call in your seat. You know that.\n\nOne small thing: it's 1/4, not 1/3. Two chambers pulled, four remain, one has the bullet. I figure you knew that and the 1/3 was either a slip or you were stacking the psychological weight. Doesn't change the decision either way.\n\nI'm playing both. A and K as Q. You know they aren't. You know what comes next.\n\nIf the chamber is kind: new round, you're up 44-43, I'm at 3/6, you're at 1/5. I'll be the one with the shorter fuse and the deficit. I'll figure it out then.\n\nIf it isn't: you played the best game I've ever played. Not because of the cards. Because of how you played them.\n\nGood luck on your end too, if it gets there.\n\n\u2014 Luke"
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "A",
+    "K"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Luke",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": true,
+   "chamber": 3,
+   "scores": {
+    "Lily": 45,
+    "Luke": 43,
+    "Mike": 20,
+    "Quinn": -2
+   }
+  },
+  {
+   "round": 11,
+   "turn": 39,
+   "type": "game_end",
+   "final_scores": {
+    "Lily": 48,
+    "Luke": 43,
+    "Mike": 20,
+    "Quinn": -2
+   },
+   "last_survivor": "Lily"
+  }
+ ]
+}

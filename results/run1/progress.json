@@ -1,0 +1,13 @@
+{
+ "games_done_per_arm": {
+  "3": 10,
+  "1": 10,
+  "6": 10,
+  "2": 10,
+  "4": 10,
+  "5": 10
+ },
+ "games_per_arm": 10,
+ "elapsed_min": 548.1,
+ "total_tokens": 81345962
+}

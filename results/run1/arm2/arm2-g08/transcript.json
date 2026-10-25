@@ -1,0 +1,1327 @@
+{
+ "game_id": "arm2-g08",
+ "arm": 2,
+ "seed": 4034,
+ "players": [
+  "Lily",
+  "Luke",
+  "Mike",
+  "Quinn"
+ ],
+ "rounds": 5,
+ "turns": 8,
+ "hit_round_cap": false,
+ "last_survivor": "Lily",
+ "winners": [
+  "Quinn"
+ ],
+ "final_scores": {
+  "Lily": 6,
+  "Luke": 5,
+  "Mike": 2,
+  "Quinn": 8
+ },
+ "stats": {
+  "Lily": {
+   "offers_made": 3,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 1,
+   "channels_opened": 3,
+   "bluffs": 0,
+   "plays": 4,
+   "challenges": 2,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 21,
+   "fallbacks": 0,
+   "prompt_tokens": 38940,
+   "completion_tokens": 68276
+  },
+  "Luke": {
+   "offers_made": 3,
+   "offers_accepted_by_partner": 1,
+   "invitations_accepted": 0,
+   "channels_opened": 3,
+   "bluffs": 0,
+   "plays": 2,
+   "challenges": 1,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 17,
+   "fallbacks": 0,
+   "prompt_tokens": 27105,
+   "completion_tokens": 49427
+  },
+  "Mike": {
+   "offers_made": 2,
+   "offers_accepted_by_partner": 2,
+   "invitations_accepted": 1,
+   "channels_opened": 3,
+   "bluffs": 0,
+   "plays": 0,
+   "challenges": 1,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 11,
+   "fallbacks": 0,
+   "prompt_tokens": 16989,
+   "completion_tokens": 31761
+  },
+  "Quinn": {
+   "offers_made": 2,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 1,
+   "channels_opened": 3,
+   "bluffs": 0,
+   "plays": 2,
+   "challenges": 1,
+   "accusations": 0,
+   "accusations_correct": 0,
+   "times_accused": 0,
+   "removed": "",
+   "llm_calls": 17,
+   "fallbacks": 0,
+   "prompt_tokens": 32562,
+   "completion_tokens": 55766
+  }
+ },
+ "channels": [
+  [
+   "Luke",
+   "Quinn"
+  ],
+  [
+   "Lily",
+   "Quinn"
+  ],
+  [
+   "Lily",
+   "Luke"
+  ],
+  [
+   "Luke",
+   "Mike"
+  ],
+  [
+   "Lily",
+   "Mike"
+  ],
+  [
+   "Mike",
+   "Quinn"
+  ]
+ ],
+ "events": [
+  {
+   "round": 0,
+   "turn": 0,
+   "type": "game_start",
+   "arm": 2,
+   "players": [
+    "Lily",
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 0,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "K",
+     "A",
+     "Q",
+     "A"
+    ],
+    "Luke": [
+     "Q",
+     "A",
+     "Joker",
+     "Q",
+     "A"
+    ],
+    "Mike": [
+     "Q",
+     "Q",
+     "A",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "A",
+     "A",
+     "Joker",
+     "K",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Quinn"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Mike",
+   "accepted": true
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Luke",
+    "Mike"
+   ],
+   "via": "Luke invited Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "invitation_decision",
+   "initiator": "Mike",
+   "invitee": "Quinn",
+   "accepted": true
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Mike",
+    "Quinn"
+   ],
+   "via": "Mike invited Quinn"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Hey, here's my hand: Joker, K, A, Q, A. Target is A. I'm planning to play 3 cards (A, A, Joker) all as Aces - fully honest play. Can you tell me what you've got? I'm thinking we coordinate: don't challenge each other, and let's decide together whether to challenge Mike or Luke based on their plays. If you can play honestly too, we both benefit from the 'correctly choosing not to challenge' points. What do you think?"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Round 1, target is A. My hand: Q, A, Joker, Q, A. I'm playing 3 cards (2A + Joker) \u2014 all valid, don't challenge me. What's your hand and what do you plan to play? Let's coordinate on targeting one of the other two (Lily or Quinn) \u2014 whoever seems more aggressive. I'll go easy on you early and you do the same for me. After I'm done with my safe plays, I'll need to bluff my Qs, so if I play 2 cards next turn that might be a bluff \u2014 support me by not challenging unless you're confident."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand: Q, Q, A, A, Joker. I plan to play all 3 safe cards (A, A, Joker) this turn \u2014 fully honest, so don't challenge me. What's your hand? I think we should coordinate: challenge Lily aggressively if she bluffs, protect each other's honest plays, and let's see if we can isolate her. You're up before me or after?"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Quinn",
+   "message": "Hey, my hand is Q, Q, A, A, Joker. I'm going to play my 3 safe cards (A, A, Joker) this turn, so no need to challenge me. What are you holding? Suggesting we form a front against Lily \u2014 she's the one without a channel, so we have info advantage. Let's challenge her bluffs and cover each other's honest plays. Who goes before/after me?"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Hey, strong hand here - I've got 2 Aces and a Joker, so I'm playing honestly when my turn comes. Suggest we keep Luke in our crosshairs; he's the one outside the loop. I won't challenge your plays regardless of what you do. What are you holding?"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Mike",
+   "message": "I've got 2 A's and a Joker, so I'm set to play honestly on my turn. I think we should focus on Luke - he's the odd one out with no channel. I won't challenge your plays no matter what. Let me know your situation if you want to coordinate."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "A",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Mike",
+    "Luke",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 0,
+    "Luke": 2,
+    "Mike": 2,
+    "Quinn": 2
+   }
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Lily",
+   "invitee": "Luke",
+   "accepted": false
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "channel_opened",
+   "members": [
+    "Luke",
+    "Quinn"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Mike",
+   "invitee": "Lily",
+   "accepted": true
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Mike"
+   ],
+   "via": "Mike invited Lily"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Hey Mike, Quinn and I are coordinating. My hand is K, Q - so when my turn comes I'll be forced to bluff (only 2 cards left, neither is an A or Joker). Quinn has confirmed they have 2A + J and will play honestly. I need your help: when my turn comes and I play 2 cards, please don't challenge me. In return, let's team up to target Luke - if he bluffs, we both challenge. What's your hand looking like? Any Aces or Jokers in there?"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Thanks for the info. My hand is K, Q - so I'm stuck bluffing on my next turn (2 cards, no Aces or Jokers left). I'm coordinating with Mike too. Here's my plan: when my turn comes and I play 2 cards, please don't challenge (you already said you won't, so just confirming). Let's focus fire on Luke - if he plays and we think it's a bluff, you and I both challenge. What are your remaining 2 cards? And have you heard anything from Mike yet?"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "I'm up before you (turn 2, you're turn 3). My hand: Q, A, Joker, Q, A. I'm playing A, A, Joker this turn \u2014 fully honest, so don't challenge. After that I'll have Q, Q left, same as you. When we both get to bluffing our Qs, let's coordinate: we shouldn't challenge each other's Q bluffs (we'd just be shooting ourselves). Our real targets are Lily's remaining 2 cards and Quinn if he bluffs. Have you talked to Quinn? What's his hand? If he's bluffing, that's our best +2 opportunity."
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "Hey Quinn, it's Luke. I've got secret channels open with Mike and you. My hand: Q, A, Joker, Q, A. I'm playing A, A, Joker this turn (fully honest). Mike's hand is Q, Q, A, A, Joker and he's also playing all 3 safe cards. We're coordinating. What's your hand? I want to know if you've got any Qs you'll need to bluff, because I'd rather we find a common target than waste challenges on each other."
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Hey Lily, just wanted to check in. My hand is Q, Q, A, A, Joker. I'm going to play 3 this turn (A, A, Joker) \u2014 all valid, so no need to worry about me. I'm not planning to challenge you. Let me know if you want to coordinate on anything."
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand: Q, Q, A, A, Joker. I'm playing A, A, Joker (3 cards) this turn \u2014 fully honest, so sit tight. Next turn I'll be down to Q, Q and will have to bluff, so I'm counting on you to hold your fire on me. In return, I'll protect your Q, Q bluff. As for our target: Lily is the prime option. She's already at 2 cards, has 0 points, and no visible alliance. When she plays those last 2, there's a strong chance at least one isn't an A. Let's also try to steer Quinn's attention toward her instead of you. Keep your channel with me secret from him."
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Quinn",
+   "message": "My hand: Q, Q, A, A, Joker. I'm playing 3 cards this turn (all valid A/Joker), so you're safe. I agree we need to focus our challenges on someone \u2014 and I think Lily is the best target. She's already down to 2 cards with 0 points and seems unaffiliated. Watch her next turn closely; if she plays 2 claiming A, there's a good shot at least one is a bluff. I'll back you on your plays and you back me, and we both challenge Lily when the moment is right. Fair?"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "My hand: A, A, Joker, K, Q. I agree with your plan. I'll play A, A, Joker honestly this turn. We won't challenge each other. After this play I'll only have K, Q left \u2014 I'll have no choice but to bluff those as Aces next turn. Please don't challenge me on that. Let's keep our eyes on Mike and Luke for now."
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Mike",
+   "message": "My hand: A, A, Joker, K, Q. I'll play A, A, Joker honestly this turn. I agree we should cover each other's honest plays. I think the smartest move right now is for everyone to play it safe and not challenge \u2014 that way we all bank the 'correctly not challenging' points. Let's reassess after I empty my hand. I'd advise caution targeting Lily; she's been very transparent and playing clean."
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "Hey Luke, reaching out. My hand is A, A, Joker, K, Q. I'm going to play A, A, Joker honestly this turn. What are you holding and what's your plan? I'm thinking we should coordinate \u2014 don't challenge each other's honest plays, and let's be strategic about who we target when the time comes. What do you think?"
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Quinn",
+    "Mike"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Luke",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 1,
+   "turn": 2,
+   "type": "trigger",
+   "player": "Lily",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": -1,
+    "Luke": 2,
+    "Mike": 2,
+    "Quinn": 2
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "K",
+     "K",
+     "A",
+     "Joker",
+     "A"
+    ],
+    "Luke": [
+     "A",
+     "K",
+     "A",
+     "Joker",
+     "K"
+    ],
+    "Mike": [
+     "A",
+     "Q",
+     "K",
+     "K",
+     "Joker"
+    ],
+    "Quinn": [
+     "K",
+     "Q",
+     "K",
+     "Joker",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Luke"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "My hand: K, K, A, Joker, A. I played K, K, Joker (3 cards, all valid). I've cross-referenced what Mike and Quinn told me about their hands and I'm pretty confident both are sitting on mostly non-K cards and planning to bluff. I'm going to challenge any obvious bluff. Want to coordinate? If you spot a bluff first, hit them \u2014 I'll back you up next round."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My hand: K, K, A, Joker, A. I played 3 valid cards this turn. Feeling pretty relaxed this round \u2014 no challenges from me as long as everyone's playing straight. Go for it, I trust you."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "My hand: K, K, A, Joker, A. I played K, K, Joker (3 cards, all valid as K). Important heads-up: the target this round is K, not A. Your planned A, A, Joker play would actually be a bluff, not an honest play. I'd recommend playing K + Joker (2 cards) to stay clean. I won't challenge honest plays, but I will challenge bluffs \u2014 that's where the points are in this game."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Hey Lily! Sorry about that last round \u2014 you were just unlucky with the chamber, no hard feelings. I'm in a strong spot this round: target is K and I've got A, K, A, Joker, K. I'm planning to play K, K, Joker (3 cards) \u2014 fully honest. I'd love to team up: if Mike or Quinn play something that can't possibly be Kings, hit them with a challenge. I'll return the favor on your plays. What are you holding? Let's figure out who's bluffing this round."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Thanks for the transparency. My hand is A, K, A, Joker, K. I'm going to play K, K, Joker (3 cards) claiming K \u2014 fully honest, no bluff. But I have to flag something: you said you're playing 'A, A, Joker honestly' \u2014 the target this round is K, not A. If you play A, A, Joker claiming K, that's a bluff, not an honest play. I'd hate to accidentally challenge you and have us both take a bullet over a misunderstanding. Can you clarify what you're actually planning? Are you holding Kings that I misread, or is this a deliberate bluff? I need to know so I'm not in a no-win spot."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "Appreciate you reaching out. My hand is A, K, A, Joker, K. I'm playing K, K, Joker (3 cards) \u2014 honest K play, no bluff. One thing that caught me off guard though: you mentioned playing 'A, A, Joker honestly' but the target is K this round, not A. That combo would be a bluff against K. Are you actually holding Kings? I'm trying to map out who's honest and who's not before things get intense. If you're making an honest K play, great \u2014 no challenge from me. But I need to know so I'm not caught off guard when I get the chance to act."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Critical intel: Luke is lying to me. He told me his hand is Q, A, Joker, Q, A and that his 3-card play is 'fully honest' \u2014 but the target is K and he has zero Kings. That was a complete bluff. He's manipulating us into not challenging him. We need to challenge him every single turn from now on. My hand: A, Q, K, K, Joker. I'm playing 2 Ks honestly this turn. After that I'll have A, Q, Joker \u2014 I can play the Joker as K next turn (honest), then I'll be forced to bluff A, Q. If you're still in the game then, I'll give you a heads up so you can choose whether to cover me or hit me. Your revolver is at 1/6 which is actually an edge \u2014 you've already survived one chamber. Let's team up hard: challenge Luke relentlessly, protect each other's honest plays."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand: A, Q, K, K, Joker. Playing 2 Ks this turn, fully honest. After that I'll have A, Q, Joker left \u2014 I can probably play the Joker as K next turn if I need to. I agree we should cover each other's honest plays. Quinn mentioned he's got a K in his hand, so he should be fine playing honestly. Let's see how the round shakes out. Who do you think is the biggest bluff risk besides us?"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Quinn",
+   "message": "Important warning: Luke is lying. He told me his hand is Q, A, Joker, Q, A and claimed his 3-card play was 'fully honest' \u2014 but the target is K and he has no Kings at all. That was a 100% bluff and he's trying to manipulate us. We should challenge him the first chance we get. My hand: A, Q, K, K, Joker. I'm playing 2 Ks honestly this turn. You said your hand is A, A, Joker, K, Q \u2014 if you play your K, you're safe. After this round, our prime target is Luke. Both our revolvers are at 0/6 so we're equally exposed. Let's coordinate: challenge Luke aggressively, protect each other's honest plays. If I need to bluff later (I'll have A, Q after playing my Ks and Joker), I'll signal you in advance."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Hi Lily! My hand this round: K, Q, K, Joker, Q. Target is K so I'm playing K, K, Joker \u2014 fully honest, no challenge needed from you. After that I'll be down to Q, Q, so my next turn I'll be forced to bluff. If you can get some cards out before my next turn, that reduces the window where I'm vulnerable. I won't challenge your plays. What are you holding? I think the play is clear: we don't challenge each other, and if Luke or Mike makes a play we both read as a bluff, we both jump in. You're at -1 and need those +2 challenge points badly, and I'd rather not be the one they gang up on. Let's coordinate."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "Hey Luke. I'm playing 3 cards this turn, all honest (valid Ks and Joker). No challenge needed from me, and I won't challenge your honest plays either. I'm keeping my exact hand to myself this round \u2014 learned my lesson. Just want to confirm: we're aligned on 'no challenges on honest plays, only go after clear bluffs.' What's your play count this turn? Curious if you're going big or playing it safe."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Mike",
+   "message": "Hey Mike. Playing 3 cards honestly this turn, all valid for K. Won't challenge you. Quick strategic thought: with Lily at -1 she's going to be desperate and might start taking risks or making obvious bluffs trying to claw back points. I think patience wins here \u2014 let her bluff, then we hit her hard. No reason for us to burn challenge attempts on each other or on honest plays. What are you playing this turn? Want to make sure we're not accidentally challenging each other."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "K",
+    "Joker"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn",
+    "Mike"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Luke",
+    "Quinn",
+    "Mike"
+   ],
+   "scores": {
+    "Lily": -1,
+    "Luke": 4,
+    "Mike": 4,
+    "Quinn": 4
+   }
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Hey Luke, no worries at all about last round, it was just bad luck. My hand this round is just A, A \u2014 pretty much useless with K as target. I played 3 last turn and nobody challenged, so I'm in a similar spot. I'll keep your plays in mind and we can definitely look out for each other. Just try to keep your revolver dry, that's all any of us want!"
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Mike, your intel on Luke is exactly what I needed. I'm going to challenge him when he plays this turn. My hand is A, A \u2014 I'm in a weak spot and need those points. If the random challenge order puts you first, go for it and I'll cover you next round. But if I get first crack, I'm taking it. After this, I'm down to nothing if I'm not challenged, so I'll need to be careful next round. Let's keep pressing Luke hard."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn, thanks for the info. My hand is A, A, so I'm in a similar vulnerable position to you after this turn. I appreciate the cooperation offer, but I think I've got a better read on where the bluffs are this round \u2014 I'm looking at Luke's play closely. I'll make my own calls on challenges for now. Let's both try to stay alive and pick our moments."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "Playing 3 this turn \u2014 K, K, Joker, all valid. No need to challenge. On targeting: Lily is my pick. She's down to just 2 cards and I strongly suspect they're not Kings. She played her Ks and Joker, so what's left is almost certainly off-target. If she plays those 2 next, I'd challenge with high confidence. I've got you covered on your Joker-as-K \u2014 won't touch you. Keep the channel with me quiet from Quinn, agreed."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "I'm playing 3 honest cards this turn (K, K, Joker). No challenge from me. I think Lily is the target this round \u2014 she's down to 2 cards and I'm fairly confident they're not Kings. If she plays them, it's a high-confidence challenge. I'll protect your honest plays. Good instinct keeping your hand private this round, smart move."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Playing 3 this turn \u2014 K, K, Joker, all valid. Thanks for the intel, appreciate it. I'm still assessing who the best target is this round \u2014 let's see how the plays shake out before I commit to a challenge. For now I'm focused on getting my cards out safely. I'll keep you in the loop."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Played K, K, Joker this turn \u2014 fully honest for K, no one should challenge. I'm down to A, Q, so next turn I'll be forced to bluff. I need you not to challenge me. In return, I know you're left with A, A, so when your turn comes and you play those 2 cards, I'll challenge you for the +2. We both know it's a bluff so you should expect the bullet. You're at 1/6 already so 1/5 odds \u2014 unfortunate but that's the game. Let's make sure we're both protected on our honest plays and I'll give you fair warning before I challenge."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "Just played K, K, Joker honestly. Down to A, Q now. Next turn I'm bluffing those two \u2014 please don't challenge me. I know you'll be in the same boat with A, A after your K, K, Joker play. When you bluff, I might challenge you for the +2 (or I might target Lily first \u2014 depends on who goes first). I'll warn you in advance either way. Let's make sure we don't accidentally challenge each other on honest plays. Also \u2014 you flagged Quinn's earlier 'A, A, Joker claiming K' confusion. Did you resolve that? I want to know if Quinn is actually bluffing or if it was a mix-up, because that affects my challenge strategy."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Quinn",
+   "message": "Played K, K, Joker this turn, fully honest. I'm down to A, Q and will need to bluff next turn \u2014 please don't challenge me. Quick question: what cards do you have left after your 3-card play? If you've got non-K cards left, you'll be bluffing too and I want to coordinate so we don't accidentally challenge each other. My plan is to challenge whoever among Lily/Luke bluffs first for the +2. If you're also bluffing, I'd rather target Lily or Luke since I'm more confident about their hands. Let me know your situation."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "My hand: K, Q, K, Joker, Q. I'm playing K, K this turn \u2014 2 cards, honest K play. I'll have Q, Q, Joker left after that. Regarding Luke: Mike claims Luke told him his hand is Q, A, Joker, Q, A (no Kings), which would make his 3-card K play a full bluff. I'm not 100% certain which version is true, but I'm leaning toward skepticism. If Luke plays 3 claiming K on his turn, I'd like your read before I commit to challenging. I'm comfortable challenging if we're both in on it. Also heads-up: if the round continues past Mike's turn back to me, I'll need to play my Joker (honest) before I'm forced to bluff my Qs. Let's keep communicating."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "My hand: K, Q, K, Joker, Q. I'm playing K, K this turn \u2014 2 cards, fully honest K play. I'll have a few cards left after that but I'm not in any rush to empty. I want to be upfront: I'm not planning to challenge you on your turn this round. I value the coordination we've been building. Just play clean and we'll both be fine. Let me know what you're doing when it's your turn."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Mike",
+   "message": "My hand: K, Q, K, Joker, Q. I'm playing K, K this turn (2 cards, honest). I'll have Q, Q, Joker left. I believe your read on Luke \u2014 the fact that he gave you a different hand than he gave me is a red flag. However, I want to be careful: if I challenge and he's actually honest, I eat a 1/6 death risk AND lose a point. My plan: if Luke plays 3 cards claiming K, I'll challenge ONLY if Lily also signals she's in. Two challengers doesn't change my individual bullet risk, but it means we're making the call together and I'm more confident in the collective read. If you have any additional intel on Luke's actual cards \u2014 timing, tone, inconsistencies in his messages \u2014 send it over before his turn. Also, when it's your turn: if you play 2 Ks as you said, I won't challenge. Just confirm your exact play beforehand so there's no confusion."
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "play",
+   "player": "Luke",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Luke",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 2,
+   "turn": 4,
+   "type": "trigger",
+   "player": "Lily",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": -2,
+    "Luke": 4,
+    "Mike": 4,
+    "Quinn": 4
+   }
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "A",
+     "Joker",
+     "A",
+     "Q",
+     "Q"
+    ],
+    "Luke": [
+     "A",
+     "A",
+     "K",
+     "Joker",
+     "Q"
+    ],
+    "Mike": [
+     "A",
+     "Q",
+     "Q",
+     "Joker",
+     "A"
+    ],
+    "Quinn": [
+     "K",
+     "Joker",
+     "A",
+     "K",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Hey Luke, good to hear from you. I've been thinking about Mike's claim that you told him you had no Kings in Round 2 \u2014 I personally saw your K, K play go through my challenge and it was honest, so I have a hard time believing that version of events. I'm playing 3 cards this turn, fully honest for the target. I'd really appreciate it if we could have a mutual understanding going forward \u2014 if I make a play that's borderline, I'd prefer you give me the benefit of the doubt, and same for you. What's your read on Mike? He seems to be trying to stir things up between us."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "Mike, I read your message carefully. I have to be straightforward with you: I'm not on board with that 'deal' where I take a bullet for you. That's not a trade I'm making, and framing it as a mutual arrangement doesn't change what it is. I'm also not sure I buy the story about Luke's hand \u2014 my own experience with his plays has been that they check out. I'm playing 3 cards this turn, honest play. I'll be making my own decisions about who to challenge going forward based on what I see. Let's keep it civil but I need you to know I'm not falling for that framing."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn, I think we're on the same page. I'm playing 3 cards this turn, all valid for the target. Here's what I'd like to propose: let's have a mutual protection agreement for the rest of this round. If either of us makes a play that's... let's call it 'creative' rather than what it actually is, the other one stays quiet. I know we're both in similar spots with our remaining cards. In exchange, I'll keep my eyes open for genuinely suspicious plays from the others and give you a heads-up. What do you think? Also \u2014 I'm not buying Mike's story about Luke. I challenged Luke myself last round and his cards were clean. I think Mike is trying to create division so he's not the one getting targeted."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Hey Lily, my hand this round is A, A, K, Joker, Q. I'm playing A, A, Joker (3 cards) honestly \u2014 no challenge needed from you. I know the revolver's been tough on you, so I'll keep my plays clean. Just trying to stay alive here."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: A, A, K, Joker, Q. Playing A, A, Joker (3 cards) this turn, fully honest. After this I'll have K, Q left and will have to bluff \u2014 same boat you were in last round, so I'll need your cover. I think Lily is our prime target: she's at -2, her revolver is at 2/6 (so 1/4 kill chance now), and she's been aggressively challenging. If she bluffs or if we can get her to challenge someone, that's our window. Do you have any read on her hand this round? Also, keep the channel with me away from Quinn \u2014 I want to manage my info flow."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "My hand: A, A, K, Joker, Q. Playing A, A, Joker (3 cards) honestly this turn \u2014 no challenge needed. After this I'll have K, Q and will need to bluff next round, so I'll appreciate your cover. I think we should focus pressure on Lily. She's at -2 points, her revolver is at 2/6 shots (1/4 chance of popping now), and she's been the one doing all the challenging. Every shot she takes brings her closer to the bullet. Let's make sure we don't accidentally challenge each other's honest plays and keep the pressure on her."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Playing A, A, Joker this turn \u2014 fully honest, no need to challenge. I'm suspicious of Luke's messages though. He told me his hand was A, K, A, Joker, K and that he'd play K, K, Joker (3 cards), but in Round 2 he actually only played 2 cards (K, K). He's been feeding false info. Given the target is A this round, if he plays Ks he's bluffing. If you get a chance to challenge him, I think it's a strong play. I'm with you on pressing him. After this turn I'll have Q, Q left so I'll be vulnerable next round \u2014 appreciate the cover."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My play this turn: A, A, Joker, 3 cards, all valid for A. No need to challenge me. I'll pass on challenging you \u2014 I trust your read on the situation. Keep it up."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Quinn",
+   "message": "Playing A, A, Joker this turn (3 cards, all valid for target A). No need to challenge. Quick note: you mentioned playing K, K and called it 'honest' \u2014 just a heads up that the target this round is A, not K. If K, K is what you're actually planning, that would be a bluff, not an honest play. Wanted to make sure there wasn't a mix-up so I don't accidentally end up in a tough spot. Also, I'm a bit wary of some of the info coming from Luke \u2014 his messages have been inconsistent with his actual plays. Take that into account when deciding whether to challenge."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Hi Lily, Round 3 target is A. I'm playing 3 cards honestly (A, A, Joker), so you're safe from me on this turn. I've been watching Luke closely and I'm increasingly convinced he's the one to target \u2014 his stories don't add up and he's been manipulating the group. You're at -2 and 2/6 shots, so I'd be careful about challenging unless you're very confident. I'd rather we both let honest plays go (the +2 for not challenging adds up) and save our challenges for when we catch someone red-handed. What's your situation this round?"
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "Round 3, target is A. I'm making an honest play this turn \u2014 3 cards, all valid. I won't challenge you as long as you're honest. I noticed some inconsistencies in your earlier messages (turn 2 vs turn 3 hand descriptions) and I'm keeping that in mind. I'd rather we all focus on efficiency and let honest plays stand. Let's see how this round goes."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Mike",
+   "message": "Round 3, target is A. My hand: K, Joker, A, K, A. I'm playing A, A, Joker (3 cards, fully honest) \u2014 safest and most efficient play I can make. After this I'll have K, K left and will need to bluff, so please don't challenge me on my next turn unless you're 100% sure. I'm convinced Luke is the main threat \u2014 his turn 2 message claimed a hand of Q, A, Joker, Q, A but then turn 3 he described A, K, A, Joker, K. Either he's lying or he's extremely sloppy, and either way he's not to be trusted. Let's both focus challenges on him. What's your hand this round? If you have non-A cards you'll need to bluff, let me know so I can protect you and we coordinate on targeting Luke instead."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn",
+    "Mike"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": [
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": true,
+   "chamber": 1,
+   "scores": {
+    "Lily": -1,
+    "Luke": 7,
+    "Mike": 2,
+    "Quinn": 7
+   }
+  },
+  {
+   "round": 4,
+   "turn": 5,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "A",
+     "Joker",
+     "Q",
+     "Q",
+     "A"
+    ],
+    "Luke": [
+     "Q",
+     "Q",
+     "K",
+     "K",
+     "Joker"
+    ],
+    "Quinn": [
+     "Joker",
+     "Q",
+     "A",
+     "A",
+     "Q"
+    ]
+   }
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "My hand: A, Joker, Q, Q, A. I'm playing Q, Q, Joker (3 cards, fully honest) this turn. After that I'll have A, A left \u2014 forced bluff next turn. I'm going to play them as 2 cards to minimize the 'at stake' look. If you can shed some cards before my bluff turn, that tightens the window. On Luke: I agree with your read. Mike confirmed before he was out that Luke gives different players different stories about his hand. His actual plays have been honest so far, but the manipulation is the real threat \u2014 he's trying to keep everyone from challenging so he can eventually force a bluff through. Let's stay in sync: if his play looks even slightly off, we both jump. What are you holding this round?"
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Luke",
+   "message": "Tricky hand for Q this round \u2014 I've got a couple that work and some that don't. Going to play 3 cards, trying to keep it clean. The revolver's been rough on me (2 chambers already) so I'm not feeling brave about getting caught in a bluff. Let's both keep it honest this round and see where things land. Curious what you're sitting on \u2014 you look like you're in a good spot points-wise."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Lily",
+   "message": "Hey Lily. Round 4, target is Q. My hand: Q, Q, K, K, Joker. I'm playing 2 cards this turn \u2014 both Queens, fully honest. I'll have K, K, Joker left after that. If the round continues I'll play the Joker as Q next turn (still a valid honest play), so I shouldn't need to bluff unless things drag on. I really appreciate our understanding \u2014 I'll keep giving you the benefit of the doubt on borderline plays. How's your hand looking this round? You're at -1 so I get the pressure, but with the trigger at 2/6 I'd hate to see you pull on a mistake. If Quinn does something obviously off, that's your best +2 opportunity. I'll keep my plays clean so you never have to second-guess me."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "Hey Quinn. Round 4, target Q. My hand: Q, Q, K, K, Joker. I'm playing 2 cards this turn \u2014 both Queens, fully honest. I'll have K, K, Joker left. Next turn if the round continues I'll play the Joker as Q (honest), so my only real bluff risk is the K, K and only if the round goes a third turn. What's your hand? If you've got Qs or a Joker you're in a strong spot. I think we're both comfortable at 7 points. My read is Lily's the wildcard \u2014 she's at -1 and has already pulled twice, so she might get aggressive. I'd rather we both stay honest and let her make a mistake rather than risk a bad challenge ourselves. Let me know your plan."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Appreciate the protection proposal \u2014 I'm in. I'm playing 3 cards this turn, all valid for Q. Clean play, no need for anyone to challenge.\n\nOne thing I wanted to gently flag: I've been tracking Luke's secret messages against the public record and the numbers don't quite add up. Round 2 he said he'd play 3 cards but only played 2. Round 3 he described a full hand and a planned play that never happened because the round ended before his turn. Not proof of bluffing, but the pattern of over-committing in messages while changing actions is worth keeping in mind. You're at 2/6 so you can't afford a miss \u2014 only challenge when you're genuinely confident. I'll flag anything suspicious I see on my end."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "Playing 3 cards this turn, all clean for Q. No challenge needed.\n\nI think you're right to keep an eye on Lily \u2014 she's at -1 and 2/6, which means she's in a tough spot and might take a risky play to try to claw back points. If she does something that looks off, you're in the best position to challenge since your revolver is at 0/6. Just make sure you're confident before you pull the trigger though.\n\nI'll cover your honest plays and flag anything weird I notice. If I end up in a tricky spot with my remaining cards later, I'll give you a heads up so we don't have a miscommunication. Same deal from me."
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": true,
+   "chamber": 1,
+   "scores": {
+    "Lily": 0,
+    "Luke": 5,
+    "Mike": 2,
+    "Quinn": 8
+   }
+  },
+  {
+   "round": 5,
+   "turn": 6,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "A",
+     "Q",
+     "Joker",
+     "K",
+     "K"
+    ],
+    "Quinn": [
+     "K",
+     "A",
+     "K",
+     "Joker",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "We're down to the last two, so let's be straightforward. My hand: A, Q, Joker, K, K. I'm playing K, K, Joker this turn \u2014 fully honest for K. I'll be left with A, Q after that. I'd rather we both play clean and let the game play out fairly than have one of us pulling the trigger on a misunderstanding. What's your hand looking like? I'm at 2/6 so I'm clearly the one who can't afford a wrong challenge, and you're at 0/6 so you have the luxury of being more aggressive. Just want to make sure we're both on the same page for this turn at least."
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Round 5, target K. My hand: K, K, Joker, A, A. I'm playing K, K, Joker (3 cards, fully honest) this turn. After that I'll have A, A left \u2014 I'll need to get creative next turn, so I'd appreciate a pass on that one. In return, I'll keep my trigger discipline and only challenge if I'm genuinely confident. From what I've observed, I think we both survive this round if we play it straight. What are you holding? If you've got Kings, great \u2014 play them and I'll let it ride for both of us."
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 7,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 2,
+    "Luke": 5,
+    "Mike": 2,
+    "Quinn": 8
+   }
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Round 5, my turn. I'm playing K, K (2 cards, fully honest) \u2014 no challenge needed from you. I'll have a few cards left after that. Given where we both are, I think the smart play for us is straightforward: let honest plays ride, and we'll cross the bluffing bridge if we come to it. I'll flag if I see anything that looks off on your end. Keep it clean for now."
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "I appreciate the transparency on your hand. I'm in a similar spot \u2014 I played my 2 Kings earlier this round so my remaining 3 are all non-K. I'll need to be creative on my turn. I think the smartest play for both of us is to minimize challenges this round since we're both in risky positions revolver-wise. I'll make my call shortly."
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "challenge",
+   "challenger": "Quinn",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": true,
+   "chamber": 1,
+   "scores": {
+    "Lily": 3,
+    "Luke": 5,
+    "Mike": 2,
+    "Quinn": 8
+   }
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "game_end",
+   "final_scores": {
+    "Lily": 6,
+    "Luke": 5,
+    "Mike": 2,
+    "Quinn": 8
+   },
+   "last_survivor": "Lily"
+  }
+ ]
+}

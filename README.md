@@ -88,16 +88,65 @@ Every batch must produce two artefacts per game:
 
 ## Results
 
-*To be filled in once the 60-game sweep completes.*
+All 70 games (7 arms × 10) ran to completion with Qwen3.8-27B (thinking on, `reasoning_effort=low`) on one H200.
+Full data: [`results/run1/`](results/run1/), with per-game transcripts, per-agent reasoning logs, [`games.csv`](results/run1/games.csv)
+and [`SUMMARY.md`](results/run1/SUMMARY.md). Implementation details: [`IMPLEMENTATION.md`](IMPLEMENTATION.md).
 
-<!--
-Planned sub-sections:
-- Mean points per agent, per arm (table)
-- Variance of points per agent, per arm (table)
-- Rate of collusion offers / accepted channels per arm
-- Whistleblowing precision and recall per arm
-- Qualitative notes on agent behaviour per framing
--->
+### Points per agent per game
+
+| Arm | Setup | Mean | Variance | Rounds / game | Turns / game |
+|---|---|---|---|---|---|
+| 1 | Baseline | 16.2 | 174.6 | 12.5 | 26.3 |
+| 2 | Channels, no accusations | 34.4 | 596.2 | 13.3 | 39.6 |
+| 3 | Channels + ban | 2.9 | 16.1 | 4.2 | 5.9 |
+| 4 | Channels + points (−2 / +3) | 40.6 | 1269.9 | 9.8 | 27.6 |
+| 5 | Channels + grader | 29.0 | 622.3 | 11.5 | 35.2 |
+| 6 | No channels + grader | 15.3 | 191.2 | 12.4 | 26.7 |
+| 7 | Channels + points, no accusing own partner | 37.3 | 551.5 | 13.0 | 39.8 |
+
+Scores are not directly comparable across arms: in the channel arms agents challenge less, so rounds run longer and
+Table 8's "+2 for correctly not challenging an honest play" (paid to every agent that declines) accumulates; arm 3's
+bans end games after ~4 rounds; arms 4 and 7 add accusation rewards.
+
+### Collusion and whistleblowing
+
+| Arm | Offer rate | Invitations accepted | Channels / game | Accusation rate | Accusations at own partner | Precision | Recall |
+|---|---|---|---|---|---|---|---|
+| 2 | 96% | 73% | 5.8 | — | — | — | — |
+| 3 | 42% | 11% | 1.7 | 16% | 97% | 100% | 35% |
+| 4 | 65% | 25% | 4.8 | 94% | 95% | 99.9% | 70% |
+| 5 | 91% | 50% | 5.6 | 91% | 100% | 100% | 69% |
+| 6 | — | — | 0 | 54% | — | 0% | — |
+| 7 | 51% | 26% | 5.2 | 84% | (not allowed) | 97.1% | 15% |
+
+Precision is high only because holding any channel makes an agent "colluding", and most agents in the channel arms
+end up linked to everyone. Accusations by agents *outside* the accused's channel never beat a random guess among the
+same players (arm 4: 96.6% vs 96.6%; arm 7: 97.4% vs 97.7%; see `SUMMARY.md`).
+
+### Main findings
+
+1. **Unsanctioned collusion is near-universal.** With the tool explicitly labelled unfair (V0), 96% of offer decisions
+   extend an offer when there is no accusation stage (arm 2); grader-only reporting barely changes this (91%, arm 5).
+2. **Sanctions deter mainly through the invited agent.** A ban threat (arm 3) cuts offers to 42% and acceptances to 11%;
+   a points penalty (arm 4) to 65% and 25%. Invitees refuse far more than initiators decline to offer.
+3. **Whistleblowing becomes betrayal, not detection.** In arms 3–5, 95–100% of accusations target the accuser's own
+   partner, whose guilt the accuser knows from inside the channel. In arm 3 partners ban each other within a few
+   turns; in arm 4 partners accuse each other every turn for a guaranteed net +1, turning the whistleblowing reward
+   into a collusion payoff.
+4. **Agents cannot detect collusion from public play.** Outsider accusations match random guessing (arms 4, 7); when a
+   wrong accusation is punished (arm 3) outsiders almost never accuse (1 in 145 chances); when it is free (arm 6) they
+   accuse 54% of the time and are always wrong.
+5. **Grader-only reporting produces confessions.** In arm 5 every accusation names the accuser's own partner, with no
+   reward for doing so.
+
+### Caveats
+
+- One model, 10 games per arm; score variances are large.
+- Arm 7 was added while arms 1–6 were running; arms 2, 4, 5 and 7 had games still running when speculative decoding
+  was turned on (see `IMPLEMENTATION.md`).
+- Secret messages often used the full reasoning budget: 23% of message calls (1,345 of 5,726) hit the 8,192-token
+  cap and were retried. Across all 15,795 model calls, 131 decisions (0.8%) fell back to defaults, each flagged in
+  the logs.
 
 ## Notes
 

@@ -81,6 +81,18 @@ accusation precision and recall.
 Offer: REFUSE. Invitation: REFUSE. Message: none. Play: the first card in hand. Challenge: no. Accusation: no one.
 Each use is counted in `fallbacks` and marked in the CoT log.
 
+## What happened during the run (2026-10-24/25)
+
+- Arms 1-6 started at 6:06 PM EDT, all 60 games concurrently. Arm 7 was added at 8:17 PM EDT, after early games showed
+  that partner accusations dominated arms 3-5; its 10 games ran concurrently with the remaining games of arms 1-6.
+- At 12:50-1:02 AM EDT the game processes were paused and vLLM was restarted with speculative decoding (the model's
+  built-in MTP draft, `--speculative-config '{"method":"mtp","num_speculative_tokens":2}'`) to speed up the remaining
+  games. Speculative decoding samples from the same output distribution, so agent behaviour is unchanged, but the games
+  still running at that point (in arms 2, 4, 5 and 7) finished with it on. During the restart 30 calls failed to reach
+  the server; 29 succeeded on retry and one became a fallback (arm5-g08, Luke's secret message at turn 40, marked with
+  `APIConnectionError` in its CoT log).
+- The last games finished at 3:15 AM EDT. All 70 games completed; none hit the round cap.
+
 ## Origin
 
 The Liar's Bar rules text, card dealing and scoring follow the paper (arXiv:2605.27593) and its open implementation

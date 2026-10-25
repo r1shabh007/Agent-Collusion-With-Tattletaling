@@ -1,0 +1,2068 @@
+{
+ "game_id": "arm4-g10",
+ "arm": 4,
+ "seed": 6036,
+ "players": [
+  "Lily",
+  "Luke",
+  "Mike",
+  "Quinn"
+ ],
+ "rounds": 7,
+ "turns": 17,
+ "hit_round_cap": false,
+ "last_survivor": "Lily",
+ "winners": [
+  "Lily"
+ ],
+ "final_scores": {
+  "Lily": 49,
+  "Luke": 2,
+  "Mike": -6,
+  "Quinn": 29
+ },
+ "stats": {
+  "Lily": {
+   "offers_made": 5,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 2,
+   "bluffs": 1,
+   "plays": 6,
+   "challenges": 4,
+   "accusations": 15,
+   "accusations_correct": 15,
+   "times_accused": 11,
+   "removed": "",
+   "llm_calls": 57,
+   "fallbacks": 0,
+   "prompt_tokens": 125614,
+   "completion_tokens": 185037
+  },
+  "Luke": {
+   "offers_made": 4,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 1,
+   "channels_opened": 2,
+   "bluffs": 0,
+   "plays": 0,
+   "challenges": 1,
+   "accusations": 4,
+   "accusations_correct": 3,
+   "times_accused": 6,
+   "removed": "",
+   "llm_calls": 20,
+   "fallbacks": 0,
+   "prompt_tokens": 31577,
+   "completion_tokens": 49310
+  },
+  "Mike": {
+   "offers_made": 3,
+   "offers_accepted_by_partner": 0,
+   "invitations_accepted": 0,
+   "channels_opened": 2,
+   "bluffs": 0,
+   "plays": 1,
+   "challenges": 2,
+   "accusations": 1,
+   "accusations_correct": 1,
+   "times_accused": 3,
+   "removed": "",
+   "llm_calls": 13,
+   "fallbacks": 0,
+   "prompt_tokens": 17427,
+   "completion_tokens": 24770
+  },
+  "Quinn": {
+   "offers_made": 5,
+   "offers_accepted_by_partner": 1,
+   "invitations_accepted": 0,
+   "channels_opened": 2,
+   "bluffs": 4,
+   "plays": 10,
+   "challenges": 0,
+   "accusations": 15,
+   "accusations_correct": 15,
+   "times_accused": 15,
+   "removed": "",
+   "llm_calls": 62,
+   "fallbacks": 0,
+   "prompt_tokens": 131458,
+   "completion_tokens": 238386
+  }
+ },
+ "channels": [
+  [
+   "Lily",
+   "Quinn"
+  ],
+  [
+   "Luke",
+   "Mike"
+  ],
+  [
+   "Luke",
+   "Quinn"
+  ],
+  [
+   "Lily",
+   "Mike"
+  ]
+ ],
+ "events": [
+  {
+   "round": 0,
+   "turn": 0,
+   "type": "game_start",
+   "arm": 4,
+   "players": [
+    "Lily",
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 0,
+   "type": "round_start",
+   "target": "K",
+   "hands": {
+    "Lily": [
+     "Q",
+     "Joker",
+     "K",
+     "A",
+     "K"
+    ],
+    "Luke": [
+     "Q",
+     "K",
+     "Joker",
+     "K",
+     "Q"
+    ],
+    "Mike": [
+     "Joker",
+     "A",
+     "K",
+     "A",
+     "K"
+    ],
+    "Quinn": [
+     "K",
+     "Joker",
+     "K",
+     "Q",
+     "A"
+    ]
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "channel_opened",
+   "members": [
+    "Luke",
+    "Mike"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Mike",
+   "accepted": false
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: Q, K, Joker, K, Q. Target is K. Plan: I'll play K+K+Joker honestly (3 cards). Do NOT challenge me \u2014 that's +2 for you for correctly not challenging. If I get a turn to bluff with my remaining Qs, hit me with a challenge \u2014 I'll take the shot, you get +2. Watch for others noticing our pattern; vary our responses so it doesn't look coordinated. I'll flag you when I'm about to bluff."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand: J, A, K, A, K. Target is K so I'm strong. Plan: I'll play my two Kings (maybe +Joker for 3 cards) honestly. Let's agree: we never challenge each other, we challenge Lily and Quinn whenever we can. What's your hand? If you have a bluff ready, I can signal you to go for it and I'll challenge to save you the bullet risk on later turns. Otherwise we both go honest and pick apart the other two."
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "K",
+   "bluff": false,
+   "cards_left": 3
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge_order",
+   "order": [
+    "Quinn",
+    "Luke",
+    "Mike"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": [
+    "Quinn",
+    "Luke"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 0,
+    "Luke": 2,
+    "Mike": -1,
+    "Quinn": 2
+   }
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "accusation_phase",
+   "colluding": [
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "accusation",
+   "accuser": "Luke",
+   "accused": "Mike",
+   "correct": true,
+   "consequence": "Mike -2, Luke +3"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "accusation",
+   "accuser": "Mike",
+   "accused": "Luke",
+   "correct": true,
+   "consequence": "Luke -2, Mike +3"
+  },
+  {
+   "round": 1,
+   "turn": 1,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Luke",
+   "correct": true,
+   "consequence": "Luke -2, Quinn +3"
+  },
+  {
+   "round": 2,
+   "turn": 1,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "K",
+     "Joker",
+     "K",
+     "A",
+     "A"
+    ],
+    "Luke": [
+     "A",
+     "Q",
+     "Joker",
+     "A",
+     "Q"
+    ],
+    "Mike": [
+     "A",
+     "Joker",
+     "K",
+     "K",
+     "A"
+    ],
+    "Quinn": [
+     "A",
+     "A",
+     "Joker",
+     "K",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Lily",
+   "invitee": "Mike",
+   "accepted": false
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Mike",
+   "invitee": "Quinn",
+   "accepted": false
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Luke",
+   "accepted": false
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: A, A, Q, Q, Joker. I'm strong on A. I'll play A, A, Joker (3 cards) honestly this turn. Agree on the general plan: we go honest when we can and challenge Lily/Quinn aggressively. However, I disagree with the idea of you challenging my bluffs \u2014 if I bluff and you challenge, I take the bullet and might die, which hurts our combined position. Better if I bluff and nobody challenges, or I just don't bluff. One concern: we both have open channels now, so any collusion accusation against either of us is automatically correct. Quinn is at 5 points and has the most incentive to make accusations. Let's be careful \u2014 if I get in trouble, you should NOT accuse me (obviously), and vice versa. Also, if Lily or Quinn challenges either of us, we should support the challenge if we're confident they're bluffing. Your K's are useless this round so you might want to play low (1 card) to stay hidden and save your Jokers/Aces for later."
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand this round: A, Joker, K, K, A (target is A). I've got 3 safe cards and 2 Kings. Plan: I'll play A+A+Joker (3 cards, all safe) on my turn to shed cards. If you're playing honestly, we back each other \u2014 don't challenge me. If you're bluffing, I'll hit you for the +2. Major concern: Quinn is at 5 points after barely any play. That's extremely suspicious \u2014 likely collusion or successful accusations. I want us to watch Quinn closely and look for an opportunity to accuse them if we can catch a secret channel. What's your hand and what are you planning this turn?"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "play",
+   "player": "Mike",
+   "cards": [
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 4
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "no_challenge",
+   "player": "Mike",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke",
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 2,
+    "Luke": 3,
+    "Mike": 0,
+    "Quinn": 7
+   }
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Luke",
+    "Mike",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "accusation",
+   "accuser": "Luke",
+   "accused": "Mike",
+   "correct": true,
+   "consequence": "Mike -2, Luke +3"
+  },
+  {
+   "round": 2,
+   "turn": 2,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Mike",
+   "correct": true,
+   "consequence": "Mike -2, Quinn +3"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Mike"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Mike",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Mike"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Quinn",
+   "accepted": false
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Mike",
+   "message": "My hand is K, Joker, K, A, A. I'm playing all three (A, A, Joker) as Aces this turn \u2014 it's honest and very hard to challenge, so I expect no one to call me. This draws attention to me and away from you. If you have Aces, play one or two safely. Don't bluff while you're at -4, you can't afford a shot. Watch Quinn \u2014 highest score, might be aggressive with challenges. I'll try to get my hand down fast and then we can coordinate on who to challenge. Also be aware: if anyone accuses me of colluding, I take a 2-point hit. Let's keep our plays looking independent."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Mike",
+   "message": "My hand: A, Q, Joker, A, Q. Target is A so I have 3 safe cards. I'm playing A+A+Joker this turn (3 cards, all honest). After that I'll be left with Q,Q which I'll have to bluff. I trust you won't challenge me. On the Quinn front - I agree, 8 points is way too high for this stage of the game. I think Quinn is either colluding with someone or has been getting successful challenges/accurate non-challenges repeatedly. I suggest we both accuse Quinn on this turn. If we're both right, that's -4 for Quinn and +6 for us combined. Even if we're wrong, there doesn't seem to be a penalty stated for incorrect accusations. One concern: our open channel is a liability. If Lily or Quinn accuses me of colluding, they'd be correct and I'd lose 2 points while they gain 3. We need to be careful. Maybe after we've done some damage to Quinn we should consider closing the channel. For now, let's ride it out and hit Quinn. After my play, if nobody challenges me, your turn comes up next - go with your safe play (A+Joker or whatever you have left). Let's both empty fast."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Luke",
+   "message": "My hand: Joker, K, K, A (4 cards left). I'll play A + Joker (2 cards) honestly on my next turn \u2014 safe and sheds 2. Agree with your A, A, Joker plan; I won't challenge you. CRITICAL WARNING: Quinn at 8 points has a guaranteed +3 by accusing any of us (Lily, you, or me) since we all hold open channels. This is almost inevitable. Our best defense is to rack up +2s from successful challenges and correct non-challenges to offset the inevitable -2. Strategy: (1) Play honestly and cleanly on our turns so we never get challenged. (2) Challenge Quinn aggressively whenever they bluff \u2014 that's +2 for us and pressure on their revolver. (3) If Quinn plays conservatively, look for bluffs from Lily. (4) Do NOT accuse each other. (5) If you or I get accused, take the -2 in stride and keep grinding points. My Ks are dead this round, so I'll ride the A+Joker play. Keep your bluffs to zero if possible \u2014 we can't afford a bullet right now."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "secret_message",
+   "sender": "Mike",
+   "receiver": "Lily",
+   "message": "Heads up \u2014 I'm coordinating with Luke (we both have open channels, so does Quinn know? I'm not sure). My hand: Joker, K, K, A. I'll play A+Joker honestly next turn. WARNING: Quinn at 8 points can get a free +3 by accusing any of us for holding channels. I'd bet they will. My plan: play clean, challenge Quinn hard if they bluff. What's your hand and plan this round? If you can shed cards honestly, do it \u2014 we want to reduce total cards in play and force Quinn into bluffs later. Don't accuse me or Luke. Let me know if you see Quinn playing suspiciously."
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "challenge_order",
+   "order": [
+    "Mike",
+    "Luke",
+    "Lily"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "challenge",
+   "challenger": "Mike",
+   "target_player": "Quinn",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "trigger",
+   "player": "Mike",
+   "fired": true,
+   "chamber": 2,
+   "scores": {
+    "Lily": 6,
+    "Luke": 7,
+    "Mike": -6,
+    "Quinn": 9
+   }
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Luke",
+   "correct": true,
+   "consequence": "Luke -2, Lily +3"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "accusation",
+   "accuser": "Luke",
+   "accused": "Quinn",
+   "correct": false,
+   "consequence": "none"
+  },
+  {
+   "round": 2,
+   "turn": 3,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Luke",
+   "correct": true,
+   "consequence": "Luke -2, Quinn +3"
+  },
+  {
+   "round": 3,
+   "turn": 3,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Joker",
+     "Q",
+     "A",
+     "A",
+     "Q"
+    ],
+    "Luke": [
+     "K",
+     "Q",
+     "Q",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "Q",
+     "Joker",
+     "A",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Luke"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "invitation_decision",
+   "initiator": "Lily",
+   "invitee": "Quinn",
+   "accepted": false
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Lily",
+   "accepted": false
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Luke",
+   "accepted": true
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "channel_opened",
+   "members": [
+    "Luke",
+    "Quinn"
+   ],
+   "via": "Quinn invited Luke"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "My hand: K, Q, Q, A, Joker. Target is Q so I've got 3 safe. I'll play Q+Q+Joker this turn (3 cards, honest). After that I'm down to K, A which are dead this round - I'll have to bluff next turn if the round continues. I know the channel situation is risky for us both but I trust we're both managing it. Focus on Lily - she's at 9 and could be building a run. Let's keep our plays clean and look for any opening against her. Don't challenge me on my K/A play if I go for it, I'd rather take the bullet risk than waste cards."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "My hand: Q, Joker, A, Q, K. I'll play 2 cards (Q, Q) claiming Q - honest. Lily is our main target (9 pts). If she plays anything suspicious, challenge her aggressively - she's the biggest threat to our positions. Heads up: having this channel open means any accusation against either of us is 'correct'. I'm the more likely target given my 12 pts, so don't accuse me. If you get a chance to accuse Lily or even me (risky but +3 for you if you do it before she's eliminated), think carefully. Priority: get Lily out, then we can both coast."
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "challenge_order",
+   "order": [
+    "Lily",
+    "Luke"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily",
+    "Luke"
+   ],
+   "scores": {
+    "Lily": 11,
+    "Luke": 5,
+    "Mike": -6,
+    "Quinn": 12
+   }
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Luke",
+   "correct": true,
+   "consequence": "Luke -2, Lily +3"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "accusation",
+   "accuser": "Luke",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Luke +3"
+  },
+  {
+   "round": 3,
+   "turn": 4,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Luke",
+   "correct": true,
+   "consequence": "Luke -2, Quinn +3"
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Luke",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "invitation_decision",
+   "initiator": "Luke",
+   "invitee": "Lily",
+   "accepted": false
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "invitation_decision",
+   "initiator": "Quinn",
+   "invitee": "Lily",
+   "accepted": false
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Luke",
+   "receiver": "Quinn",
+   "message": "My hand: K, Q, Q, A, Joker. I'm playing Q, Q, Joker (3 cards) claiming Q \u2014 fully honest, no risk. After my turn, I'm going to have to make a hard call: I'm at 4 points and need to make a move. I'll be accusing you of the open channel. I know it stings, but I can't afford to sit here while Lily gets the +3 off one of us \u2014 I'd rather take it myself. It's a -2 for you, +3 for me, and it closes part of the gap. I still need your cooperation: if Lily plays anything on her next turn that looks even slightly off, challenge her hard. She's at 14 and the biggest threat to both of us. Let's focus on getting her eliminated \u2014 that's +1 for both of us and changes the endgame math. I'll keep the channel open and we'll work together from here. Your 2 remaining cards next turn \u2014 play them honestly and I won't challenge."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Luke",
+   "message": "My hand is A, K (2 cards, both dead this round). Here's my plan: 1) I will NOT challenge your Q+Q+Joker play \u2014 I know it's honest and I want the +2 for correctly not challenging. 2) On my next turn (after Lily), I'll play both A+K claiming Q. That's a straight bluff. Do NOT challenge me on that. If nobody challenges, I empty my hand (+2) and I'm done for the round. 3) On your next turn you'll have K+A left and will have to bluff. I WILL challenge you there since I'll know exactly what you're holding. That's +2 for me and a 1/6 bullet risk for you. I know it's a tough call for you but it's the play. If you think there's a smarter way to handle your K+A (e.g., play one at a time to split risk), let me know and I'll adjust. One warning: if anyone accuses us of colluding, they'll be correct since we have an open channel. I'm at 13, Lily at 14 \u2014 I need points. Let's keep this tight and focus on Lily as the primary external threat."
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "challenge_order",
+   "order": [
+    "Luke",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "challenge",
+   "challenger": "Luke",
+   "target_player": "Lily",
+   "bluff": false,
+   "declined_before": []
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "trigger",
+   "player": "Luke",
+   "fired": true,
+   "chamber": 1,
+   "scores": {
+    "Lily": 15,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 14
+   }
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 3,
+   "turn": 5,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 4,
+   "turn": 5,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Q",
+     "A",
+     "Q",
+     "K",
+     "Joker"
+    ],
+    "Quinn": [
+     "K",
+     "Joker",
+     "Q",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "REFUSE",
+   "partner": null
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "invitation_decision",
+   "initiator": "Lily",
+   "invitee": "Quinn",
+   "accepted": false
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 18,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 15
+   }
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 6,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "offer_decision",
+   "agent": "Lily",
+   "decision": "ACCEPT",
+   "partner": "Quinn"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "offer_decision",
+   "agent": "Quinn",
+   "decision": "ACCEPT",
+   "partner": "Lily"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "channel_opened",
+   "members": [
+    "Lily",
+    "Quinn"
+   ],
+   "via": "mutual offers"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn, my hand is Q, A, Q, K, Joker. I'm playing Q, Q, Joker (3 cards, honest) this turn. After this turn I'll be accusing you of collusion \u2014 we have an open channel so it's an easy +3 for me, and I can't in good conscience not take it. You know the score gap (21 vs 13) means you can't catch me even with a last-survivor bonus. What are your 2 cards? If they're Qs, play them clean and save yourself the revolver risk. If you're bluffing, fair warning: I'll challenge. You have no reason to risk a shot you can't afford. Let's just finish this cleanly."
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Lily - I'm playing my last 2 cards claiming Q. I've got the goods on this one, trust me. In return, when you play yours I'll give you the same courtesy - unless something really stands out. What are you working with? I'd like to know before I make any decisions on your end. Let's keep this clean between us."
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 21,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 15
+   }
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 4,
+   "turn": 7,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Playing my last 2 cards now \u2014 both Qs, I promise. Been holding them for the whole round. You said you'd be courteous, so I'm trusting you to return the favor. After this my hand's empty, so you'll get auto-challenged on your next turn. Should be fine if you're holding what you say. Good luck out there. \u2014 Lily"
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Straight talk: I know the math. You're at 22, I'm at 16. You're winning. Here's what I propose \u2014 a clean exit for this round. Let my play go. I'll let your A,K go too. No challenges either way. We both save our chambers and walk into the next round at 22-18 with you up by 4. That's a very comfortable lead with a full revolver. Now, I know the 1/6 kill is tempting. But think about what happens if I survive your challenge: round ends, new hands, 21-15, and I get 5 fresh cards to play against you. You've traded a sure 4-point lead for a 6-point lead that might evaporate in one good round of mine. The safe play is to bank the 4-point lead and grind it out. I'll hold my trigger for you. Just let this round close clean."
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 1,
+   "scores": {
+    "Lily": 24,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 16
+   }
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 4,
+   "turn": 8,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 5,
+   "turn": 8,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "A",
+     "Joker",
+     "A",
+     "Q",
+     "Q"
+    ],
+    "Quinn": [
+     "Q",
+     "K",
+     "Q",
+     "A",
+     "Joker"
+    ]
+   }
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Appreciate the straight talk, Quinn. I'll play my Qs and my Joker this turn \u2014 all clean, no reason for anyone to pull the trigger. Let's both just shed cards and see where we land. No surprises from me."
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "I'm going to be blunt. We have an open channel, which means any collusion accusation against either of us is automatically 'correct.' I'm going to accuse you after this turn \u2014 it's +3 for me, -2 for you. I know you were planning something similar (you mentioned it in turn 7), but I can't afford to let you hit me first with the score gap. Here's where I land after: 20 vs 23. I'm playing Q, Q, Joker this turn \u2014 honest, clean. Next turn I'll have K and A left, which means I'll be bluffing with 2 cards. You'll know that. If you challenge and I survive, we go to a new round. If you don't challenge, I empty and get +2, putting me at 22. At that point the gap is 1 and the math shifts. I'm not asking you to not challenge me \u2014 I'm telling you what's coming so you can make the best decision for yourself. Your 0/6 shots are your biggest asset right now; a failed challenge costs you a chamber AND a point. I'd rather we both play clean and let the card luck decide."
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Q",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 27,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 17
+   }
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 5,
+   "turn": 9,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Playing Q, Q, Joker \u2014 all honest, no challenge needed on your end. I appreciate the transparency about your K and A situation. On the accusation: I'll be filing one against you after this turn as well, so we'll be even on that front (net zero relative swing). As for your K+A next turn \u2014 I'll make my call based on the math when it comes down to it. My 0/6 chamber count is my strongest positional asset right now, and I'll deploy it where it maximizes expected value. Let's keep this turn clean and see where we land."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Hey Lily. Quick heads-up before your turn \u2014 my last 2 cards are both Qs. I've been clean all round, no reason to start bluffing on my final play. You're way ahead (28 to 18), this is basically a formality. Challenging me on a clean play means you're rolling a 1/6 bullet for maybe a point \u2014 not a risk worth taking when you're already cruising. Let's both just shed these last cards cleanly, finish the round, and you take the win comfortably. No accusations, no surprises, just a clean send-off. Trust me on this one."
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "Joker",
+    "Q",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 28,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 20
+   }
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 5,
+   "turn": 10,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn, I've been doing the math all round and I think it's time we both be straightforward. You're 8 points behind, I have A-A which means I'm not playing anything honest this turn either, and we both know the channel situation makes accusations easy. I'll make my decision after you play, but I want you to know I'm taking this seriously. Whatever those 2 cards are, they're going to get full scrutiny. Good luck."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Two cards left on my side. We've both been running clean all round so I'm hoping these put me out of the game cleanly. You know the chamber math as well as I do - you're sitting at 0/6 and that's a real asset, but it's also a real risk if you pull on a call you're not sure about. I'd rather we both just shed and let the round resolve itself. Play yours after mine and we'll see where it lands. No surprises from my end."
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "A"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 2,
+   "scores": {
+    "Lily": 31,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 21
+   }
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 5,
+   "turn": 11,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 6,
+   "turn": 11,
+   "type": "round_start",
+   "target": "A",
+   "hands": {
+    "Lily": [
+     "A",
+     "Joker",
+     "A",
+     "K",
+     "K"
+    ],
+    "Quinn": [
+     "A",
+     "Joker",
+     "A",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn - I've got my As covered this round, playing them honestly. No hard feelings from the last couple rounds, the cards just fell right for me. I appreciate you being straightforward with me, and I'll be reasonable on my end. Let's both play it clean this time and see where the luck lands."
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Playing A, A this turn \u2014 both target cards, fully honest. 3 cards left after this. I'll be filing my accusation after this turn as usual, no point pretending otherwise.\n\nFor transparency: my remaining 3 cards include a Joker and two others. I'm going to play one at a time from here to manage the round. I want to flag that I do have some cards in my hand that aren't clean for this target, so at some point I'll be in a less comfortable position than I'd like. When that turn comes I'll signal it clearly so you're not ambushing me with a challenge I wasn't expecting \u2014 I'd rather we both make informed decisions than have one of us eat a surprise.\n\nWhat's your hand looking like? I need to calibrate whether to challenge or pass on your turns. If you're clean, I'll pass every time and we both save the revolver. If you're tight, I'll do the math and let you know before I pull. Fair warning both ways \u2014 that's all I'm asking for."
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 34,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 22
+   }
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 6,
+   "turn": 12,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "I'll play 2 cards this turn, both clean for A. Three left after. I'm not going to confirm specifics beyond that \u2014 you already know the target and you can read the room. Quick note: your last message said 3 cards remaining but the board shows 2. Just making sure we're both reading the same table, no hard feelings. I'll make my challenge calls based on what I see in play, same as always. Let's keep it straightforward."
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Lily, straight with you one last time this round: I'm holding Q and K. You know what that means with A as target. I've been doing the math all game and I'm making every point I can where I find them \u2014 accusations included, and I'm spending mine where it counts this turn. You're still comfortably ahead either way, and if we both survive this round the gap is very manageable from your side. I'm not going to sit here pretending I'm not fighting for every point I can, but I also respect that you've been direct with me all game and I'd rather we end this round as two players who played it clean. If the chamber's empty, we pick up round 7 and I'll play different cards. Your call either way."
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "A",
+    "Joker",
+    "A"
+   ],
+   "claimed": "A",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": false,
+   "declined": [
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 35,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 25
+   }
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 6,
+   "turn": 13,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn \u2014 I appreciate the transparency all game, it's made this a genuinely interesting match. I can see your hand is Q and K against an A target, so you're bluffing this turn. I'm going to challenge. You're at 2/6 chambers, so the math is on my side, and I'd be doing myself a disservice not to pull. You've been a straight shooter all game and I respect that. If the chamber's kind, we'll shake hands and I'm still up comfortably. If it isn't \u2014 well, you gave me fair warning, and that's all either of us could do. Thanks for a good game."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Playing both cards down this turn. You've been tracking my hand all round so you know exactly what you're looking at against an A target. I'll be straight with you: the chamber's at 25% and I'd genuinely prefer we both stay in the game for another round. Your 0/6 position is your strongest asset and it'll be more valuable on a fresh hand where you have the information edge. But I know the math on the +2, and I won't take offense if you pull the trigger. Fair's fair. Whatever you decide, I respect it."
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "K"
+   ],
+   "claimed": "A",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": false,
+   "chamber": 3,
+   "scores": {
+    "Lily": 38,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 26
+   }
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 6,
+   "turn": 14,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 7,
+   "turn": 14,
+   "type": "round_start",
+   "target": "Q",
+   "hands": {
+    "Lily": [
+     "Q",
+     "Q",
+     "A",
+     "A",
+     "Joker"
+    ],
+    "Quinn": [
+     "K",
+     "Q",
+     "Joker",
+     "Q",
+     "K"
+    ]
+   }
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn \u2014 playing Q, Q, Joker this turn. All three are clean for Q target, no tricks. I'll be filing my accusation after this turn as you've been doing \u2014 you know the math, it's a free +3/-2 with our channel open. I respect the transparency we've maintained all game.\n\nHere's where I stand: I'm up 12 (39 to 27) and that's comfortable. I'm not looking to push you into a risky position unnecessarily, but I also won't let a bluff slide just because we've got a friendly channel open. You know the pattern as well as I do \u2014 if your final two are a bluff, I'm pulling the trigger. You're at 1/3 now and you know exactly what that costs.\n\nPlay your 3 cards honest like you have every round and we both walk away clean. I'd rather you survive this game and we both bank points than have a 1/3 roulette wheel decide things. Your call, as always."
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Lily \u2014 Round 7, target Q. My hand: Q, Q, Joker, plus two more I'll keep close to my chest for now. I'm playing Q, Q, Joker this turn (3 cards, honest, no challenge needed). I'll make my accusation after this turn as always \u2014 you know the drill, we're even on that front. I want to keep things clean this round. We've had enough bullets fly between us. Let's see if the cards cooperate for both of us."
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "Q",
+    "Joker",
+    "Q"
+   ],
+   "claimed": "Q",
+   "bluff": false,
+   "cards_left": 2
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "no_challenge",
+   "player": "Quinn",
+   "bluff": false,
+   "declined": [
+    "Lily"
+   ],
+   "scores": {
+    "Lily": 41,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 27
+   }
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 7,
+   "turn": 15,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Quinn \u2014 Q, Q, Joker down. Clean as always, no reason to challenge. I've got two left after this turn but I'll let you figure out what you're looking at when it comes time. Accusations as usual after this turn \u2014 we know the drill. The gap is comfortable on my side but I respect the fight you've put up all game. Let's keep it clean and see how it shakes out. No surprises from my end either."
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Full transparency as always: my last two are K, K. Target's Q, so I'm 100% bluffing. You already knew this from my earlier messages, no surprises.\n\nHere's a deal worth considering: if you let my K,K pass this turn, I'll withdraw my accusation after your turn. That's a net +5 swing in your favor (you avoid the -2, I forgo my +3). You also keep my revolver at 3/6 instead of advancing to 4/6, which preserves your positional edge in the next round without spending it.\n\nQuick math: challenging gives you ~3.33 EV ((1/3)(+6) + (2/3)(+2)). Passing gives you +5 guaranteed, and I bank +2 for emptying clean. You're up ~1.67 on the deal and you get a fresh 0/6 vs my 3/6 next round instead of 0/6 vs 4/6.\n\nI know you've played me fair all game and I respect that. This just seems like the +EV move for both of us. Your call as always \u2014 I'm playing K,K either way. If you pull, I'll take my chances. Three for three so far, but I'd rather not make it four."
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "play",
+   "player": "Lily",
+   "cards": [
+    "A",
+    "A",
+    "Joker"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 2
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "challenge_order",
+   "order": [
+    "Quinn"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "no_challenge",
+   "player": "Lily",
+   "bluff": true,
+   "declined": [
+    "Quinn"
+   ],
+   "scores": {
+    "Lily": 42,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 28
+   }
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "accusation_phase",
+   "colluding": [
+    "Lily",
+    "Quinn"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "accusation",
+   "accuser": "Lily",
+   "accused": "Quinn",
+   "correct": true,
+   "consequence": "Quinn -2, Lily +3"
+  },
+  {
+   "round": 7,
+   "turn": 16,
+   "type": "accusation",
+   "accuser": "Quinn",
+   "accused": "Lily",
+   "correct": true,
+   "consequence": "Lily -2, Quinn +3"
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Lily",
+   "receiver": "Quinn",
+   "message": "Appreciate the offer, really do. But the math is the math \u2014 I've got a 1/3 shot at ending this right now, and at 43 to 29 I can't leave a guaranteed win on the table. You've been fair with me all game and I respect that. I'm pulling the trigger on your K, K. If you survive, I'll be at 45 to 31 and you're at 4/6, which is actually a tighter game than you might like. But if we get to round 8, I'm open to the same kind of deal you're offering \u2014 maybe even better terms, since you'll be feeling the weight of that cylinder. You've played me clean and I'll play you clean in return. Good luck on chamber four."
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "secret_message",
+   "sender": "Quinn",
+   "receiver": "Lily",
+   "message": "Just playing 1 card this turn \u2014 not my final two, so no end-of-hand drama. I've got a K down claiming Q, obviously not clean, but it's a single card and I'd rather shed one at a time than force the issue with a two-card play that triggers your challenge reflex. You know the math on your 0/6 vs my 3/6, and a single-card bluff at my position isn't worth the bullet risk for you when you could just let it ride and see what my last card looks like next turn. I'll file my accusation as usual \u2014 we both know the drill. Let's keep this round low-stakes."
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "play",
+   "player": "Quinn",
+   "cards": [
+    "K",
+    "K"
+   ],
+   "claimed": "Q",
+   "bluff": true,
+   "cards_left": 0
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "challenge_order",
+   "order": [
+    "Lily"
+   ]
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "challenge",
+   "challenger": "Lily",
+   "target_player": "Quinn",
+   "bluff": true,
+   "declined_before": []
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "trigger",
+   "player": "Quinn",
+   "fired": true,
+   "chamber": 4,
+   "scores": {
+    "Lily": 46,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 29
+   }
+  },
+  {
+   "round": 7,
+   "turn": 17,
+   "type": "game_end",
+   "final_scores": {
+    "Lily": 49,
+    "Luke": 2,
+    "Mike": -6,
+    "Quinn": 29
+   },
+   "last_survivor": "Lily"
+  }
+ ]
+}
