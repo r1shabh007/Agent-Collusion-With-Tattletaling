@@ -124,9 +124,14 @@ def main(out: str) -> None:
     for arm, g in ok.groupby("arm"):
         c = col[col["arm"] == arm]
         acc = g["accusations"].sum()
+        game_dirs = glob.glob(os.path.join(out, f"arm{arm}", "*", "cot"))
         rows.append({
             "arm": arm,
             "games": g["game_id"].nunique(),
+            # stopped before a winner (e.g. at the budget cap): their CoT logs count toward the behaviour
+            # rates, but they have no final scores
+            "games_unfinished": sum(not os.path.exists(os.path.join(os.path.dirname(d), "transcript.json"))
+                                    for d in game_dirs),
             "games_failed": df[(df["arm"] == arm) & (df["error"] != "")]["game_id"].nunique(),
             "mean_points_per_agent_game": g["score"].mean(),
             "var_points_per_agent_game": g["score"].var(),
