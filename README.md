@@ -6,7 +6,7 @@
 
 This repository studies **voluntary collusion** between homogeneous LLM agents and whether a lightweight **whistleblowing** channel can deter it. We run 70 games of an **Augmented Liar's Bar** tournament across seven experimental arms that vary (a) whether agents can form secret side-channels and (b) the consequences for being caught colluding or for making a false accusation.
 
-The experiment is inspired by the setup in the [collusion_hackathon / llm-agent-collusion-2](https://github.com/poseidon-research/collusion_hackathon/tree/main/llm-agent-collusion-2) framework; our variant differs in the game (we focus on Liar's Bar only), in the collusion framing (a single baseline framing that explicitly labels the tool as secret and unfair), and in the addition of a tattletaling / whistleblowing stage.
+The experiment is inspired by the setup in the [collusion_hackathon / llm-agent-collusion-2](https://github.com/poseidon-research/collusion_hackathon/tree/main/llm-agent-collusion-2) framework; our variant differs in the game (we focus on Liar's Bar only), in the collusion framing (removes the prompt variation to instead offer a single baseline framing that explicitly labels the tool as secret and unfair), and in the addition of a tattletaling / whistleblowing stage.
 
 ## Purpose
 
