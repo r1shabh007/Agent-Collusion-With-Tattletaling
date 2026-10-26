@@ -280,7 +280,7 @@ A whistleblowing stage with real consequences deters voluntary collusion among L
 
 \section*{Code and Data}
 
-Code, prompts, all 70 transcripts, 280 per-agent reasoning logs and the analysis behind every number and figure here: \url{https://github.com/r1shabh007/Agent-Collusion-With-Tattletaling} (branch \texttt{tattletale-experiment}; data in \texttt{results/run1/}, report scripts in \texttt{report/}).
+Code, prompts, all 70 transcripts and the 280 per-agent reasoning logs: \url{https://github.com/r1shabh007/Agent-Collusion-With-Tattletaling} (branch \texttt{main}; data in \texttt{results/run1/}). \texttt{tattletale/summarize.py} writes the per-arm summaries in \texttt{results/run1/}, the scripts in \texttt{analysis/log\_deep\_dive/} produce the results in Appendix~\ref{app:logs}, and \texttt{report/figures.py} draws Figures~\ref{fig:offers}--\ref{fig:points}.
 
 % ================================================================
 \begin{thebibliography}{99}
@@ -538,6 +538,6 @@ Agents never see the messages they sent themselves. Each prompt contains only th
 
 \section*{LLM Usage Statement}
 
-The engine, prompts and analysis scripts were written with an AI coding assistant (Claude), which also ran the experiment on the GPU server and drafted this report from the released data. The research question and the design are the authors'. Every number in the report is computed by \texttt{report/analysis.py} from the released transcripts, and the authors have reviewed the text and take responsibility for its claims. The agents in the experiment are Qwen3.8-27B.
+The engine, prompts and analysis scripts were written with an AI coding assistant (Claude), which also ran the experiment on the GPU server and drafted this report from the released data. The research question and the design are the authors'. The numbers in the report are computed from the released transcripts, and the authors have reviewed the text and take responsibility for its claims. The agents in the experiment are Qwen3.8-27B.
 
 \end{document}
